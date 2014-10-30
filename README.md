@@ -12,7 +12,7 @@ This is why I hope for this repository to become a central place to collect addi
 
 * status icons for the owncloud desktop client
 
-## How to install
+## How to Install
 
 Just download the directory or clone the repository into `~/.icons`.
 Then select the theme in [elementary tweaks](https://code.launchpad.net/~versable/elementary-community/elementary-tweaks).
