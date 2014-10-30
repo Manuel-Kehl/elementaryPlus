@@ -2,6 +2,8 @@
 
 This theme is and addition to elementary OS's default icon theme. It contains icons for several third party applications that resemble elementary OS's style.
 
+![Screenshot](screenshot.png)
+
 ## Intention
 [DanRabbit](http://danrabbit.deviantart.com/) indicated [on deviantART](http://danrabbit.deviantart.com/art/elementary-Icons-65437279), that the original theme is most likely to be limited to applications installed on elementary OS by default.
 I understand that decision. They want to keep the theme clean and compact. 
