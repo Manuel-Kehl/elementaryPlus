@@ -12,8 +12,10 @@ This is why I hope for this repository to become a central place to collect addi
 
 ## List of Additions
 
-* status icons for the owncloud desktop client
-* indicator icon for the wallpaper changer "variety"
+* status icons for the Owncloud desktop client
+* indicator icon for the wallpaper changer "Variety"
+
+See [CREDITS](CREDITS.md) for a list of sources and authors of the work contained in this collection.
 
 ## How to Install
 
