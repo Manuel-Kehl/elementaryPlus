@@ -13,6 +13,7 @@ This is why I hope for this repository to become a central place to collect addi
 ## List of Additions
 
 * status icons for the owncloud desktop client
+* indicator icon for the wallpaper changer "variety"
 
 ## How to Install
 
