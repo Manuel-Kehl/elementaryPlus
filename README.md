@@ -24,6 +24,9 @@ Then select the theme in [elementary tweaks](https://code.launchpad.net/~versabl
 
 Please also make sure, that the original elementary icon theme is installed, because elementary+ only provides additions and inherits the base theme.
 
+### Dropbox Indicator
+If you want to make the dropbox indicator visible, you can simply execute `./scripts/show_dropbox_indicator.sh` from the parent directory of this theme.
+
 ## Contribute
 
 I am waiting for your pull requests and would love to see this theme become as complete as possible.
