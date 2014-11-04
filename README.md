@@ -13,7 +13,9 @@ This is why I hope for this repository to become a central place to collect addi
 ## List of Additions
 
 * status icons for the Owncloud desktop client
+* status icons for the Dropbox desktop client
 * indicator icon for the wallpaper changer "Variety"
+* a script to easily activate the dropbox indicator in wingpanel
 
 See [CREDITS](CREDITS.md) for a list of sources and authors of the work contained in this collection.
 
