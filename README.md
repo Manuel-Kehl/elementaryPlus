@@ -1,6 +1,6 @@
 # elementary+ Icon Theme
 
-This theme is an addition to elementary OS's default icon theme. It contains icons for several third party applications that resemble elementary OS's style.
+This theme is a community maintained addition to elementary OS's default icon theme. It contains icons for several third party applications that resemble elementary OS's style.
 
 ![Screenshot](screenshot.png)
 
