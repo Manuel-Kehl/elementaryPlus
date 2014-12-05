@@ -18,7 +18,8 @@ This is why I hope for this repository to become a central place to collect addi
 * application icon for Gimp
 * application icon for Inkscape
 * application icon for Tuxguitar
-* application icon fro Pidgin
+* application icon for Pidgin
+* application icon for Okular
 * a script to easily activate the dropbox indicator in wingpanel
 
 See [CREDITS](CREDITS.md) for a list of sources and authors of the work contained in this collection.
