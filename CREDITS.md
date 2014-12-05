@@ -11,3 +11,6 @@ Application icons
 * Inkscape
 * Tux Guitar
 * GNU Image Manipulation Program
+
+Micah Ilbery (TraumaD91)
+* Various LibreOffice icons

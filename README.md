@@ -2,7 +2,9 @@
 
 This theme is a community maintained addition to elementary OS's default icon theme. It contains icons for several third party applications that resemble elementary OS's style.
 
-![Screenshot](screenshot.png)
+![Screenshot of the indicator icons](screenshot_wingpanel.png)
+
+![Screenshot of the application icons](screenshot_dock.png)
 
 ## Intention
 [DanRabbit](http://danrabbit.deviantart.com/) indicated [on deviantART](http://danrabbit.deviantart.com/art/elementary-Icons-65437279), that the original theme is most likely to be limited to applications installed on elementary OS by default.
@@ -20,6 +22,7 @@ This is why I hope for this repository to become a central place to collect addi
 * application icon for Tuxguitar
 * application icon for Pidgin
 * application icon for Okular
+* application icons for the LibreOffice suite
 * a script to easily activate the dropbox indicator in wingpanel
 
 See [CREDITS](CREDITS.md) for a list of sources and authors of the work contained in this collection.
