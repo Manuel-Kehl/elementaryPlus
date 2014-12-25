@@ -5,7 +5,7 @@ if [ "$EUID" -ne 0 ]
   exit 
 fi
 
-read -p "Do you want to replace the default MEGAsync status icons with the new ones [Y/n]?is
+read -p "Do you want to replace the default Skype status icons with the new ones [Y/n]?is
 This will install a patched version sni-qt thus replacing the default one!" yn
 
 if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
@@ -23,11 +23,11 @@ if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
     mkdir -p /usr/share/sni-qt/icons
     
     echo "Copying files to the directory..."
-    cp ./megasync/icons/* /usr/share/sni-qt/icons/
+    cp ./skype/icons/* /usr/share/sni-qt/icons/
     
     echo "Removing the repository"
     add-apt-repository --remove --yes ppa:rpeshkov/ppa
     
     echo
-    echo "You can now start MEGAsync from the applications menu and enjoy the new icons!"
+    echo "You can now start Skype from the applications menu and enjoy the new icons!"
 fi
