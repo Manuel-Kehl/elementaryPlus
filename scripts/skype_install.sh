@@ -1,11 +1,8 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit 
-fi
+(( EUID != 0 )) && exec sudo -- "$0" "$@"
 
-read -p "Do you want to replace the default Skype status icons with the new ones [Y/n]?is
+read -p "Do you want to replace the default Skype status icons with the new ones [Y/n]?
 This will install a patched version sni-qt thus replacing the default one!" yn
 
 if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
@@ -29,5 +26,5 @@ if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
     add-apt-repository --remove --yes ppa:rpeshkov/ppa
     
     echo
-    echo "You can now start Skype from the applications menu and enjoy the new icons!"
+    echo "The Skype icon set has been replaced successfuly! Start Skype again to check it out."
 fi
