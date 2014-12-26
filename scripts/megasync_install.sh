@@ -1,9 +1,6 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit 
-fi
+(( EUID != 0 )) && exec sudo -- "$0" "$@"
 
 read -p "Do you want to replace the default MEGAsync status icons with the new ones [Y/n]?is
 This will install a patched version sni-qt thus replacing the default one!" yn
@@ -29,5 +26,5 @@ if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
     add-apt-repository --remove --yes ppa:rpeshkov/ppa
     
     echo
-    echo "You can now start MEGAsync from the applications menu and enjoy the new icons!"
+    echo "The MEGAsync icon set has been replaced successfuly! Start MEGAsync again to check it out."
 fi
