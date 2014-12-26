@@ -20,7 +20,7 @@ if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
     mkdir -p /usr/share/sni-qt/icons
     
     echo "Copying files to the directory..."
-    cp ./megasync/icons/* /usr/share/sni-qt/icons/
+    cp ./megasync/* /usr/share/sni-qt/icons/
     
     echo "Removing the repository"
     add-apt-repository --remove --yes ppa:rpeshkov/ppa
