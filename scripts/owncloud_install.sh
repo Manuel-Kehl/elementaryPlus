@@ -2,7 +2,7 @@
 
 (( EUID != 0 )) && exec sudo -- "$0" "$@"
 
-read -p "Do you want to replace the default MEGAsync status icons with the new ones [Y/n]?is
+read -p "Do you want to replace the default OwnCloud status icons with the new ones [Y/n]?is
 This will install a patched version sni-qt thus replacing the default one!" yn
 
 if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
@@ -20,11 +20,11 @@ if [[ $yn =~ ^[Yy]$ ]] || [[ $yn == "" ]]; then
     mkdir -p /usr/share/sni-qt/icons
     
     echo "Copying files to the directory..."
-    cp ./megasync/* /usr/share/sni-qt/icons/
+    cp ./owncloud/* /usr/share/sni-qt/icons/
     
     echo "Removing the repository"
     add-apt-repository --remove --yes ppa:rpeshkov/ppa
     
     echo
-    echo "The MEGAsync icon set has been replaced successfuly! Start MEGAsync again to check it out."
+    echo "The Owncloud icon set has been replaced successfuly! Start OwnCloud and select the \"Monochrome Icons\" option in the settings menu to check it out."
 fi
