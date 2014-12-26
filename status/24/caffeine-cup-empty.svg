@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="22" height="22" version="1.1">
+ <metadata id="metadata3401"/>
+ <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(0,6)">
+  <g transform="translate(-169,-271)" id="g3772" opacity="0.2" enable-background="new">
+   <path sodipodi:nodetypes="scccscscccsccscccc" inkscape:connector-curvature="0" id="path3774" d="m 173,279 c 0,3 2,5 5,5 l 2,0 c 3,0 4.75982,-1.56569 4.95898,-4 l 0.54102,0 c 1.5,0 1.5,-1.5 1.5,-1.5 l 0,-1 c 0,-1.5 -1.5,-1.5 -1.5,-1.5 l -0.5,0 -12,0 z m 12.5,-2 c 0.5,-0.0323 0.51562,0.53125 0.51562,0.53125 l 0,1 C 186.01562,279 185.5,279 185.5,279 l -0.5,0 0.008,-1.98438 z" color="#000000"/>
+  </g>
+  <g id="g4272" transform="translate(-169,-272)" fill="#ffffff" enable-background="new">
+   <path d="m 173,279 c 0,3 2,5 5,5 l 2,0 c 3,0 4.75982,-1.56569 4.95898,-4 l 0.54102,0 c 1.5,0 1.5,-1.5 1.5,-1.5 l 0,-1 c 0,-1.5 -1.5,-1.5 -1.5,-1.5 l -0.5,0 -12,0 z m 12.5,-2 c 0.5,-0.0323 0.51562,0.53125 0.51562,0.53125 l 0,1 C 186.01562,279 185.5,279 185.5,279 l -0.5,0 0.008,-1.98438 z" id="path4274" inkscape:connector-curvature="0" sodipodi:nodetypes="scccscscccsccscccc" color="#000000"/>
+   <path inkscape:connector-curvature="0" d="m 179.19325,269 c -1.09813,1.38422 -1.42816,2.06599 -1.03201,2.94706 0.3591,0.79867 1.28759,1.20591 0.82092,3.05294 0.7664,-0.89992 1.37585,-2.04275 0.77401,-2.9647 -0.61213,-0.9377 -0.94785,-1.5073 -0.56292,-3.0353 z" id="path4276" sodipodi:nodetypes="cscsc" opacity="0.35" color="#000000"/>
+   <path sodipodi:nodetypes="cscsc" id="path4278" d="m 176.19325,269 c -1.09813,1.38422 -1.42816,2.06599 -1.03201,2.94706 0.3591,0.79867 1.28759,1.20591 0.82092,3.05294 0.7664,-0.89992 1.37585,-2.04275 0.77401,-2.9647 -0.61213,-0.9377 -0.94785,-1.5073 -0.56292,-3.0353 z" inkscape:connector-curvature="0" opacity="0.35" color="#000000"/>
+   <path inkscape:connector-curvature="0" d="m 182.19325,269 c -1.09813,1.38422 -1.42816,2.06599 -1.03201,2.94706 0.3591,0.79867 1.28759,1.20591 0.82092,3.05294 0.7664,-0.89992 1.37585,-2.04275 0.77401,-2.9647 -0.61213,-0.9377 -0.94785,-1.5073 -0.56292,-3.0353 z" id="path4280" sodipodi:nodetypes="cscsc" opacity="0.35" color="#000000"/>
+  </g>
+ </g>
+</svg>
