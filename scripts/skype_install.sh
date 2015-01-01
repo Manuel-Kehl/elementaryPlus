@@ -1,6 +1,6 @@
 #!/bin/bash
 
-(( EUID != 0 )) && exec sudo -- "$0" "$@"
+[ "$(whoami)" != "root" ] && exec sudo -- "$0" "$@"
 
 read -p "Do you want to replace the default Skype status icons with the new ones [Y/n]?
 This will install a patched version sni-qt thus replacing the default one!" yn
