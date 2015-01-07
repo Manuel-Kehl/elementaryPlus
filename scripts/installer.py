@@ -89,6 +89,10 @@ class InstallerWindow(Gtk.Window):
                         os.chdir(curr)
                 del toremove[:]
                 del toinstall[:]
+                dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "All changes applied")
+                dialog.format_secondary_text("Check out your new icons!")
+                dialog.run()
+                dialog.destroy()
             elif response == Gtk.ResponseType.CANCEL:
                 print("The Cancel button was clicked")
 
