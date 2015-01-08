@@ -6,7 +6,13 @@ import os
 import sys
 
 
-
+options = {
+    "Core icon theme":"core",
+    "MEGAsync":"megasync",
+    "Spotify":"spotify",
+    "Skype":"skype",
+    "OwnCloud":"owncloud"
+}
 installed = "/tmp/elementaryPlus.installed"
 sniqt = "/tmp/sni-qt.patch.installed"
 toinstall = []
@@ -20,11 +26,21 @@ class confirmDialog(Gtk.Dialog):
             (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
              Gtk.STOCK_OK, Gtk.ResponseType.OK))
 
-        self.set_default_size(150, 100)
+        self.set_default_size(200, 100)
 
+        toinstallList = ", ".join([x[0] for x in options.items() if x[1] in toinstall])
+        toremoveList = ", ".join([x[0] for x in options.items() if x[1] in toremove])
+        label_toinstall = Gtk.Label("To install: "+toinstallList)
+        label_toremove = Gtk.Label("To remove: "+toremoveList)
+        label_sep = Gtk.Label(" ")
         label = Gtk.Label("Are you sure you want to appply these changes?")
 
         box = self.get_content_area()
+        if toinstall != []:
+            box.add(label_toinstall)
+        if toremove != []:
+            box.add(label_toremove)
+        box.add(label_sep)
         box.add(label)
         self.show_all()
 
@@ -106,13 +122,6 @@ class InstallerWindow(Gtk.Window):
 
 
     def __init__(self):
-        options = {
-            "Core icon theme":"core",
-            "MEGAsync":"megasync",
-            "Spotify":"spotify",
-            "Skype":"skype",
-            "OwnCloud":"owncloud"
-        }
         Gtk.Window.__init__(self, title="elementaryPlus Installer")
         self.set_border_width(10)
         hb = Gtk.HeaderBar()
