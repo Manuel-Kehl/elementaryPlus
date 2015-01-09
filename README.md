@@ -29,7 +29,7 @@ See [CREDITS](CREDITS.md) for a list of sources and authors of the work containe
 
 ## How to Install
 
-Just download the directory or clone the repository and run `./install.py` from the parent directory of this repository
+Just download the directory or clone the repository and run `./install.sh` from the parent directory of this repository
 Then select the theme in [elementary tweaks](https://code.launchpad.net/~versable/elementary-community/elementary-tweaks).
 
 Please also make sure, that the original elementary icon theme is installed, because elementary+ only provides additions and inherits the base theme.
