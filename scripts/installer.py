@@ -68,7 +68,6 @@ class InstallerWindow(Gtk.Window):
 
         print "\n%s was toggled %s" % (data, ("OFF", "ON")[widget.get_active()])
 
-
         if widget.get_active() == 1:
             if toRemove != [] and data in installedComponents:
                 toRemove.remove(data)
