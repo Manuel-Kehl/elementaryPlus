@@ -1,8 +1,7 @@
 #!/bin/bash
 
-for entry in icons/*
-do
-  echo "$entry"
-  rm /usr/share/sni-qt/$entry
-done
+tmp_dir="/tmp/elementaryPlus/spotify"
+cd $tmp_dir
+cp resources_old.zip /opt/spotify/spotify-client/Data/resources.zip
+rm -rf $tmp_dir
 exit
