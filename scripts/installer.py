@@ -84,12 +84,12 @@ class InstallerWindow(Gtk.Window):
 
     def install(self, widget, event, data=None):
 
-        if toInstall != [] or toRemove != []:
+        if len(toInstall) != 0 or len(toRemove) != 0:
             dialog = confirmDialog(self)
             response = dialog.run()
             dialog.destroy()
             if response == Gtk.ResponseType.OK:
-                if toInstall != []:
+                if len(toInstall) != 0:
                     for data in toInstall[:]:
                         patchedSniqt = settings.get_boolean("sniqt-patched")
                         if data != "core" and patchedSniqt == False:
@@ -101,20 +101,20 @@ class InstallerWindow(Gtk.Window):
                         os.system("bash ./"+data+".sh")
                         print data+" was installed"
                         os.chdir(curr)
-                    mergedInstalledComponents = installedComponents + toInstall
-                    settings.set_strv("installed", mergedInstalledComponents)                      
+                        installedComponents.append(data)
+                    settings.set_strv("installed", installedComponents)                      
                             
-                if toRemove != []:
+                if len(toRemove) != 0:
                     for data in toRemove[:]:
                         os.chdir(curr+data+"/")
                         os.system("bash ./"+data+"_remove.sh")
                         print data+" was removed"
                         os.chdir(curr)
-                    installedComponents[:] = [ item for item in installedComponents if item != data ]
+                        installedComponents.remove(data)
                     settings.set_strv("installed", installedComponents)
 
-                toInstall[:] = []
                 toRemove[:] = []
+                toInstall[:] = []
 
                 dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "All changes applied")
                 dialog.format_secondary_text("Check out your new icons!")
