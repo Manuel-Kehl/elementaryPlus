@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="apps.elementaryPlusInstaller" path="/apps/elementaryPlusInstaller/">
+    <key type="as" name="installed">
+      <default>[]</default>
+      <summary>Installed components</summary>
+      <description>List of installed components.</description>
+    </key>
+    <key type="b" name="sniqt-patched">
+      <default>false</default>
+      <summary>Sni-qt patched</summary>
+      <description>True if patched sni-qt installed.</description>
+    </key>
+  </schema>
+</schemalist>
