@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir -p /usr/share/sni-qt/icons
-cp ./icons/* /usr/share/sni-qt/icons/
+mkdir -p ~/.local/share/sni-qt/icons
+cp ./icons/* ~/.local/share/sni-qt/icons/
 exit

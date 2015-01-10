@@ -11,5 +11,10 @@
       <summary>Sni-qt patched</summary>
       <description>True if patched sni-qt installed.</description>
     </key>
+    <key type="s" name="previous-icon-theme">
+      <default>""</default>
+      <summary>Previous icon theme</summary>
+      <description>The name of the icon theme used before selecting elementary+</description>
+    </key>
   </schema>
 </schemalist>
