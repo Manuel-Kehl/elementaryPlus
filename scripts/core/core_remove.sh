@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rm -rf /usr/share/icons/elementaryPlus
+rm -rf ~/.icons/elementaryPlus
 exit

@@ -1,4 +1,5 @@
 #!/bin/bash
 
-cp -R ../../elementaryPlus /usr/share/icons/
+mkdir ~/.icons
+cp -R ../../elementaryPlus ~/.icons/
 exit
