@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 
 from gi.repository import Gtk, Gio
-import os.path
 import os
-import sys
-import shutil
+import os.path
 
 if os.path.isfile("/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml") == False:
     os.system("gksu ./scripts/install_schema.sh")
