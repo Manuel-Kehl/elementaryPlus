@@ -14,3 +14,7 @@ Application icons
 
 Micah Ilbery (TraumaD91)
 * Various LibreOffice icons
+
+Stefan Ric (cybre)
+* Scripts for activating icons, that rely on `sni-qt`
+* The graphical installer of **elementary+**
