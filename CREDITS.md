@@ -18,3 +18,6 @@ Micah Ilbery (TraumaD91)
 Stefan Ric (cybre)
 * Scripts for activating icons, that rely on `sni-qt`
 * The graphical installer of **elementary+**
+
+Caleb Riley (spiceofdesign)
+* Spotify application icon

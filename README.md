@@ -22,6 +22,7 @@ This is why I hope for this repository to become a central place to collect addi
 * application icon for Pidgin
 * application icon for Okular
 * application icons for the LibreOffice suite
+* application icon for Spotify
 * a script to easily activate the dropbox indicator in wingpanel
 * a graphical installer with the following purposes
   * toggle the core icon theme
