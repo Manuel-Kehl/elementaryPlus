@@ -4,17 +4,19 @@ from gi.repository import Gtk, Gio
 import os
 import os.path
 
-if os.path.isfile("/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml") == False:
+schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
+
+if os.path.isfile(schema) is False:
     os.system("gksu ./scripts/install_schema.sh")
     print "schemas copied"
 
 
 components = {
-    "Core icon theme":"core",
-    "MEGAsync":"megasync",
-    "Spotify":"spotify",
-    "Skype":"skype",
-    "OwnCloud":"owncloud"
+    "Core icon theme": "core",
+    "MEGAsync": "megasync",
+    "Spotify": "spotify",
+    "Skype": "skype",
+    "OwnCloud": "owncloud"
 }
 
 toInstall = []
@@ -25,9 +27,9 @@ iconThemeName = "elementaryPlus"
 settings = Gio.Settings.new("apps.elementaryPlusInstaller")
 installedComponents = settings.get_strv("installed")
 patchedSniqt = settings.get_boolean("sniqt-patched")
-#settings.reset("installed")
-#settings.reset("sniqt-patched")
-#settings.reset("previous-icon-theme")
+# settings.reset("installed")
+# settings.reset("sniqt-patched")
+# settings.reset("previous-icon-theme")
 
 systemSettings = Gio.Settings.new("org.gnome.desktop.interface")
 
@@ -35,12 +37,13 @@ systemSettings = Gio.Settings.new("org.gnome.desktop.interface")
 print "Installed components: ", installedComponents
 print "Sni-qt %s patched" % (("IS NOT", "IS")[patchedSniqt])
 
+
 class confirmDialog(Gtk.Dialog):
 
     def __init__(self, parent):
         Gtk.Dialog.__init__(self, "Confirm", parent, 0,
-            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-             Gtk.STOCK_OK, Gtk.ResponseType.OK))
+                            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+                                Gtk.STOCK_OK, Gtk.ResponseType.OK))
 
         self.set_default_size(200, 100)
         self.set_resizable(False)
@@ -50,7 +53,6 @@ class confirmDialog(Gtk.Dialog):
         toRemoveList = ", ".join([x[0] for x in components.items() if x[1] in toRemove])
         labelToInstall = Gtk.Label("To install: "+toInstallList)
         labelToRemove = Gtk.Label("To remove: "+toRemoveList+"\n")
-        labelSeparator = Gtk.Label(" ")
         labelQuestion = Gtk.Label("Are you sure you want to appply these changes?\n")
 
         box = self.get_content_area()
@@ -61,26 +63,30 @@ class confirmDialog(Gtk.Dialog):
         box.add(labelQuestion)
         self.show_all()
 
+
 class useThemeDialog(Gtk.Dialog):
 
     def __init__(self, parent):
         Gtk.Dialog.__init__(self, "Switch to elementary+", parent, 0,
-            (Gtk.STOCK_NO, Gtk.ResponseType.NO,
-             Gtk.STOCK_YES, Gtk.ResponseType.YES))
+                            (Gtk.STOCK_NO, Gtk.ResponseType.NO,
+                                Gtk.STOCK_YES, Gtk.ResponseType.YES))
 
         self.set_default_size(150, 100)
         self.set_resizable(False)
         self.set_border_width(6)
-   
+
         labelQuestion = Gtk.Label("Would you like to switch to elementary+ now?", xalign=0)
         labelInfo = Gtk.Label("This will replace your current icon theme.\n", xalign=0)
-        labelInfo1 = Gtk.Label("You can swith back to your previous icon theme \nby removing the \"Core icon theme\" from the installer \nor by selecting it in elementary Tweaks.")
+        labelInfo1 = Gtk.Label("You can swith back to your previous icon theme \
+            \nby removing the \"Core icon theme\" from the installer \
+            \nor by selecting it in elementary Tweaks.")
 
         box = self.get_content_area()
         box.add(labelQuestion)
         box.add(labelInfo)
         box.add(labelInfo1)
         self.show_all()
+
 
 class InstallerWindow(Gtk.Window):
 
@@ -100,8 +106,8 @@ class InstallerWindow(Gtk.Window):
             else:
                 toInstall.remove(data)
 
-        print "To install: ",toInstall
-        print "To remove: ",toRemove
+        print "To install: ", toInstall
+        print "To remove: ", toRemove
 
     def install(self, widget, event, data=None):
 
@@ -114,7 +120,7 @@ class InstallerWindow(Gtk.Window):
                 if len(toInstall) != 0:
                     for data in toInstall[:]:
                         patchedSniqt = settings.get_boolean("sniqt-patched")
-                        if data != "core" and patchedSniqt == False:
+                        if data != "core" and patchedSniqt is False:
                             print "Installing patched sni-qt"
                             os.system("gksu ./sni-qt.sh")
                             settings.set_boolean("sniqt-patched", True)
@@ -136,8 +142,8 @@ class InstallerWindow(Gtk.Window):
 
                         os.chdir("../../")
                         installedComponents.append(data)
-                    settings.set_strv("installed", installedComponents)                      
-                            
+                    settings.set_strv("installed", installedComponents)
+
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
                         os.chdir("./scripts/"+data+"/")
@@ -163,14 +169,11 @@ class InstallerWindow(Gtk.Window):
             elif response == Gtk.ResponseType.CANCEL:
                 print("The Cancel button was clicked")
 
-
         else:
             dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "There is nothing to apply")
             dialog.format_secondary_text("You must change an option before applying")
             dialog.run()
             dialog.destroy()
-
-
 
     def __init__(self):
         Gtk.Window.__init__(self, title="elementaryPlus Installer")
@@ -182,7 +185,7 @@ class InstallerWindow(Gtk.Window):
         hb.set_subtitle("Installer")
 
         installButton = Gtk.Button(label="Apply")
-        installButton.connect("clicked", self.install, "yes")   
+        installButton.connect("clicked", self.install, "yes")
         hb.pack_end(installButton)
 
         lni = len(components.keys())
