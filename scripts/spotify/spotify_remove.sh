@@ -1,7 +1,9 @@
 #!/bin/bash
-
-tmp_dir="/tmp/elementaryPlus/spotify"
-cd $tmp_dir
-cp resources_old.zip /opt/spotify/spotify-client/Data/resources.zip
-rm -rf $tmp_dir
-exit
+dire=`find /tmp/ -name 'sni-qt_spotify*'`
+cd $dire
+subdire="icons/hicolor/16x16/apps/"
+cd $subdire
+filename=`find . -name 'spotify_*'`
+filename="${filename%.*}"
+uuid=`cut -d '_' -f3 <<< $filename`
+rm ~/.local/share/sni-qt/icons/$uuid.png

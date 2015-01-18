@@ -1,16 +1,17 @@
 #!/bin/bash
-
-apt-get install zip
-tmp_dir="/tmp/elementaryPlus/spotify"
-mkdir -p $tmp_dir
-cp icons/spotify_icon.ico $tmp_dir
-cd $tmp_dir
-cp /opt/spotify/spotify-client/Data/resources.zip resources_old.zip
-unzip resources_old.zip -d resources_old/
-mv spotify_icon.ico resources_old/_linux/spotify_icon.ico
-cd resources_old/
-zip -r resources_patched.zip .
-cd ..
-mv resources_old/resources_patched.zip .
-cp resources_patched.zip /opt/spotify/spotify-client/Data/resources.zip
-exit
+curr=`pwd`
+dire=`find /tmp/ -name 'sni-qt_spotify*'`
+if [[ -n $dire ]]; then
+    cd $dire
+    subdire="icons/hicolor/16x16/apps/"
+    cd $subdire
+    filename=`find . -name 'spotify_*'`
+    filename="${filename%.*}"
+    uuid=`cut -d '_' -f3 <<< $filename`
+    cd $curr
+    mkdir -p ~/.local/share/sni-qt/icons
+    cp ./icons/icon.png ~/.local/share/sni-qt/icons/$uuid.png
+else
+    timeout 1 /opt/spotify/spotify-client/spotify
+    bash f.sh
+fi
