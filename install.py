@@ -120,11 +120,7 @@ class InstallerWindow(Gtk.Window):
                             settings.set_boolean("sniqt-patched", True)
 
                         os.chdir("./scripts/"+data+"/")
-                        if data == "spotify":
-                            os.system("gksu ./"+data+".sh")
-                        else:
-                            os.system("bash ./"+data+".sh")
-
+                        os.system("bash ./"+data+".sh")
                         print data+" was installed"
                         if data == "core":
                             dialog = useThemeDialog(self)
@@ -145,10 +141,7 @@ class InstallerWindow(Gtk.Window):
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
                         os.chdir("./scripts/"+data+"/")
-                        if data == "spotify":
-                            os.system("gksu ./"+data+"_remove.sh")
-                        else:
-                            os.system("bash ./"+data+"_remove.sh")
+                        os.system("bash ./"+data+"_remove.sh")
                         print data+" was removed"
                         if data == "core":
                             currentTheme = systemSettings.get_string("icon-theme")
