@@ -13,5 +13,5 @@ if [[ -n $dire ]]; then
     cp ./icons/icon.png ~/.local/share/sni-qt/icons/$uuid.png
 else
     timeout 1 /opt/spotify/spotify-client/spotify
-    bash f.sh
+    bash spotify.sh
 fi
