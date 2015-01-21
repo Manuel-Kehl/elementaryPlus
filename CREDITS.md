@@ -29,3 +29,6 @@ Stefan Ric (cybre)
 
 Caleb Riley (spiceofdesign)
 * Spotify application icon
+
+Samuell Hewitt (hewittsamuel)
+* Minecraft
