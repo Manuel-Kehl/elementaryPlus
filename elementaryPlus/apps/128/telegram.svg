@@ -320,12 +320,12 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="715"
+     inkscape:window-height="745"
      id="namedview4"
-     showgrid="false"
+     showgrid="true"
      inkscape:zoom="4"
-     inkscape:cx="37.735914"
-     inkscape:cy="72.981725"
+     inkscape:cx="74.594301"
+     inkscape:cy="62.236342"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -333,15 +333,18 @@
     <inkscape:grid
        type="xygrid"
        id="grid2987"
-       empspacing="5"
+       empspacing="4"
        visible="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       snapvisiblegridlinesonly="true"
+       dotted="false"
+       spacingx="4px"
+       spacingy="4px" />
   </sodipodi:namedview>
   <g
      id="g4072">
     <path
-       transform="matrix(0.70098164,0,0,1.3382378,-5.5072454,-139.14053)"
+       transform="matrix(0.82843284,0,0,1.2426493,-18.144926,-121.84476)"
        d="m 161.92613,186.17059 a 62.769119,10.461519 0 1 1 -125.538236,0 62.769119,10.461519 0 1 1 125.538236,0 z"
        sodipodi:ry="10.461519"
        sodipodi:rx="62.769119"
