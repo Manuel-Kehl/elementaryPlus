@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=elementary+ Installer
+Icon=gnome-tweak-tool
+Exec=/usr/bin/elementaryplus-installer
+NoDisplay=false
+Categories=Utility;
+StartupNotify=false
+Terminal=false
+
