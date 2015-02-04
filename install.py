@@ -7,7 +7,7 @@ import os.path
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 
 if os.path.isfile(schema) is False:
-    os.system("gksu /usr/share/elementaryPlus/scripts/install_schema.sh")
+    os.system("gksu ./scripts/install_schema.sh")
     print "schemas copied"
 
 
@@ -125,7 +125,7 @@ class InstallerWindow(Gtk.Window):
                             os.system("gksu ./sni-qt.sh")
                             settings.set_boolean("sniqt-patched", True)
 
-                        os.chdir("/usr/share/elementaryPlus/scripts/"+data+"/")
+                        os.chdir("./scripts/"+data+"/")
                         os.system("bash ./"+data+".sh")
                         print data+" was installed"
                         if data == "core":
@@ -146,7 +146,7 @@ class InstallerWindow(Gtk.Window):
 
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
-                        os.chdir("/usr/share/elementaryPlus/scripts/"+data+"/")
+                        os.chdir("./scripts/"+data+"/")
                         os.system("bash ./"+data+"_remove.sh")
                         print data+" was removed"
                         if data == "core":
