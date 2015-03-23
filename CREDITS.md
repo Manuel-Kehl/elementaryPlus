@@ -32,3 +32,8 @@ Caleb Riley (spiceofdesign)
 
 Samuell Hewitt (hewittsamuel)
 * Minecraft
+
+Ori (ori.iblogger.org)
+* Chromium
+* Transmission
+* VirtualBox
