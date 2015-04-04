@@ -12,23 +12,8 @@ I understand that decision. They want to keep the theme clean and compact.
 
 This is why I hope for this repository to become a central place to collect additions that integrate third party applications into the elementary desktop.
 
-## List of Additions
-
-* status icons for the Dropbox desktop client
-* indicator icon for the wallpaper changer "Variety"
-* application icon for Gimp
-* application icon for Inkscape
-* application icon for Tuxguitar
-* application icon for Pidgin
-* application icon for Okular
-* application icons for the LibreOffice suite
-* application icon for Spotify
-* a script to easily activate the dropbox indicator in wingpanel
-* a graphical installer with the following purposes
-  * toggle the core icon theme
-  * active wingpanel icons for *Spotify*, *Skype*, *Owncloud* and *Megasync*
-
-See [CREDITS](CREDITS.md) for a list of sources and authors of the work contained in this collection.
+## CREDITS
+See [CREDITS](CREDITS.csv) for a list of sources and authors of the work contained in this collection as well as the corresponding licences.
 
 ## How to Install
 
