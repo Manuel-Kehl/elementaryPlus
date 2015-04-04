@@ -13,7 +13,7 @@ I understand that decision. They want to keep the theme clean and compact.
 This is why I hope for this repository to become a central place to collect additions that integrate third party applications into the elementary desktop.
 
 ## CREDITS
-See [CREDITS](CREDITS.csv) for a list of sources and authors of the work contained in this collection as well as the corresponding licences.
+See [CREDIT](CREDIT.csv) for a list of sources and authors of the work contained in this collection as well as the corresponding licences.
 
 ## How to Install
 
