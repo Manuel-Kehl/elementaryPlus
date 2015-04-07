@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 
-from gi.repository import Gtk, Gio
+from gi.repository import Gtk, Gio, Notify
 import os
 import os.path
+
+Notify.init("elementaryPlus Configurator")
 
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 
 if os.path.isfile(schema) is False:
-    os.system("gksu ./scripts/install_schema.sh")
-    print "schemas copied"
-
+    os.system("pkexec %s/scripts/first_start.sh %s" % (os.getcwd(), os.getcwd()))
 
 components = {
     "Core icon theme": "core",
@@ -24,7 +24,7 @@ toRemove = []
 
 iconThemeName = "elementaryPlus"
 
-settings = Gio.Settings.new("apps.elementaryPlusInstaller")
+settings = Gio.Settings.new("apps.elementaryPlusConfigurator")
 installedComponents = settings.get_strv("installed")
 patchedSniqt = settings.get_boolean("sniqt-patched")
 # settings.reset("installed")
@@ -32,7 +32,6 @@ patchedSniqt = settings.get_boolean("sniqt-patched")
 # settings.reset("previous-icon-theme")
 
 systemSettings = Gio.Settings.new("org.gnome.desktop.interface")
-
 
 print "Installed components: ", installedComponents
 print "Sni-qt %s patched" % (("IS NOT", "IS")[patchedSniqt])
@@ -90,7 +89,43 @@ class useThemeDialog(Gtk.Dialog):
 
 class InstallerWindow(Gtk.Window):
 
+    def __init__(self):
+        Gtk.Window.__init__(self, title="elementaryPlus Configurator")
+        self.set_border_width(10)
+        self.hb = Gtk.HeaderBar()
+        self.hb.set_show_close_button(True)
+        self.hb.props.title = "elementaryPlus"
+        self.set_titlebar(self.hb)
+        self.hb.set_subtitle("Configurator")
+
+        self.installButton = Gtk.Button(label="Apply")
+        self.installButton.set_sensitive(False)
+        self.installButton.connect("clicked", self.install, "yes")
+
+        self.hb.pack_end(self.installButton)
+
+        lni = len(components.keys())
+        self.table = Gtk.Table(lni, 3, True)
+        self.table.set_row_spacings(15)
+        self.table.set_col_spacings(10)
+        self.add(self.table)
+
+        for i in range(len(components.keys())):
+
+            self.componentLabel = Gtk.Label(components.keys()[i], xalign=0)
+
+            self.componentSwitch = Gtk.Switch()
+            self.componentSwitch.props.halign = Gtk.Align.CENTER
+            self.componentSwitch.connect("notify::active", self.callback, components.values()[i])
+
+            if components.values()[i] in installedComponents:
+                self.componentSwitch.set_active(True)
+
+            self.table.attach(self.componentLabel, 0, 2, i, i+1)
+            self.table.attach(self.componentSwitch, 2, 3, i, i+1)
+
     def callback(self, widget, event, data=None):
+
         installedComponents = settings.get_strv("installed")
 
         print "\n%s was toggled %s" % (data, ("OFF", "ON")[widget.get_active()])
@@ -105,6 +140,11 @@ class InstallerWindow(Gtk.Window):
                 toRemove.append(data)
             else:
                 toInstall.remove(data)
+
+        if len(toInstall) != 0 or len(toRemove) != 0:
+            self.installButton.set_sensitive(True)
+        else:
+            self.installButton.set_sensitive(False)
 
         print "To install: ", toInstall
         print "To remove: ", toRemove
@@ -122,8 +162,10 @@ class InstallerWindow(Gtk.Window):
                         patchedSniqt = settings.get_boolean("sniqt-patched")
                         if data != "core" and patchedSniqt is False:
                             print "Installing patched sni-qt"
-                            os.system("gksu ./sni-qt.sh")
-                            settings.set_boolean("sniqt-patched", True)
+                            notif = Notify.Notification.new('This may take while', 'Please don\'t close the window', 'gnome-tweak-tool')
+                            notif.show()
+                            if os.system("pkexec %s/scripts/sni-qt.sh" % os.getcwd()) == 0:
+                                settings.set_boolean("sniqt-patched", True)
 
                         os.chdir("./scripts/"+data+"/")
                         os.system("bash ./"+data+".sh")
@@ -161,52 +203,16 @@ class InstallerWindow(Gtk.Window):
                 toRemove[:] = []
                 toInstall[:] = []
 
-                dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "All changes applied")
-                dialog.format_secondary_text("Check out your new icons!")
-                dialog.run()
-                dialog.destroy()
+                notif = Notify.Notification.new('All changes applied', 'Check out your new icons!', 'gnome-tweak-tool')
+                notif.show()
 
             elif response == Gtk.ResponseType.CANCEL:
                 print("The Cancel button was clicked")
 
+            self.installButton.set_sensitive(False)
         else:
-            dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "There is nothing to apply")
-            dialog.format_secondary_text("You must change an option before applying")
-            dialog.run()
-            dialog.destroy()
-
-    def __init__(self):
-        Gtk.Window.__init__(self, title="elementaryPlus Installer")
-        self.set_border_width(10)
-        hb = Gtk.HeaderBar()
-        hb.set_show_close_button(True)
-        hb.props.title = "elementaryPlus"
-        self.set_titlebar(hb)
-        hb.set_subtitle("Installer")
-
-        installButton = Gtk.Button(label="Apply")
-        installButton.connect("clicked", self.install, "yes")
-        hb.pack_end(installButton)
-
-        lni = len(components.keys())
-        table = Gtk.Table(lni, 3, True)
-        table.set_row_spacings(15)
-        table.set_col_spacings(10)
-        self.add(table)
-
-        for i in range(len(components.keys())):
-
-            componentLabel = Gtk.Label(components.keys()[i], xalign=0)
-
-            componentSwitch = Gtk.Switch()
-            componentSwitch.props.halign = Gtk.Align.CENTER
-            componentSwitch.connect("notify::active", self.callback, components.values()[i])
-
-            if components.values()[i] in installedComponents:
-                componentSwitch.set_active(True)
-
-            table.attach(componentLabel, 0, 2, i, i+1)
-            table.attach(componentSwitch, 2, 3, i, i+1)
+            notif = Notify.Notification.new('There is nothing to apply', 'You must change an option before applying!', 'gnome-tweak-tool')
+            notif.show()
 
 win = InstallerWindow()
 win.connect("delete-event", Gtk.main_quit)
