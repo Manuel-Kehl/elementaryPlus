@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="btsync-gui-paused.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#8c8c8c"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.919596"
+     inkscape:cx="8.8103458"
+     inkscape:cy="10.12115"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:object-nodes="false"
+     inkscape:snap-intersection-paths="false"
+     inkscape:snap-grids="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="745"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:snap-others="false"
+     inkscape:snap-nodes="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid11195" />
+    <sodipodi:guide
+       position="4,13"
+       orientation="1,0"
+       id="guide11197" />
+    <sodipodi:guide
+       position="20,11"
+       orientation="1,0"
+       id="guide11199" />
+    <sodipodi:guide
+       position="11,20"
+       orientation="0,1"
+       id="guide11201" />
+    <sodipodi:guide
+       position="9,4"
+       orientation="0,1"
+       id="guide11203" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1028.3622)">
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 12 4 A 8 8 0 0 0 4 12 A 8 8 0 0 0 12 20 A 8 8 0 0 0 13.505859 19.853516 A 4.5 4.5 0 0 1 12.255859 17.980469 C 11.982365 17.992221 11.708581 18.00127 11.429688 17.974609 C 8.6279855 17.706876 6.4076248 15.517333 6.0605469 12.742188 A 0.50005 0.50005 0 0 1 6.3027344 12.041016 A 0.50005 0.50005 0 0 1 6.3125 12.037109 A 0.50005 0.50005 0 0 1 6.5195312 11.992188 A 0.50005 0.50005 0 0 1 6.8203125 12.089844 L 9.1796875 13.033203 A 0.50051289 0.50051289 0 0 1 8.8085938 13.962891 L 7.1757812 13.310547 C 7.7107025 15.291704 9.4200171 16.777472 11.523438 16.978516 C 11.695027 16.994916 11.862038 16.983462 12.03125 16.982422 A 4.5 4.5 0 0 1 12 16.5 A 4.5 4.5 0 0 1 16.5 12 A 4.5 4.5 0 0 1 19.851562 13.503906 A 8 8 0 0 0 20 12 A 8 8 0 0 0 12 4 z M 12.529297 6.0214844 C 15.354162 6.2718909 17.605514 8.4759947 17.945312 11.279297 A 0.50051295 0.50051295 0 0 1 17.308594 11.962891 L 14.820312 10.966797 A 0.50004997 0.50004997 0 0 1 14.998047 10 A 0.50004997 0.50004997 0 0 1 15.191406 10.039062 L 16.822266 10.691406 C 16.28343 8.6969928 14.557876 7.2071298 12.441406 7.0195312 C 10.044001 6.8069312 7.8412025 8.3262783 7.1875 10.642578 A 0.50021759 0.50021759 0 1 1 6.2246094 10.371094 C 7.0071517 7.5982934 9.6593804 5.7690375 12.529297 6.0234375 L 12.529297 6.0214844 z "
+       transform="translate(0,1028.3622)"
+       id="path11205" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 16.5 13 A 3.5 3.5 0 0 0 13 16.5 A 3.5 3.5 0 0 0 16.5 20 A 3.5 3.5 0 0 0 20 16.5 A 3.5 3.5 0 0 0 16.5 13 z M 15 15 L 16 15 L 16 18 L 15 18 L 15 15 z M 17 15 L 18 15 L 18 18 L 17 18 L 17 15 z "
+       transform="translate(0,1028.3622)"
+       id="path11522" />
+  </g>
+</svg>
