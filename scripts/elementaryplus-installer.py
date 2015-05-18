@@ -14,20 +14,27 @@ schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 if os.path.isfile(schema) is False:
     os.system("pkexec %s/scripts/first_start.sh %s" % (os.getcwd(), os.getcwd()))
 
+def is_installed(package,folder):
+    try :
+        cache = apt.Cache()
+        if cache[package].is_installed or os.path.isdir(folder):
+            return True
+    except OSError:
+        print("Please install "+ package + " and try again!")
+
 cache = apt.Cache()
 
 packages = [
         ["Spotify","spotify-client","/opt/spotify"],
         ["Skype","skype","/usr/share/skype"],
-        ["OwnCloud","owncloud-client","/usr/share/owncloud"],
-        ["MEGAsync","megasync"]
+        ["OwnCloud","owncloud-client","/usr/share/owncloud"]
     ]
 components = {
     "Core icon theme": "core",
 }
 
 for package in packages:
-    if cache[package[1]].is_installed or os.path.isdir(package[2]):
+    if is_installed(package[1],package[2]):
         compenents[d[0]] = d[0].lower()
 
 
