@@ -17,9 +17,9 @@ if os.path.isfile(schema) is False:
 cache = apt.Cache()
 
 packages = [
-        ["Spotify","spotify-client"],
-        ["Skype","skype"],
-        ["OwnCloud","owncloud-client"],
+        ["Spotify","spotify-client","/opt/spotify"],
+        ["Skype","skype","/usr/share/skype"],
+        ["OwnCloud","owncloud-client","/usr/share/owncloud"],
         ["MEGAsync","megasync"]
     ]
 components = {
@@ -27,7 +27,7 @@ components = {
 }
 
 for package in packages:
-    if cache[package[1]].is_installed:
+    if cache[package[1]].is_installed or os.path.isdir(package[2]):
         compenents[d[0]] = d[0].lower()
 
 
