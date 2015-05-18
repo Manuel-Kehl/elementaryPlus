@@ -22,8 +22,6 @@ def is_installed(package,folder):
     except OSError:
         print("Please install "+ package + " and try again!")
 
-cache = apt.Cache()
-
 packages = [
         ["Spotify","spotify-client","/opt/spotify"],
         ["Skype","skype","/usr/share/skype"],
