@@ -2,6 +2,7 @@
 
 from gi.repository import Gtk, Gio, Notify
 import os
+import apt 
 
 if Gtk.get_major_version() != 3 and Gtk.get_minor_version() <= 14:
     os.system("You need to have GTK 3.14 to use this script")
@@ -13,19 +14,20 @@ schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 if os.path.isfile(schema) is False:
     os.system("pkexec %s/scripts/first_start.sh %s" % (os.getcwd(), os.getcwd()))
 
+cache = apt.Cache()
 
-dirs = [
-        ["Spotify","/opt/spotify"],
-        ["Skype","/usr/share/skype"],
-        ["OwnCloud","/usr/share/owncloud"]
+packages = [
+        ["Spotify","spotify-client"],
+        ["Skype","skype"],
+        ["OwnCloud","owncloud-client"],
+        ["MEGAsync","megasync"]
     ]
 components = {
     "Core icon theme": "core",
-    "MEGAsync":"megasync"
 }
 
-for d in dirs:
-    if os.path.isdir(d[1]):
+for package in packages:
+    if cache[package[1]].is_installed:
         compenents[d[0]] = d[0].lower()
 
 
