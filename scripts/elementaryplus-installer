@@ -16,7 +16,8 @@ components = {
     "MEGAsync": "megasync",
     "Spotify": "spotify",
     "Skype": "skype",
-    "OwnCloud": "owncloud"
+    "OwnCloud": "owncloud",
+    "Telegram Desktop": "telegram"
 }
 
 toInstall = []
