@@ -2,10 +2,6 @@
 
 from gi.repository import Gtk, Gio, Notify
 import os
-import apt 
-
-if Gtk.get_major_version() != 3 and Gtk.get_minor_version() <= 14:
-    os.system("You need to have GTK 3.14 to use this script")
 
 Notify.init("elementaryPlus Configurator")
 
