@@ -17,11 +17,11 @@ if os.path.isfile(schema) is False:
 dirs = [
         ["Spotify","/opt/spotify"],
         ["Skype","/usr/share/skype"],
-        ["MEGAsync",""],
-        ["OwnCloud",""]
+        ["OwnCloud","/usr/share/owncloud"]
     ]
 components = {
     "Core icon theme": "core",
+    "MEGAsync":"megasync"
 }
 
 for d in dirs:
