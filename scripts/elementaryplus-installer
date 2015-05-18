@@ -163,7 +163,7 @@ class InstallerWindow(Gtk.Window):
                         if data != "core" and patchedSniqt is False:
                             print "Installing patched sni-qt"
                             notif = Notify.Notification.new('This may take while', 'Please don\'t close the window', 'gnome-tweak-tool')
-                            if notify:
+                            if notif:
                                 notif.show()
                             if os.system("pkexec %s/scripts/sni-qt.sh" % os.getcwd()) == 0:
                                 settings.set_boolean("sniqt-patched", True)
