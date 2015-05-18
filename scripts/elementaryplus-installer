@@ -163,7 +163,8 @@ class InstallerWindow(Gtk.Window):
                         if data != "core" and patchedSniqt is False:
                             print "Installing patched sni-qt"
                             notif = Notify.Notification.new('This may take while', 'Please don\'t close the window', 'gnome-tweak-tool')
-                            notif.show()
+                            if notif:
+                                notif.show()
                             if os.system("pkexec %s/scripts/sni-qt.sh" % os.getcwd()) == 0:
                                 settings.set_boolean("sniqt-patched", True)
 
@@ -204,7 +205,8 @@ class InstallerWindow(Gtk.Window):
                 toInstall[:] = []
 
                 notif = Notify.Notification.new('All changes applied', 'Check out your new icons!', 'gnome-tweak-tool')
-                notif.show()
+                if notif:
+                    notif.show()
 
             elif response == Gtk.ResponseType.CANCEL:
                 print("The Cancel button was clicked")
@@ -212,7 +214,8 @@ class InstallerWindow(Gtk.Window):
             self.installButton.set_sensitive(False)
         else:
             notif = Notify.Notification.new('There is nothing to apply', 'You must change an option before applying!', 'gnome-tweak-tool')
-            notif.show()
+            if notif:
+                notif.show()
 
 win = InstallerWindow()
 win.connect("delete-event", Gtk.main_quit)
