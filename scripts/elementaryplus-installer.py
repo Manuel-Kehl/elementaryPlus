@@ -11,13 +11,20 @@ schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 if os.path.isfile(schema) is False:
     os.system("pkexec %s/scripts/first_start.sh %s" % (os.getcwd(), os.getcwd()))
 
+dirs = [
+        ["Spotify","/opt/spotify/spotify-client/spotify"],
+    ]
+    
 components = {
     "Core icon theme": "core",
     "MEGAsync": "megasync",
-    "Spotify": "spotify",
-    "Skype": "skype",
-    "OwnCloud": "owncloud"
+    "Skype":"skype",
+    "OwnCloud":"owncloud"
 }
+
+for d in dirs:
+    if os.path.isfile(d[1]):
+        compenents[d[0]] = d[0].lower()
 
 toInstall = []
 toRemove = []
