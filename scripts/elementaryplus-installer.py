@@ -24,7 +24,7 @@ components = {
 
 for d in dirs:
     if os.path.isfile(d[1]):
-        compenents[d[0]] = d[0].lower()
+        components[d[0]] = d[0].lower()
 
 toInstall = []
 toRemove = []
