@@ -16,8 +16,8 @@ if os.path.isfile(schema) is False:
 
 bins = [
     ["MEGAsync", "/usr/bin/megasync"],
-    ["Spotify", "/opt/spotify/spotify-client/spotify"],
     ["Skype", "/usr/bin/skype"],
+    ["Spotify", "/opt/spotify/spotify-client/spotify"],
     ["OwnCloud", "/usr/bin/owncloud"]
 ]
 
