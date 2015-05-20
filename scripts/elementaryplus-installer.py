@@ -215,13 +215,15 @@ class InstallerWindow(Gtk.Window):
                 toInstall[:] = []
 
                 notif = Notify.Notification.new('All changes applied', 'Check out your new icons!', 'gnome-tweak-tool')
+
                 if notif:
                     notif.show()
 
+                self.installButton.set_sensitive(False)
             elif response == Gtk.ResponseType.CANCEL:
                 print("The Cancel button was clicked")
+                self.installButton.set_sensitive(True)
 
-            self.installButton.set_sensitive(False)
         else:
             notif = Notify.Notification.new('There is nothing to apply', 'You must change an option before applying!', 'gnome-tweak-tool')
             if notif:
