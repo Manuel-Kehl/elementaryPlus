@@ -6,7 +6,6 @@ import sys
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to use this script")
- 
 
 Notify.init("elementaryPlus Configurator")
 
@@ -15,13 +14,20 @@ schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 if os.path.isfile(schema) is False:
     os.system("pkexec %s/scripts/first_start.sh %s" % (os.getcwd(), os.getcwd()))
 
-components = {
-    "Core icon theme": "core",
-    "MEGAsync": "megasync",
-    "Spotify": "spotify",
-    "Skype": "skype",
-    "OwnCloud": "owncloud"
-}
+bins = [
+    ["MEGAsync", "/usr/bin/megasync"],
+    ["Spotify", "/opt/spotify/spotify-client/spotify"],
+    ["Skype", "/usr/bin/skype"],
+    ["OwnCloud", "/usr/bin/owncloud"]
+]
+
+components = [
+    ["Core icon theme", "core"]
+]
+
+for b in bins:
+    if os.path.isfile(b[1]):
+        components.append([b[0], b[0].lower()])
 
 toInstall = []
 toRemove = []
@@ -52,8 +58,8 @@ class confirmDialog(Gtk.Dialog):
         self.set_resizable(False)
         self.set_border_width(6)
 
-        toInstallList = ", ".join([x[0] for x in components.items() if x[1] in toInstall])
-        toRemoveList = ", ".join([x[0] for x in components.items() if x[1] in toRemove])
+        toInstallList = ", ".join([x[0] for x in components if x[1] in toInstall])
+        toRemoveList = ", ".join([x[0] for x in components if x[1] in toRemove])
         labelToInstall = Gtk.Label("To install: "+toInstallList)
         labelToRemove = Gtk.Label("To remove: "+toRemoveList+"\n")
         labelQuestion = Gtk.Label("Are you sure you want to appply these changes?\n")
@@ -108,21 +114,21 @@ class InstallerWindow(Gtk.Window):
 
         self.hb.pack_end(self.installButton)
 
-        lni = len(components.keys())
+        lni = len(components)
         self.table = Gtk.Table(lni, 3, True)
         self.table.set_row_spacings(15)
         self.table.set_col_spacings(10)
         self.add(self.table)
 
-        for i in range(len(components.keys())):
+        for i in range(len(components)):
 
-            self.componentLabel = Gtk.Label(components.keys()[i], xalign=0)
+            self.componentLabel = Gtk.Label(components[i][0], xalign=0)
 
             self.componentSwitch = Gtk.Switch()
             self.componentSwitch.props.halign = Gtk.Align.CENTER
-            self.componentSwitch.connect("notify::active", self.callback, components.values()[i])
+            self.componentSwitch.connect("notify::active", self.callback, components[i][1])
 
-            if components.values()[i] in installedComponents:
+            if components[i][1] in installedComponents:
                 self.componentSwitch.set_active(True)
 
             self.table.attach(self.componentLabel, 0, 2, i, i+1)
