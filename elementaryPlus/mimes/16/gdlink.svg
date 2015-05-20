@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="a" y2="41.59" gradientUnits="userSpaceOnUse" x2="24" gradientTransform="matrix(.24324 0 0 .35135 2.1622 -.43243)" y1="6.2052" x1="24">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".029293"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".97230"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <linearGradient id="b" y2="47.013" gradientUnits="userSpaceOnUse" x2="25.132" gradientTransform="matrix(.28571 0 0 .30420 1.1429 .23260)" y1=".98521" x1="25.132">
+   <stop stop-color="#f4f4f4" offset="0"/>
+   <stop stop-color="#dbdbdb" offset="1"/>
+  </linearGradient>
+  <linearGradient id="c" y2="2.9062" gradientUnits="userSpaceOnUse" x2="-51.786" gradientTransform="matrix(.25379 0 0 .30502 19.129 -.68548)" y1="50.786" x1="-51.786">
+   <stop stop-opacity=".33951" offset="0"/>
+   <stop stop-opacity=".24691" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path d="m3 1c2.2915 0 10 0.0008904 10 0.0008904v13.999h-10v-14z" fill="url(#b)"/>
+ <path d="m12.5 14.5h-9v-13h9z" stroke="url(#a)" stroke-linecap="round" fill="none"/>
+ <path stroke-linejoin="round" d="m2.5 0.49997c2.5207 0 11 0.000954 11 0.000954l0.000013 14.999h-11v-15z" stroke="url(#c)" stroke-width=".99992" fill="none"/>
+ <path opacity=".4" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m6.334 4.3379l-3.334 5.7751 1.666 2.887h6.668l1.666-2.887-3.334-5.7751h-3.332zm1.666 2.8867l1.666 2.8884h-3.332l1.666-2.8884z" fill-rule="evenodd" clip-rule="evenodd" fill="#fff"/>
+ <g clip-rule="evenodd" fill-rule="evenodd">
+  <polygon style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" transform="matrix(0.0000751 0 0 0.0000751 3 3.3379)" class="fil0" points="44385 76894 1.3316e5 76894 1.1096e5 1.1534e5 22194 1.1534e5" fill="#3777e3"/>
+  <polygon style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" transform="matrix(0.0000751 0 0 0.0000751 3 3.3379)" class="fil1" points="1.3316e5 76894 88772 0 44385 0 88772 76894" fill="#ffcf63"/>
+  <polygon style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" transform="matrix(0.0000751 0 0 0.0000751 3 3.3379)" class="fil2" points="22194 1.1534e5 66578 38447 44385 0 0 76894" fill="#11a861"/>
+ </g>
+</svg>
