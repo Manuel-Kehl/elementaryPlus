@@ -5,7 +5,7 @@ import os
 import sys
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
-    sys.exit("You need to have GTK 3.14 to use this script")
+    sys.exit("You need to have GTK 3.14 or newer to use this script")
  
 
 Notify.init("elementaryPlus Configurator")
