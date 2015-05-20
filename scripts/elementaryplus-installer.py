@@ -220,6 +220,7 @@ class InstallerWindow(Gtk.Window):
                     notif.show()
 
                 self.installButton.set_sensitive(False)
+
             elif response == Gtk.ResponseType.CANCEL:
                 print("The Cancel button was clicked")
                 self.installButton.set_sensitive(True)
