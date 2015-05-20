@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <radialGradient id="d" gradientUnits="userSpaceOnUse" cy="43.5" cx="4.993" gradientTransform="matrix(2.0038 0 0 1.4 27.988 -17.4)" r="2.5">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="c" gradientUnits="userSpaceOnUse" cy="43.5" cx="4.993" gradientTransform="matrix(2.0038 0 0 1.4 -20.012 -104.4)" r="2.5">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <linearGradient id="f" y2="39.999" gradientUnits="userSpaceOnUse" x2="25.058" y1="47.028" x1="25.058">
+   <stop stop-color="#181818" stop-opacity="0" offset="0"/>
+   <stop stop-color="#181818" offset=".5"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="e" y2="43" gradientUnits="userSpaceOnUse" x2="24" gradientTransform="matrix(1.4324 0 0 1.4363 -2.3784 -2.4708)" y1="5" x1="24">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".063165"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".95056"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <radialGradient id="b" gradientUnits="userSpaceOnUse" cy="4.3419" cx="32" gradientTransform="matrix(1.0056e-8 2.3103 -2.3103 1.0056e-8 42.031 -69.086)" r="27.5">
+   <stop stop-color="#fafafa" offset="0"/>
+   <stop stop-color="#e1e1e1" offset="1"/>
+  </radialGradient>
+  <linearGradient id="a" y2="50" xlink:href="#g" gradientUnits="userSpaceOnUse" x2="31" y1="14" x1="31"/>
+  <linearGradient id="g">
+   <stop stop-color="#008fef" offset="0"/>
+   <stop stop-color="#007acc" offset="1"/>
+  </linearGradient>
+  <clipPath id="h" clipPathUnits="userSpaceOnUse">
+   <path d="m42.5 14-16.5 15-9-7.5-3 1.5v18l3 1.5 9-7.5 16.5 15 7.5-3v-30zm-1.5 10.5c0.0024 4.9869 0 10.053 0 15l-9-7.5zm-24 3 4.5 4.5-4.5 4.5z" fill-rule="evenodd" fill="url(#a)"/>
+  </clipPath>
+ </defs>
+ <g opacity=".4" transform="matrix(1.579 0 0 .71429 -5.8948 27.929)">
+  <rect height="7" width="5" y="40" x="38" fill="url(#d)"/>
+  <rect transform="scale(-1)" height="7" width="5" y="-47" x="-10" fill="url(#c)"/>
+  <rect height="7" width="28" y="40" x="10" fill="url(#f)"/>
+ </g>
+ <rect style="color:#000000" rx="2.5" ry="2.5" height="54" width="54" y="5" x="5" fill="url(#b)"/>
+ <rect stroke-linejoin="round" rx="2" ry="2" height="53.142" width="53" stroke="url(#e)" stroke-linecap="round" y="5.4288" x="5.5" fill="none"/>
+ <rect opacity=".3" style="color:#000000" rx="3" ry="3" height="55" width="55" stroke="#000" y="4.5" x="4.5" fill="none"/>
+ <g font-size="12.666px" font-family="Bitstream Vera Sans" fill="#000000">
+  <text opacity=".8" xml:space="preserve" y="11.54004" x="1023.4568"><tspan y="11.54004" x="1023.4568"/></text>
+  <text opacity=".8" xml:space="preserve" y="-29.201666" x="1047.4177"><tspan y="-29.201666" x="1047.4177"/></text>
+  <text opacity=".8" xml:space="preserve" y="-59.279808" x="-423.14066"><tspan y="-59.279808" x="-423.14066"/></text>
+  <text opacity=".8" xml:space="preserve" y="686.27368" x="-2246.8267"><tspan y="686.27368" x="-2246.8267"/></text>
+  <text opacity=".8" xml:space="preserve" y="-444.60077" x="-308.64957"><tspan y="-444.60077" x="-308.64957"/></text>
+  <text opacity=".8" xml:space="preserve" y="-858.07086" x="498.95258"><tspan y="-858.07086" x="498.95258"/></text>
+  <text opacity=".8" xml:space="preserve" y="-898.81256" x="522.91351"><tspan y="-898.81256" x="522.91351"/></text>
+  <text opacity=".8" xml:space="preserve" y="-906.02246" x="-968.54968"><tspan y="-906.02246" x="-968.54968"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1179.2567" x="491.9931"><tspan y="-1179.2567" x="491.9931"/></text>
+  <text opacity=".8" xml:space="preserve" y="-552.56525" x="1978.1166"><tspan y="-552.56525" x="1978.1166"/></text>
+  <text opacity=".8" xml:space="preserve" y="-593.30701" x="2002.0774"><tspan y="-593.30701" x="2002.0774"/></text>
+  <text opacity=".8" xml:space="preserve" y="-600.51691" x="510.61426"><tspan y="-600.51691" x="510.61426"/></text>
+  <text opacity=".8" xml:space="preserve" y="-873.75092" x="1971.1571"><tspan y="-873.75092" x="1971.1571"/></text>
+  <text opacity=".8" xml:space="preserve" y="-648.60822" x="-427.20206"><tspan y="-648.60822" x="-427.20206"/></text>
+  <text opacity=".8" xml:space="preserve" y="96.945297" x="-2250.8877"><tspan y="96.945297" x="-2250.8877"/></text>
+  <text opacity=".8" xml:space="preserve" y="189.81743" x="-536.13226"><tspan y="189.81743" x="-536.13226"/></text>
+  <text opacity=".8" xml:space="preserve" y="10.635291" x="572.89203"><tspan y="10.635291" x="572.89203"/></text>
+  <text opacity=".8" xml:space="preserve" y="-30.106415" x="596.85297"><tspan y="-30.106415" x="596.85297"/></text>
+  <text opacity=".8" xml:space="preserve" y="-37.316387" x="-894.61023"><tspan y="-37.316387" x="-894.61023"/></text>
+  <text opacity=".8" xml:space="preserve" y="-310.55045" x="565.93256"><tspan y="-310.55045" x="565.93256"/></text>
+  <text opacity=".8" xml:space="preserve" y="-40.030632" x="-461.80203"><tspan y="-40.030632" x="-461.80203"/></text>
+  <text opacity=".8" xml:space="preserve" y="705.52289" x="-2285.488"><tspan y="705.52289" x="-2285.488"/></text>
+  <text opacity=".8" xml:space="preserve" y="-901.5611" x="-310.70898"><tspan y="-901.5611" x="-310.70898"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1315.0314" x="496.89316"><tspan y="-1315.0314" x="496.89316"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1355.7731" x="520.85406"><tspan y="-1355.7731" x="520.85406"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1362.983" x="-970.60907"><tspan y="-1362.983" x="-970.60907"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1636.2172" x="489.93365"><tspan y="-1636.2172" x="489.93365"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1009.5258" x="1976.057"><tspan y="-1009.5258" x="1976.057"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1050.2675" x="2000.0178"><tspan y="-1050.2675" x="2000.0178"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1057.4774" x="508.55481"><tspan y="-1057.4774" x="508.55481"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1330.7115" x="1969.0975"><tspan y="-1330.7115" x="1969.0975"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1105.5687" x="-429.26147"><tspan y="-1105.5687" x="-429.26147"/></text>
+  <text opacity=".8" xml:space="preserve" y="-360.01517" x="-2252.9473"><tspan y="-360.01517" x="-2252.9473"/></text>
+  <text opacity=".8" xml:space="preserve" y="-267.14301" x="-538.19171"><tspan y="-267.14301" x="-538.19171"/></text>
+  <text opacity=".8" xml:space="preserve" y="-26.228838" x="301.82278"><tspan y="-26.228838" x="301.82278"/></text>
+  <text opacity=".8" xml:space="preserve" y="-66.970558" x="325.78372"><tspan y="-66.970558" x="325.78372"/></text>
+  <text opacity=".8" xml:space="preserve" y="-260.99918" x="-944.03296"><tspan y="-260.99918" x="-944.03296"/></text>
+  <text opacity=".8" xml:space="preserve" y="-674.4693" x="-136.43091"><tspan y="-674.4693" x="-136.43091"/></text>
+  <text opacity=".8" xml:space="preserve" y="-715.211" x="-112.46998"><tspan y="-715.211" x="-112.46998"/></text>
+  <text opacity=".8" xml:space="preserve" y="-722.4209" x="-1603.9331"><tspan y="-722.4209" x="-1603.9331"/></text>
+  <text opacity=".8" xml:space="preserve" y="-995.65503" x="-143.39035"><tspan y="-995.65503" x="-143.39035"/></text>
+  <text opacity=".8" xml:space="preserve" y="-368.96368" x="1342.733"><tspan y="-368.96368" x="1342.733"/></text>
+  <text opacity=".8" xml:space="preserve" y="-409.70541" x="1366.6938"><tspan y="-409.70541" x="1366.6938"/></text>
+  <text opacity=".8" xml:space="preserve" y="-416.91537" x="-124.76923"><tspan y="-416.91537" x="-124.76923"/></text>
+  <text opacity=".8" xml:space="preserve" y="-690.14941" x="1335.7736"><tspan y="-690.14941" x="1335.7736"/></text>
+  <text opacity=".8" xml:space="preserve" y="-465.00665" x="-1062.5856"><tspan y="-465.00665" x="-1062.5856"/></text>
+  <text opacity=".8" xml:space="preserve" y="280.54691" x="-2886.2712"><tspan y="280.54691" x="-2886.2712"/></text>
+ </g>
+ <g transform="matrix(.90475 0 0 .90475 -570.51 -675.56)">
+  <text opacity=".8" xml:space="preserve" font-size="14px" y="1159.4154" x="-664.2738" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="1159.4154" x="-664.2738"/></text>
+ </g>
+ <g font-size="12.666px" font-family="Bitstream Vera Sans" fill="#000000">
+  <text opacity=".8" xml:space="preserve" y="18.778028" x="1023.4568"><tspan y="18.778028" x="1023.4568"/></text>
+  <text opacity=".8" xml:space="preserve" y="-21.963676" x="1047.4177"><tspan y="-21.963676" x="1047.4177"/></text>
+  <text opacity=".8" xml:space="preserve" y="-52.041821" x="-423.14066"><tspan y="-52.041821" x="-423.14066"/></text>
+  <text opacity=".8" xml:space="preserve" y="693.51166" x="-2246.8267"><tspan y="693.51166" x="-2246.8267"/></text>
+  <text opacity=".8" xml:space="preserve" y="-437.36276" x="-308.64957"><tspan y="-437.36276" x="-308.64957"/></text>
+  <text opacity=".8" xml:space="preserve" y="-850.83282" x="498.95258"><tspan y="-850.83282" x="498.95258"/></text>
+  <text opacity=".8" xml:space="preserve" y="-891.57458" x="522.91351"><tspan y="-891.57458" x="522.91351"/></text>
+  <text opacity=".8" xml:space="preserve" y="-898.78448" x="-968.54968"><tspan y="-898.78448" x="-968.54968"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1172.0187" x="491.9931"><tspan y="-1172.0187" x="491.9931"/></text>
+  <text opacity=".8" xml:space="preserve" y="-545.32727" x="1978.1166"><tspan y="-545.32727" x="1978.1166"/></text>
+  <text opacity=".8" xml:space="preserve" y="-586.06903" x="2002.0774"><tspan y="-586.06903" x="2002.0774"/></text>
+  <text opacity=".8" xml:space="preserve" y="-593.27893" x="510.61426"><tspan y="-593.27893" x="510.61426"/></text>
+  <text opacity=".8" xml:space="preserve" y="-866.51288" x="1971.1571"><tspan y="-866.51288" x="1971.1571"/></text>
+  <text opacity=".8" xml:space="preserve" y="-641.37024" x="-427.20206"><tspan y="-641.37024" x="-427.20206"/></text>
+  <text opacity=".8" xml:space="preserve" y="104.18329" x="-2250.8877"><tspan y="104.18329" x="-2250.8877"/></text>
+  <text opacity=".8" xml:space="preserve" y="197.05542" x="-536.13226"><tspan y="197.05542" x="-536.13226"/></text>
+  <text opacity=".8" xml:space="preserve" y="17.87328" x="572.89203"><tspan y="17.87328" x="572.89203"/></text>
+  <text opacity=".8" xml:space="preserve" y="-22.868425" x="596.85297"><tspan y="-22.868425" x="596.85297"/></text>
+  <text opacity=".8" xml:space="preserve" y="-30.078396" x="-894.61023"><tspan y="-30.078396" x="-894.61023"/></text>
+  <text opacity=".8" xml:space="preserve" y="-303.31244" x="565.93256"><tspan y="-303.31244" x="565.93256"/></text>
+  <text opacity=".8" xml:space="preserve" y="-32.792641" x="-461.80203"><tspan y="-32.792641" x="-461.80203"/></text>
+  <text opacity=".8" xml:space="preserve" y="712.76093" x="-2285.488"><tspan y="712.76093" x="-2285.488"/></text>
+  <text opacity=".8" xml:space="preserve" y="-894.32312" x="-310.70898"><tspan y="-894.32312" x="-310.70898"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1307.7933" x="496.89316"><tspan y="-1307.7933" x="496.89316"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1348.5352" x="520.85406"><tspan y="-1348.5352" x="520.85406"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1355.745" x="-970.60907"><tspan y="-1355.745" x="-970.60907"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1628.9791" x="489.93365"><tspan y="-1628.9791" x="489.93365"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1002.2878" x="1976.057"><tspan y="-1002.2878" x="1976.057"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1043.0295" x="2000.0178"><tspan y="-1043.0295" x="2000.0178"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1050.2394" x="508.55481"><tspan y="-1050.2394" x="508.55481"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1323.4735" x="1969.0975"><tspan y="-1323.4735" x="1969.0975"/></text>
+  <text opacity=".8" xml:space="preserve" y="-1098.3307" x="-429.26147"><tspan y="-1098.3307" x="-429.26147"/></text>
+  <text opacity=".8" xml:space="preserve" y="-352.77716" x="-2252.9473"><tspan y="-352.77716" x="-2252.9473"/></text>
+  <text opacity=".8" xml:space="preserve" y="-259.905" x="-538.19171"><tspan y="-259.905" x="-538.19171"/></text>
+  <text opacity=".8" xml:space="preserve" y="-18.99085" x="301.82278"><tspan y="-18.99085" x="301.82278"/></text>
+  <text opacity=".8" xml:space="preserve" y="-59.732571" x="325.78372"><tspan y="-59.732571" x="325.78372"/></text>
+  <text opacity=".8" xml:space="preserve" y="-253.76117" x="-944.03296"><tspan y="-253.76117" x="-944.03296"/></text>
+  <text opacity=".8" xml:space="preserve" y="-667.23132" x="-136.43091"><tspan y="-667.23132" x="-136.43091"/></text>
+  <text opacity=".8" xml:space="preserve" y="-707.97302" x="-112.46998"><tspan y="-707.97302" x="-112.46998"/></text>
+  <text opacity=".8" xml:space="preserve" y="-715.18298" x="-1603.9331"><tspan y="-715.18298" x="-1603.9331"/></text>
+  <text opacity=".8" xml:space="preserve" y="-988.41699" x="-143.39035"><tspan y="-988.41699" x="-143.39035"/></text>
+  <text opacity=".8" xml:space="preserve" y="-361.72571" x="1342.733"><tspan y="-361.72571" x="1342.733"/></text>
+  <text opacity=".8" xml:space="preserve" y="-402.46744" x="1366.6938"><tspan y="-402.46744" x="1366.6938"/></text>
+  <text opacity=".8" xml:space="preserve" y="-409.67737" x="-124.76923"><tspan y="-409.67737" x="-124.76923"/></text>
+  <text opacity=".8" xml:space="preserve" y="-682.91144" x="1335.7736"><tspan y="-682.91144" x="1335.7736"/></text>
+  <text opacity=".8" xml:space="preserve" y="-457.76865" x="-1062.5856"><tspan y="-457.76865" x="-1062.5856"/></text>
+  <text opacity=".8" xml:space="preserve" y="287.78488" x="-2886.2712"><tspan y="287.78488" x="-2886.2712"/></text>
+ </g>
+ <g transform="matrix(.90475 0 0 .90475 -570.51 -668.32)">
+  <text opacity=".8" xml:space="preserve" font-size="14px" y="1159.4154" x="-664.2738" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="1159.4154" x="-664.2738"/></text>
+ </g>
+ <g font-size="12.666px" fill="#000000">
+  <text xml:space="preserve" y="-360.49802" x="582.13477" font-family="Droid Sans"><tspan y="-360.49802" x="582.13477"/><tspan y="-344.66495" x="582.13477"/></text>
+  <g font-family="Bitstream Vera Sans">
+   <text opacity=".8" xml:space="preserve" y="-842.54254" x="1047.3187"><tspan y="-842.54254" x="1047.3187"/></text>
+   <text opacity=".8" xml:space="preserve" y="-96.989113" x="-776.36725"><tspan y="-96.989113" x="-776.36725"/></text>
+   <text opacity=".8" xml:space="preserve" y="-1127.5385" x="1774.3982"><tspan y="-1127.5385" x="1774.3982"/></text>
+   <text opacity=".8" xml:space="preserve" y="-1168.2802" x="1798.359"><tspan y="-1168.2802" x="1798.359"/></text>
+   <text opacity=".8" xml:space="preserve" y="-1175.4901" x="306.8959"><tspan y="-1175.4901" x="306.8959"/></text>
+   <text opacity=".8" xml:space="preserve" y="-1448.7242" x="1767.4387"><tspan y="-1448.7242" x="1767.4387"/></text>
+  </g>
+ </g>
+ <path opacity=".2" d="m42.5 15-16.5 15-9-7.5-3 1.5v18l3 1.5 9-7.5 16.5 15 7.5-3v-30zm-1.5 10.5c0.0024 4.9869 0 10.053 0 15l-9-7.5zm-24 3 4.5 4.5-4.5 4.5z" fill-rule="evenodd" fill="#fff"/>
+ <path d="m42.5 14-16.5 15-9-7.5-3 1.5v18l3 1.5 9-7.5 16.5 15 7.5-3v-30zm-1.5 10.5c0.0024 4.9869 0 10.053 0 15l-9-7.5zm-24 3 4.5 4.5-4.5 4.5z" fill-rule="evenodd" fill="url(#a)"/>
+ <path stroke-linejoin="round" opacity=".15" d="m42.5 14l-16.5 15-9-7.5-3 1.5v1l3-1.5 9 7.5 16.5-15 7.5 3v-1l-7.5-3zm-21.5 18.5l-4 4v1l4.5-4.5-0.5-0.5zm11.6 0l-0.6 0.5 9 7.5v-1l-8.4-7z" clip-path="url(#h)" stroke="#002d4a" stroke-linecap="round" stroke-width="2" fill="none"/>
+ <path opacity=".3" d="m42.5 14-16.5 15-9-7.5-3 1.5v1l3-1.5 9 7.5 16.5-15 7.5 3v-1l-7.5-3zm-21.5 18.5l-4 4v1l4.5-4.5-0.5-0.5zm11.6 0l-0.6 0.5 9 7.5c0-0.32979-0.000019-0.66921 0-1l-8.4004-7z" fill-rule="evenodd" fill="#002d4a"/>
+</svg>
