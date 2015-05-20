@@ -1,1 +1,1 @@
-./scripts/elementaryplus-installer
+./scripts/elementaryplus-installer.py
