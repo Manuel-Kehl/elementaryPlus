@@ -103,6 +103,8 @@ class InstallerWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="elementary+ Configurator")
         self.set_border_width(10)
+        self.set_resizable(False)
+
         self.hb = Gtk.HeaderBar()
         self.hb.set_show_close_button(True)
         self.hb.props.title = "elementary+"
