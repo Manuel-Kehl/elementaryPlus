@@ -9,11 +9,11 @@ if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
 
 Notify.init("elementaryPlus Configurator")
 
-
+scripts = os.getcwd() + "/scripts/"
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 
 if os.path.isfile(schema) is False:
-    os.system("pkexec %s/scripts/first_start.sh %s" % (os.getcwd(), os.getcwd()))
+    os.system("pkexec " + scripts + "first_start.sh %s" % scripts)
 
 bins = [
     ["MEGAsync", "/usr/bin/megasync"],
@@ -179,7 +179,7 @@ class InstallerWindow(Gtk.Window):
                             if os.system("pkexec %s/scripts/sni-qt.sh" % os.getcwd()) == 0:
                                 settings.set_boolean("sniqt-patched", True)
 
-                        os.system("bash ./scripts/" + data + "/setup.sh --install")
+                        os.system("bash " + scripts + data + "/setup.sh --install")
                         print data + " was installed"
                         if data == "core":
                             dialog = useThemeDialog(self)
@@ -198,7 +198,7 @@ class InstallerWindow(Gtk.Window):
 
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
-                        os.system("bash ./scripts/" + data + "/setup.sh --remove")
+                        os.system("bash " + scripts + data + "/setup.sh --remove")
                         print data + " was removed"
                         if data == "core":
                             currentTheme = systemSettings.get_string("icon-theme")
