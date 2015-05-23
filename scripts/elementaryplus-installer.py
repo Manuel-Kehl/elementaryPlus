@@ -9,7 +9,6 @@ if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
 
 Notify.init("elementaryPlus Configurator")
 
-scripts = os.getcwd() + "/scripts/"
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusConfigurator.gschema.xml"
 
 if os.path.isfile(schema) is False:
