@@ -101,11 +101,11 @@ class useThemeDialog(Gtk.Dialog):
 class InstallerWindow(Gtk.Window):
 
     def __init__(self):
-        Gtk.Window.__init__(self, title="elementaryPlus Configurator")
+        Gtk.Window.__init__(self, title="elementary+ Configurator")
         self.set_border_width(10)
         self.hb = Gtk.HeaderBar()
         self.hb.set_show_close_button(True)
-        self.hb.props.title = "elementaryPlus"
+        self.hb.props.title = "elementary+"
         self.set_titlebar(self.hb)
         self.hb.set_subtitle("Configurator")
 
