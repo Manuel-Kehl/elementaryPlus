@@ -5,7 +5,7 @@ import os
 import sys
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
-    sys.exit("You need to have GTK 3.14 or newer to use this script")
+    sys.exit("You need to have GTK 3.14 or newer to run this script")
 
 Notify.init("elementaryPlus Configurator")
 
@@ -101,11 +101,11 @@ class useThemeDialog(Gtk.Dialog):
 class InstallerWindow(Gtk.Window):
 
     def __init__(self):
-        Gtk.Window.__init__(self, title="elementaryPlus Configurator")
+        Gtk.Window.__init__(self, title="elementary+ Configurator")
         self.set_border_width(10)
         self.hb = Gtk.HeaderBar()
         self.hb.set_show_close_button(True)
-        self.hb.props.title = "elementaryPlus"
+        self.hb.props.title = "elementary+"
         self.set_titlebar(self.hb)
         self.hb.set_subtitle("Configurator")
 
