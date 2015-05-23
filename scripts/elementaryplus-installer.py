@@ -9,6 +9,7 @@ if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
 
 Notify.init("elementaryPlus Configurator")
 
+
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusInstaller.gschema.xml"
 
 if os.path.isfile(schema) is False:
@@ -60,8 +61,8 @@ class confirmDialog(Gtk.Dialog):
 
         toInstallList = ", ".join([x[0] for x in components if x[1] in toInstall])
         toRemoveList = ", ".join([x[0] for x in components if x[1] in toRemove])
-        labelToInstall = Gtk.Label("To install: "+toInstallList)
-        labelToRemove = Gtk.Label("To remove: "+toRemoveList+"\n")
+        labelToInstall = Gtk.Label("To install: " + toInstallList)
+        labelToRemove = Gtk.Label("To remove: " + toRemoveList + "\n")
         labelQuestion = Gtk.Label("Are you sure you want to appply these changes?\n")
 
         box = self.get_content_area()
@@ -131,8 +132,8 @@ class InstallerWindow(Gtk.Window):
             if components[i][1] in installedComponents:
                 self.componentSwitch.set_active(True)
 
-            self.table.attach(self.componentLabel, 0, 2, i, i+1)
-            self.table.attach(self.componentSwitch, 2, 3, i, i+1)
+            self.table.attach(self.componentLabel, 0, 2, i, i + 1)
+            self.table.attach(self.componentSwitch, 2, 3, i, i + 1)
 
     def callback(self, widget, event, data=None):
 
@@ -172,15 +173,14 @@ class InstallerWindow(Gtk.Window):
                         patchedSniqt = settings.get_boolean("sniqt-patched")
                         if data != "core" and patchedSniqt is False:
                             print "Installing patched sni-qt"
-                            notif = Notify.Notification.new('This may take while', 'Please don\'t close the window', 'gnome-tweak-tool')
+                            notif = Notify.Notification.new('This may take a while', 'Please don\'t close the window', 'gnome-tweak-tool')
                             if notif:
                                 notif.show()
                             if os.system("pkexec %s/scripts/sni-qt.sh" % os.getcwd()) == 0:
                                 settings.set_boolean("sniqt-patched", True)
 
-                        os.chdir("./scripts/"+data+"/")
-                        os.system("bash ./"+data+".sh")
-                        print data+" was installed"
+                        os.system("bash ./scripts/" + data + "/setup.sh --install")
+                        print data + " was installed"
                         if data == "core":
                             dialog = useThemeDialog(self)
                             response = dialog.run()
@@ -193,21 +193,19 @@ class InstallerWindow(Gtk.Window):
                             elif response == Gtk.ResponseType.NO:
                                 print "Theme not changed"
 
-                        os.chdir("../../")
                         installedComponents.append(data)
                     settings.set_strv("installed", installedComponents)
 
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
-                        os.chdir("./scripts/"+data+"/")
-                        os.system("bash ./"+data+"_remove.sh")
-                        print data+" was removed"
+                        os.system("bash ./scripts/" + data + "/setup.sh --remove")
+                        print data + " was removed"
                         if data == "core":
                             currentTheme = systemSettings.get_string("icon-theme")
                             if currentTheme == iconThemeName:
                                 previousIconTheme = settings.get_string("previous-icon-theme")
                                 systemSettings.set_string("icon-theme", previousIconTheme)
-                        os.chdir("../../")
+
                         installedComponents.remove(data)
                     settings.set_strv("installed", installedComponents)
 
