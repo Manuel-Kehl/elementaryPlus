@@ -17,7 +17,13 @@ See [CREDIT](CREDIT.csv) for a list of sources and authors of the work contained
 
 ## How to Install
 
-Just download the directory or clone the repository and run `./install.sh` from the parent directory of this repository
+You can add our PPA (Personal Package Archive) to your sources:
+```
+sudo add-apt-repository ppa:cybre/elementaryplus
+sudo apt-get update
+sudo apt-get upgrade && sudo apt-get install elementaryplus
+```
+or just download the directory or clone the repository and run `./install.sh` from the parent directory of this repository.
 Then select the theme in [elementary tweaks](https://code.launchpad.net/~versable/elementary-community/elementary-tweaks).
 
 Please also make sure, that the original elementary icon theme is installed, because elementary+ only provides additions and inherits the base theme.
