@@ -2,7 +2,7 @@
 
 from gi.repository import Gtk, Gio, Notify
 import os
-import sys,subprocess
+import sys, subprocess
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -13,7 +13,7 @@ scripts = os.getcwd() + "/scripts/"
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusConfigurator.gschema.xml"
 
 if os.path.isfile(schema) is False:
-    subprocess.call(["pkexec",scripts+"first_start.sh",scripts])
+    subprocess.call(["pkexec", scripts + "first_start.sh", scripts])
 
 bins = [
     ["MEGAsync", "/usr/bin/megasync"],
@@ -180,11 +180,12 @@ class InstallerWindow(Gtk.Window):
                             notif = Notify.Notification.new('This may take a while', 'Please don\'t close the window', 'gnome-tweak-tool')
                             if notif:
                                 notif.show()
-                            if os.system("pkexec %s/scripts/sni-qt.sh" % os.getcwd()) == 0:
+                            if subprocess.call(['pkexec', scripts + "sni-qt.sh"]) == 0:
                                 settings.set_boolean("sniqt-patched", True)
 
-                        os.system("bash " + scripts + data + "/setup.sh --install")
+                        subprocess.call(['bash', scripts + data + "/setup.sh", "--install"])
                         print data + " was installed"
+                        
                         if data == "core":
                             dialog = useThemeDialog(self)
                             response = dialog.run()
@@ -202,7 +203,7 @@ class InstallerWindow(Gtk.Window):
 
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
-                        os.system("bash " + scripts + data + "/setup.sh --remove")
+                        subprocess.call(['bash', scripts + data + "/setup.sh", "--remove"])
                         print data + " was removed"
                         if data == "core":
                             currentTheme = systemSettings.get_string("icon-theme")
