@@ -104,6 +104,7 @@ class InstallerWindow(Gtk.Window):
         Gtk.Window.__init__(self, title="elementary+ Configurator")
         self.set_border_width(10)
         self.set_resizable(False)
+        self.set_icon_name("preferences-desktop")
 
         self.hb = Gtk.HeaderBar()
         self.hb.set_show_close_button(True)
