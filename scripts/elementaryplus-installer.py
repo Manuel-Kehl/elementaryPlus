@@ -2,7 +2,7 @@
 
 from gi.repository import Gtk, Gio, Notify
 import os
-import sys
+import sys,subprocess
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -13,8 +13,8 @@ scripts = os.getcwd() + "/scripts/"
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusConfigurator.gschema.xml"
 
 if os.path.isfile(schema) is False:
-    os.system("pkexec " + scripts + "first_start.sh %s" % scripts)
-
+    subprocess.Popen(['pkexec', scripts+"first_start.sh"])
+    
 bins = [
     ["MEGAsync", "/usr/bin/megasync"],
     ["Skype", "/usr/bin/skype"],
@@ -36,6 +36,8 @@ toRemove = []
 iconThemeName = "elementaryPlus"
 
 settings = Gio.Settings.new("apps.elementaryPlusConfigurator")
+if not settings:
+    sys.exit("The setting schema does not exist, please retry again!")
 installedComponents = settings.get_strv("installed")
 patchedSniqt = settings.get_boolean("sniqt-patched")
 # settings.reset("installed")
@@ -104,7 +106,6 @@ class InstallerWindow(Gtk.Window):
         Gtk.Window.__init__(self, title="elementary+ Configurator")
         self.set_border_width(10)
         self.set_resizable(False)
-        self.set_icon_name("preferences-desktop")
 
         self.hb = Gtk.HeaderBar()
         self.hb.set_show_close_button(True)
