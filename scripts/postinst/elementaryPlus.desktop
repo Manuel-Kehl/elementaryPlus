@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=elementary+ Configurator
-Icon=gnome-tweak-tool
+Icon=preferences-desktop
 Exec=/usr/bin/elementaryplus-configurator
 NoDisplay=false
 Categories=Utility;
