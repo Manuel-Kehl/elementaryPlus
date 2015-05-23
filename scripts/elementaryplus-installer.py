@@ -2,7 +2,7 @@
 
 from gi.repository import Gtk, Gio, Notify
 import os
-import sys
+import sys,subprocess
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -13,7 +13,7 @@ scripts = os.getcwd() + "/scripts/"
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusConfigurator.gschema.xml"
 
 if os.path.isfile(schema) is False:
-    os.system("pkexec " + scripts + "first_start.sh %s" % scripts)
+    subprocess.call(["pkexec",scripts+"first_start.sh",scripts])
 
 bins = [
     ["MEGAsync", "/usr/bin/megasync"],
