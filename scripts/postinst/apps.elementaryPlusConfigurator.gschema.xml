@@ -16,5 +16,11 @@
       <summary>Previous icon theme</summary>
       <description>The name of the icon theme used before selecting elementary+</description>
     </key>
-  </schema>
+    <key type="b" name="first-run">
+      <default>true</default>
+      <summary>First run</summary>
+      <description>First run.</description>
+    </key>
+   </schema>
 </schemalist>
+
