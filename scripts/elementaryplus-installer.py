@@ -179,8 +179,6 @@ class InstallerWindow(Gtk.Window):
                             if os.system("pkexec %s/scripts/sni-qt.sh" % os.getcwd()) == 0:
                                 settings.set_boolean("sniqt-patched", True)
 
-                        # os.chdir("./scripts/" + data + "/")
-                        print os.getcwd()
                         os.system("bash ./scripts/" + data + "/setup.sh --install")
                         print data + " was installed"
                         if data == "core":
@@ -195,13 +193,11 @@ class InstallerWindow(Gtk.Window):
                             elif response == Gtk.ResponseType.NO:
                                 print "Theme not changed"
 
-                        # os.chdir("../../")
                         installedComponents.append(data)
                     settings.set_strv("installed", installedComponents)
 
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
-                        # os.chdir("./scripts/" + data + "/")
                         os.system("bash ./scripts/" + data + "/setup.sh --remove")
                         print data + " was removed"
                         if data == "core":
@@ -209,7 +205,7 @@ class InstallerWindow(Gtk.Window):
                             if currentTheme == iconThemeName:
                                 previousIconTheme = settings.get_string("previous-icon-theme")
                                 systemSettings.set_string("icon-theme", previousIconTheme)
-                        # os.chdir("../../")
+
                         installedComponents.remove(data)
                     settings.set_strv("installed", installedComponents)
 
