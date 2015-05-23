@@ -109,11 +109,12 @@ class InstallerWindow(Gtk.Window):
         self.hb = Gtk.HeaderBar()
         self.hb.set_show_close_button(True)
         self.hb.props.title = "elementary+"
-        self.set_titlebar(self.hb)
         self.hb.set_subtitle("Configurator")
+        self.set_titlebar(self.hb)
 
         self.installButton = Gtk.Button(label="Apply")
         self.installButton.set_sensitive(False)
+        self.installButton.get_style_context().add_class("suggested-action")
         self.installButton.connect("clicked", self.install, "yes")
 
         self.hb.pack_end(self.installButton)
@@ -129,7 +130,7 @@ class InstallerWindow(Gtk.Window):
             self.componentLabel = Gtk.Label(components[i][0], xalign=0)
 
             self.componentSwitch = Gtk.Switch()
-            self.componentSwitch.props.halign = Gtk.Align.CENTER
+            self.componentSwitch.props.halign = Gtk.Align.END
             self.componentSwitch.connect("notify::active", self.callback, components[i][1])
 
             if components[i][1] in installedComponents:
@@ -216,7 +217,6 @@ class InstallerWindow(Gtk.Window):
                 toInstall[:] = []
 
                 notif = Notify.Notification.new('All changes applied', 'Check out your new icons!', 'gnome-tweak-tool')
-
                 if notif:
                     notif.show()
 
