@@ -2,7 +2,8 @@
 
 from gi.repository import Gtk, Gio, Notify
 import os
-import sys, subprocess
+import sys
+import subprocess
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -15,6 +16,8 @@ schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusConfigurator.gschema.xm
 if os.path.isfile(schema) is False:
     subprocess.call(["pkexec", scripts + "first_start.sh", scripts])
 
+components = [["Core icon theme", "core"]]
+
 bins = [
     ["MEGAsync", "/usr/bin/megasync"],
     ["Skype", "/usr/bin/skype"],
@@ -23,13 +26,9 @@ bins = [
     ["Telegram Desktop", "%s/.local/share/applications/telegramdesktop.desktop" % (os.getenv('HOME'))]
 ]
 
-components = [
-    ["Core icon theme", "core"]
-]
-
 for b in bins:
     if os.path.isfile(b[1]):
-        components.append([b[0], b[0].lower().replace(" ","_")])
+        components.append([b[0], b[0].lower().replace(" ", "_")])
 
 toInstall = []
 toRemove = []
