@@ -175,7 +175,7 @@ class InstallerWindow(Gtk.Window):
                 if len(toInstall) != 0:
                     for data in toInstall[:]:
                         patchedSniqt = settings.get_boolean("sniqt-patched")
-                        if data != "core" and patchedSniqt is False:
+                        if data != "core" and data != "telegram_desktop" and patchedSniqt is False:
                             print "Installing patched sni-qt"
                             notif = Notify.Notification.new('This may take a while', 'Please don\'t close the window', 'gnome-tweak-tool')
                             if notif:
