@@ -4,12 +4,12 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 cd $DIR
 
 if [ $1 == "--install" ]
-    then
+	then
 		if [ -d $DSTDIR ]
 			then
-		  		rm $DSTDIR/* 2> /dev/null
+				rm $DSTDIR/* 2> /dev/null
 			else
-		  		mkdir -p $DSTDIR
+				mkdir -p $DSTDIR
 		fi
 		cp ./icons/*.png $DSTDIR
 		ln -s $DSTDIR/ico_22_0.png $DSTDIR/icomute_22_0.png
@@ -21,7 +21,7 @@ if [ $1 == "--install" ]
 			done
 
 elif [ $1 == "--remove" ]
-    then
+	then
 		rm $DSTDIR/*.png
 fi
 exit
