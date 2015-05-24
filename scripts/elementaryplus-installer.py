@@ -19,7 +19,8 @@ bins = [
     ["MEGAsync", "/usr/bin/megasync"],
     ["Skype", "/usr/bin/skype"],
     ["Spotify", "/opt/spotify/spotify-client/spotify"],
-    ["OwnCloud", "/usr/bin/owncloud"]
+    ["OwnCloud", "/usr/bin/owncloud"],
+    ["Telegram Desktop", "%s/.local/share/applications/telegramdesktop.desktop" % (os.getenv('HOME'))]
 ]
 
 components = [
@@ -28,7 +29,7 @@ components = [
 
 for b in bins:
     if os.path.isfile(b[1]):
-        components.append([b[0], b[0].lower()])
+        components.append([b[0], b[0].lower().replace(" ","_")])
 
 toInstall = []
 toRemove = []
@@ -185,7 +186,7 @@ class InstallerWindow(Gtk.Window):
 
                         subprocess.call(['bash', scripts + data + "/setup.sh", "--install"])
                         print data + " was installed"
-                        
+
                         if data == "core":
                             dialog = useThemeDialog(self)
                             response = dialog.run()
