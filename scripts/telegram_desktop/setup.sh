@@ -5,12 +5,6 @@ cd $DIR
 
 if [ $1 == "--install" ]
 	then
-		if [ -d $DSTDIR ]
-			then
-				rm $DSTDIR/* 2> /dev/null
-			else
-				mkdir -p $DSTDIR
-		fi
 		cp ./icons/*.png $DSTDIR
 		ln -s $DSTDIR/ico_22_0.png $DSTDIR/icomute_22_0.png
 
@@ -19,7 +13,6 @@ if [ $1 == "--install" ]
 				ln -s $DSTDIR/ico_22_1.png $DSTDIR/ico_22_$i.png
 				ln -s $DSTDIR/ico_22_1.png $DSTDIR/icomute_22_$i.png
 			done
-
 elif [ $1 == "--remove" ]
 	then
 		rm $DSTDIR/*.png
