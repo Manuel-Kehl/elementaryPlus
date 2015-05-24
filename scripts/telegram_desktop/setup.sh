@@ -6,12 +6,12 @@ cd $DIR
 if [ $1 == "--install" ]
 	then
 		cp ./icons/*.png $DSTDIR
-		ln -s $DSTDIR/ico_22_0.png $DSTDIR/icomute_22_0.png
+		ln -sf $DSTDIR/ico_22_0.png $DSTDIR/icomute_22_0.png
 
 		for((i=2; i<100; i++))
 			do
-				ln -s $DSTDIR/ico_22_1.png $DSTDIR/ico_22_$i.png
-				ln -s $DSTDIR/ico_22_1.png $DSTDIR/icomute_22_$i.png
+				ln -sf $DSTDIR/ico_22_1.png $DSTDIR/ico_22_$i.png
+				ln -sf $DSTDIR/ico_22_1.png $DSTDIR/icomute_22_$i.png
 			done
 elif [ $1 == "--remove" ]
 	then
