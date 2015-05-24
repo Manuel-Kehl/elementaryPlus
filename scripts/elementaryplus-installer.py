@@ -23,7 +23,7 @@ bins = [
     ["Skype", "/usr/bin/skype"],
     ["Spotify", "/opt/spotify/spotify-client/spotify"],
     ["OwnCloud", "/usr/bin/owncloud"],
-    ["Telegram Desktop", "%s/.local/share/applications/telegramdesktop.desktop" % (os.getenv('HOME'))]
+    ["Telegram Desktop", "%s/.TelegramDesktop/tdata/icon.png" % (os.getenv('HOME'))]
 ]
 
 for b in bins:
