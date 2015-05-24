@@ -20,9 +20,9 @@ components = [["Core icon theme", "core"]]
 
 bins = [
     ["MEGAsync", "/usr/bin/megasync"],
+    ["OwnCloud", "/usr/bin/owncloud"],
     ["Skype", "/usr/bin/skype"],
     ["Spotify", "/opt/spotify/spotify-client/spotify"],
-    ["OwnCloud", "/usr/bin/owncloud"],
     ["Telegram Desktop", "%s/.TelegramDesktop/tdata/icon.png" % (os.getenv('HOME'))]
 ]
 
