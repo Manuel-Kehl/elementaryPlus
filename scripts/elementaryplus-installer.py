@@ -19,6 +19,7 @@ if os.path.isfile(schema) is False:
 components = [["Core icon theme", "core"]]
 
 bins = [
+    ["Google Music Manager", "/opt/google/musicmanager/google-musicmanager"],
     ["MEGAsync", "/usr/bin/megasync"],
     ["OwnCloud", "/usr/bin/owncloud"],
     ["Skype", "/usr/bin/skype"],
