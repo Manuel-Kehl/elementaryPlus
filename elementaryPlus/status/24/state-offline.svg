@@ -1,1 +1,6 @@
-../16/state-offline.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="24" width="24" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 6.3499999 6.3500002" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <g transform="translate(0 -290.65)">
+  <path opacity=".4" d="m11.5 5a5.5 5.5 0 0 0 -5.5 5.5 5.5 5.5 0 0 0 0.2148 1.512 3 3 0 0 0 -0.2148 -0.012 3 3 0 0 0 -3 3 3 3 0 0 0 3 3h11a4 4 0 0 0 4 -4 4 4 0 0 0 -4 -4 4 4 0 0 0 -0.027 0 5.5 5.5 0 0 0 -5.473 -5z" transform="matrix(.26458 0 0 .26458 -2.5233e-7 290.65)" fill="#fff"/>
+ </g>
+</svg>
