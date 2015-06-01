@@ -36,6 +36,6 @@ If you want to make the dropbox indicator visible, you can simply execute `./scr
 I am waiting for your pull requests and would love to see this theme become as complete as possible.
 
 Please make sure that your icons fit the overall look and feel of elementary OS.
-It is advised to have a look at elementary OS's [human interface guidelines for icons](http://elementaryos.org/docs/human-interface-guidelines/icons) before you start designing.
+It is advised to have a look at elementary OS's [human interface guidelines for icons](https://elementary.io/docs/human-interface-guidelines#icons) before you start designing.
 
 If you are planning to implement status icons you may want to check [faba](http://mokaproject.com/faba-icon-theme/) or [Numix](https://github.com/numixproject) beforehand. They make a good base for monochromatic status icons. The owncloud icons e.g. were simply converted to a white foreground color which looks good, imho.
