@@ -22,6 +22,7 @@ bins = [
     ["Google Music Manager", "/opt/google/musicmanager/google-musicmanager"],
     ["MEGAsync", "/usr/bin/megasync"],
     ["OwnCloud", "/usr/bin/owncloud"],
+    ["Seafile Client", "/usr/bin/seafile-applet"],
     ["Skype", "/usr/bin/skype"],
     ["Spotify", "/opt/spotify/spotify-client/spotify"],
     ["Telegram Desktop", "%s/.TelegramDesktop/tdata/icon.png" % (os.getenv('HOME'))]
