@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 16 16">
+ <g transform="translate(0 -1036.4)">
+  <circle cx="8" cy="1044.4" r="8" fill="#bebebe"/>
+  <circle stroke-linejoin="round" cx="8" stroke-linecap="round" stroke="#fff" cy="1044.4" r="5" stroke-width="2" fill="#bebebe"/>
+  <path d="m4 1048.4 8-8" stroke="#fff" stroke-width="2" fill="none"/>
+ </g>
+</svg>
