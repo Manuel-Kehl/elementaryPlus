@@ -25,7 +25,8 @@ bins = [
     ["Seafile Client", "/usr/bin/seafile-applet"],
     ["Skype", "/usr/bin/skype"],
     ["Spotify", "/opt/spotify/spotify-client/spotify"],
-    ["Telegram Desktop", "%s/.TelegramDesktop/tdata/icon.png" % (os.getenv('HOME'))]
+    ["Telegram Desktop", "%s/.TelegramDesktop/tdata/icon.png" % (os.getenv('HOME'))],
+    ["Tomahawk", "/usr/bin/tomahawk"]
 ]
 
 for b in bins:
