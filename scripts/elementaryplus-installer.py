@@ -88,9 +88,7 @@ iconMegaList = [
 ]
 
 if fromPPA is True:
-    iconMegaList.reverse()
-    iconMegaList.pop()
-    iconMegaList.reverse()
+    iconMegaList.pop(0)
 
 components = []
 
