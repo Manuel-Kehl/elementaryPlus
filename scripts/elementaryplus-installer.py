@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from gi.repository import Gtk, Gio, Notify
+from gi.repository import Gtk, Gdk, Gio, Notify
 import os
 import sys
 import subprocess
@@ -173,7 +173,7 @@ class InstallerWindow(Gtk.Window):
 
     def __init__(self):
         Gtk.Window.__init__(self, title=appName)
-        self.set_border_width(10)
+        # self.set_border_width(05)
         self.set_size_request(500, 500)
         self.set_icon_name("preferences-desktop")
 
@@ -183,23 +183,58 @@ class InstallerWindow(Gtk.Window):
         self.hb.set_subtitle("Configurator")
         self.set_titlebar(self.hb)
 
+        searchIcon = Gtk.Image.new_from_icon_name("edit-find-symbolic", Gtk.IconSize.BUTTON)
+        searchButton = Gtk.ToggleButton()
+        searchButton.set_image(searchIcon)
+        searchButton.connect('clicked', self.search_handler)
+        self.searchButton = searchButton
+        self.hb.pack_start(searchButton)
+
         self.installButton = Gtk.Button(label="Apply")
         self.installButton.set_sensitive(False)
         self.installButton.get_style_context().add_class("suggested-action")
         self.installButton.connect("clicked", self.install, "yes")
-
         self.hb.pack_end(self.installButton)
 
         Notify.init(appName)
 
         self.add(self.build_ui())
 
+        style_provider = Gtk.CssProvider()
+
+        css = """
+        .search-bar {
+            border-width: 0;
+        }
+        """
+
+        style_provider.load_from_data(css)
+
+        Gtk.StyleContext.add_provider_for_screen(
+            Gdk.Screen.get_default(),
+            style_provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        )
+
     def notify(self, messageOne, messageTwo, icon):
         notification = Notify.Notification.new(messageOne, messageTwo, icon)
         notification.show()
 
     def build_ui(self):
-        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        self.search_bar = Gtk.SearchBar()
+        self.search_bar.get_style_context().add_class("primary-toolbar")
+        self.search_bar.set_halign(Gtk.Align.FILL)
+        self.search_bar.set_show_close_button(True)
+
+        entry = Gtk.SearchEntry()
+        entry.connect("search-changed", self.search_changed)
+        self.search_bar.add(entry)
+        self.search_bar.connect_entry(entry)
+        vbox.pack_start(self.search_bar, False, False, 0)
+        self.search_entry = entry
+        self.connect("key-press-event", lambda x, y: self.search_bar.handle_event(y))
+
         iconsPage = self.create_icons_page()
         vbox.pack_start(iconsPage, True, True, 0)
 
@@ -207,11 +242,21 @@ class InstallerWindow(Gtk.Window):
 
     def create_icons_page(self):
         scroller = Gtk.ScrolledWindow(None, None)
+        scroller.set_border_width(10)
         scroller.set_shadow_type(Gtk.ShadowType.IN)
         scroller.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
-        lbox = Gtk.ListBox()
-        lbox.set_selection_mode(Gtk.SelectionMode.NONE)
-        scroller.add(lbox)
+
+        self.lbox = Gtk.ListBox()
+        self.lbox.set_selection_mode(Gtk.SelectionMode.NONE)
+
+        placeholder = Gtk.Label()
+        self.placeholder = placeholder
+        placeholder.set_use_markup(True)
+        placeholder.get_style_context().add_class("dim-label")
+        self.lbox.set_placeholder(placeholder)
+        placeholder.show_all()
+
+        scroller.add(self.lbox)
 
         for i in range(len(components)):
             longDesc = iconMegaList[i][2]
@@ -235,7 +280,7 @@ class InstallerWindow(Gtk.Window):
             else:
                 wrap.set_tooltip_text(longDesc)
 
-            lbox.add(wrap)
+            self.lbox.add(wrap)
 
         return scroller
 
@@ -258,8 +303,42 @@ class InstallerWindow(Gtk.Window):
 
         return grid
 
-    def notsensitive():
-        notify("dsa", "dsa", "dasd")
+    def search_handler(self, w):
+        w.freeze_notify()
+        self.search_bar.set_search_mode(w.get_active())
+        w.thaw_notify()
+
+    def search_changed(self, w, data=None):
+        text = w.get_text().strip()
+        if text == "":
+            self.search_bar.set_search_mode(False)
+
+        act = False if text == "" else True
+        self.searchButton.freeze_notify()
+        self.searchButton.set_active(act)
+        self.searchButton.thaw_notify()
+        self.searching(w)
+
+    def searching(self, entry, event=None):
+        text = entry.get_text().strip()
+        self.lbox.set_filter_func(self.filter, text)
+
+        res = False
+        for child in self.lbox.get_children():
+            if child.get_visible() and child.get_child_visible():
+                res = True
+                break
+        if not res:
+            self.placeholder.set_markup("<big>Sorry, no results</big>")
+
+    def filter(self, row, text):
+        name = row.get_children()[0].get_children()[0].get_children()[1].get_text()
+        desc = row.get_children()[0].get_children()[0].get_children()[0].get_text()
+
+        if text.lower() in name.lower() or text in desc.lower():
+            return True
+        else:
+            return False
 
     def callback(self, widget, event, data=None):
 
