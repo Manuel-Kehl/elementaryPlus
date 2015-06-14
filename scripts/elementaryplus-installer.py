@@ -173,7 +173,6 @@ class InstallerWindow(Gtk.Window):
 
     def __init__(self):
         Gtk.Window.__init__(self, title=appName)
-        # self.set_border_width(05)
         self.set_size_request(500, 500)
         self.set_icon_name("preferences-desktop")
 
@@ -183,14 +182,14 @@ class InstallerWindow(Gtk.Window):
         self.hb.set_subtitle("Configurator")
         self.set_titlebar(self.hb)
 
-        searchIcon = Gtk.Image.new_from_icon_name("edit-find-symbolic", Gtk.IconSize.BUTTON)
+        searchIcon = Gtk.Image.new_from_icon_name("edit-find-symbolic", Gtk.IconSize.LARGE_TOOLBAR)
         searchButton = Gtk.ToggleButton()
         searchButton.set_image(searchIcon)
         searchButton.connect('clicked', self.search_handler)
         self.searchButton = searchButton
         self.hb.pack_start(searchButton)
 
-        self.installButton = Gtk.Button(label="Apply")
+        self.installButton = Gtk.Button(label="  Apply  ")
         self.installButton.set_sensitive(False)
         self.installButton.get_style_context().add_class("suggested-action")
         self.installButton.connect("clicked", self.install, "yes")
@@ -332,7 +331,7 @@ class InstallerWindow(Gtk.Window):
                 res = True
                 break
         if not res:
-            self.placeholder.set_markup("<big>Sorry, no results</big>")
+            self.placeholder.set_markup("<big>No results</big>")
 
     def filter(self, row, text):
         name = row.get_children()[0].get_children()[0].get_children()[1].get_text()
@@ -424,7 +423,6 @@ class InstallerWindow(Gtk.Window):
                 self.installButton.set_sensitive(False)
 
             elif response == Gtk.ResponseType.CANCEL:
-                print("The Cancel button was clicked")
                 self.installButton.set_sensitive(True)
 
 win = InstallerWindow()
