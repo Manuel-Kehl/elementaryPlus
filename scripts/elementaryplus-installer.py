@@ -260,7 +260,7 @@ class InstallerWindow(Gtk.Window):
 
         for i in range(len(components)):
             longDesc = iconMegaList[i][2]
-            item = self.create_item(components[i][0], components[i][3], components[i][2], longDesc)
+            item = self.create_item(components[i][0], components[i][3], components[i][2], longDesc, components[i][4])
 
             componentSwitch = Gtk.Switch()
             componentSwitch.props.halign = Gtk.Align.END
@@ -284,13 +284,16 @@ class InstallerWindow(Gtk.Window):
 
         return scroller
 
-    def create_item(self, name, iconName, shortDesc, longDesc):
+    def create_item(self, name, iconName, shortDesc, longDesc, enabled):
         grid = Gtk.Grid()
         grid.set_border_width(16)
         grid.set_row_spacing(4)
         grid.set_column_spacing(16)
 
-        label = Gtk.Label("<big>%s</big>" % name)
+        if enabled is True:
+            label = Gtk.Label("<big>%s</big>" % name)
+        else:
+            label = Gtk.Label("<big>%s (Not installed)</big>" % name)
         label.set_use_markup(True)
         label.set_alignment(0.0, 0.5)
         icon = Gtk.Image.new_from_icon_name(iconName, Gtk.IconSize.DIALOG)
