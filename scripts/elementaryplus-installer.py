@@ -18,6 +18,12 @@ schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusConfigurator.gschema.xm
 if os.path.isfile(schema) is False:
     subprocess.call(["pkexec", scripts + "first_start.sh", scripts])
 
+settings = Gio.Settings.new("apps.elementaryPlusConfigurator")
+installedComponents = settings.get_strv("installed")
+patchedSniqt = settings.get_boolean("sniqt-patched")
+
+systemSettings = Gio.Settings.new("org.gnome.desktop.interface")
+
 iconMegaList = [
     [
         "Core icon theme",
@@ -111,18 +117,6 @@ toInstall = []
 toRemove = []
 
 iconThemeName = "elementaryPlus"
-
-settings = Gio.Settings.new("apps.elementaryPlusConfigurator")
-installedComponents = settings.get_strv("installed")
-patchedSniqt = settings.get_boolean("sniqt-patched")
-# settings.reset("installed")
-# settings.reset("sniqt-patched")
-# settings.reset("previous-icon-theme")
-
-systemSettings = Gio.Settings.new("org.gnome.desktop.interface")
-
-print "Installed components: ", installedComponents
-print "Sni-qt %s patched" % (("IS NOT", "IS")[patchedSniqt])
 
 
 class confirmDialog(Gtk.Dialog):
