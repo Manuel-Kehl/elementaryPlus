@@ -242,18 +242,18 @@ class InstallerWindow(Gtk.Window):
 
     def build_ui(self):
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
-        self.search_bar = Gtk.SearchBar()
-        self.search_bar.get_style_context().add_class("primary-toolbar")
-        self.search_bar.set_halign(Gtk.Align.FILL)
-        self.search_bar.set_show_close_button(True)
+        self.searchBar = Gtk.SearchBar()
+        self.searchBar.get_style_context().add_class("primary-toolbar")
+        self.searchBar.set_halign(Gtk.Align.FILL)
+        self.searchBar.set_show_close_button(True)
 
         entry = Gtk.SearchEntry()
         entry.connect("search-changed", self.search_changed)
-        self.search_bar.add(entry)
-        self.search_bar.connect_entry(entry)
-        vbox.pack_start(self.search_bar, False, False, 0)
-        self.search_entry = entry
-        self.connect("key-press-event", lambda x, y: self.search_bar.handle_event(y))
+        self.searchBar.add(entry)
+        self.searchBar.connect_entry(entry)
+        vbox.pack_start(self.searchBar, False, False, 0)
+        self.searchEntry = entry
+        self.connect("key-press-event", lambda x, y: self.searchBar.handle_event(y))
 
         iconsPage = self.create_icons_page()
         vbox.pack_start(iconsPage, True, True, 0)
@@ -296,9 +296,8 @@ class InstallerWindow(Gtk.Window):
 
             if components[i][4] is False:
                 wrap.set_sensitive(False)
-                wrap.set_tooltip_text("You must first install this app to select this!")
-            else:
-                wrap.set_tooltip_text(longDesc)
+
+            wrap.set_tooltip_text(longDesc)
 
             self.lbox.add(wrap)
 
@@ -328,13 +327,13 @@ class InstallerWindow(Gtk.Window):
 
     def search_handler(self, w):
         w.freeze_notify()
-        self.search_bar.set_search_mode(w.get_active())
+        self.searchBar.set_search_mode(w.get_active())
         w.thaw_notify()
 
     def search_changed(self, w, data=None):
         text = w.get_text().strip()
         if text == "":
-            self.search_bar.set_search_mode(False)
+            self.searchBar.set_search_mode(False)
 
         act = False if text == "" else True
         self.searchButton.freeze_notify()
@@ -356,7 +355,8 @@ class InstallerWindow(Gtk.Window):
 
     def filter(self, row, text):
         name = row.get_children()[0].get_children()[0].get_children()[1].get_text()
-        desc = row.get_children()[0].get_children()[0].get_children()[0].get_text()
+        desc = row.get_children()[0].get_tooltip_text()
+        print desc
 
         if text.lower() in name.lower() or text in desc.lower():
             return True
