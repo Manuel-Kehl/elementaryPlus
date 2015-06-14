@@ -280,7 +280,7 @@ class InstallerWindow(Gtk.Window):
 
         for i in range(len(components)):
             longDesc = iconMegaList[i][2]
-            item = self.create_item(components[i][0], components[i][3], components[i][2], longDesc, components[i][4])
+            item = self.create_item(components[i][0], components[i][3], components[i][2], components[i][4])
 
             componentSwitch = Gtk.Switch()
             componentSwitch.props.halign = Gtk.Align.END
@@ -303,7 +303,7 @@ class InstallerWindow(Gtk.Window):
 
         return scroller
 
-    def create_item(self, name, iconName, shortDesc, longDesc, enabled):
+    def create_item(self, name, iconName, shortDesc, enabled):
         grid = Gtk.Grid()
         grid.set_border_width(16)
         grid.set_row_spacing(4)
