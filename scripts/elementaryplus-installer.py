@@ -200,8 +200,8 @@ class InstallerWindow(Gtk.Window):
 
     def build_ui(self):
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        availableIcons = self.create_icons_page()
-        vbox.pack_start(availableIcons, True, True, 0)
+        iconsPage = self.create_icons_page()
+        vbox.pack_start(iconsPage, True, True, 0)
 
         return vbox
 
