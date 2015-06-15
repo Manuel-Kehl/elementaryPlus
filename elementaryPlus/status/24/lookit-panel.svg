@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="lookit-panel3.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#b7b7b7"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.839192"
+     inkscape:cx="10.712661"
+     inkscape:cy="2.1400391"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="745"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid11195" />
+    <sodipodi:guide
+       position="4,20"
+       orientation="1,0"
+       id="guide11197" />
+    <sodipodi:guide
+       position="20,20"
+       orientation="0,1"
+       id="guide11199" />
+    <sodipodi:guide
+       position="20,4"
+       orientation="1,0"
+       id="guide11201" />
+    <sodipodi:guide
+       position="4,4"
+       orientation="0,1"
+       id="guide11203" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1028.3622)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 12 4 C 7.5935666 4 4 7.5936 4 12 C 4 14.96804 5.6339783 17.560725 8.0449219 18.941406 C 8.0185727 18.797335 8 18.651063 8 18.5 C 8 17.892519 8.2387487 17.367292 8.6210938 16.964844 C 7.036775 15.887337 6 14.069927 6 12 C 6 8.6745 8.6744469 6 12 6 C 15.325553 6 18 8.6745 18 12 C 18 12.529055 17.926053 13.039396 17.798828 13.527344 C 18.241305 14.036645 18.580754 14.644211 18.769531 15.320312 C 18.914106 15.364256 19.054467 15.418753 19.191406 15.478516 C 19.7039 14.424797 20 13.246921 20 12 C 20 7.5936 16.406433 4 12 4 z M 12 7 C 9.2444986 7 7 9.2445 7 12 C 7 13.866383 8.0417268 15.479049 9.5625 16.337891 C 9.7242699 16.272767 9.8903023 16.21733 10.064453 16.181641 C 10.080847 15.96212 10.125573 15.751172 10.171875 15.541016 C 8.8857919 14.877209 8 13.551708 8 12 C 8 9.785 9.7849387 8 12 8 C 14.215061 8 16 9.785 16 12 C 16 12.088941 15.980277 12.1723 15.974609 12.259766 C 16.318903 12.384822 16.63642 12.563581 16.935547 12.767578 C 16.97455 12.51659 17 12.261691 17 12 C 17 9.2445 14.755501 7 12 7 z "
+       transform="translate(0,1028.3622)"
+       id="path11758" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 14.5,1041.3622 a 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 0.05273,0.6074 1.5,1.5 0 0 0 -0.552734,-0.1074 1.5,1.5 0 0 0 -1.5,1.5 1.5,1.5 0 0 0 1.5,1.5 l 0.5,0 7,0 a 2,2 0 0 0 2,-2 2,2 0 0 0 -2,-2 2,2 0 0 0 -0.03906,0 3.5,3.5 0 0 0 -3.460938,-3.002 z"
+       id="path11762"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
