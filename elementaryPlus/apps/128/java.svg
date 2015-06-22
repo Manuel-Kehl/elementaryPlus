@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="128" width="128" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="e" y2="42.262" gradientUnits="userSpaceOnUse" x2="24" gradientTransform="matrix(2.7297 0 0 2.7297 -1.5135 -62.512)" y1="5.5907" x1="24">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".037503"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".96667"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <radialGradient id="c" gradientUnits="userSpaceOnUse" cy="43.5" cx="4.993" gradientTransform="matrix(2.0038 0 0 1.4 27.988 -17.4)" r="2.5">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="b" gradientUnits="userSpaceOnUse" cy="43.5" cx="4.993" gradientTransform="matrix(2.0038 0 0 1.4 -20.012 -104.4)" r="2.5">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <linearGradient id="f" y2="39.999" gradientUnits="userSpaceOnUse" x2="25.058" y1="47.028" x1="25.058">
+   <stop stop-color="#181818" stop-opacity="0" offset="0"/>
+   <stop stop-color="#181818" offset=".5"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <radialGradient id="a" gradientUnits="userSpaceOnUse" cy="93.468" cx="-4.0288" gradientTransform="matrix(1.5564 0 0 .16979 70.27 38.132)" r="35.338">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="d" gradientUnits="userSpaceOnUse" cy="4.3419" cx="32" gradientTransform="matrix(1.8995e-8 4.364 -4.364 1.8995e-8 82.948 -187.94)" r="27.5">
+   <stop stop-color="#fafafa" offset="0"/>
+   <stop stop-color="#e1e1e1" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g transform="translate(0,64)">
+  <path opacity=".2" style="color:#000000" d="m119 54.002a55 6 0 0 1 -110 0 55 6 0 1 1 110 0z" fill="url(#a)"/>
+  <g transform="matrix(2.7 0 0 .55556 -.80001 30.891)">
+   <g opacity=".4" transform="matrix(1.0526 0 0 1.2857 -1.2632 -13.429)">
+    <rect height="7" width="5" y="40" x="38" fill="url(#c)"/>
+    <rect transform="scale(-1)" height="7" width="5" y="-47" x="-10" fill="url(#b)"/>
+    <rect height="7" width="28" y="40" x="10" fill="url(#f)"/>
+   </g>
+  </g>
+  <rect style="color:#000000" rx="4.5" ry="4.5" height="102" width="102" y="-48" x="13" fill="url(#d)"/>
+  <rect stroke-linejoin="round" rx="4" ry="4" height="101" width="101" stroke="url(#e)" stroke-linecap="round" y="-47.498" x="13.5" fill="none"/>
+  <rect opacity=".25" style="color:#000000" rx="5" ry="5" height="103" width="103" stroke="#000" y="-48.498" x="12.5" fill="none"/>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-31.007912" x="927.57446" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-31.007912" x="927.57446"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-71.749619" x="951.5354" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-71.749619" x="951.5354"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-101.82776" x="-519.02295" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-101.82776" x="-519.02295"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="643.72571" x="-2342.709" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="643.72571" x="-2342.709"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-487.14871" x="-404.53186" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-487.14871" x="-404.53186"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-900.61884" x="403.07028" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-900.61884" x="403.07028"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-941.36053" x="427.03122" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-941.36053" x="427.03122"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-948.57043" x="-1064.432" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-948.57043" x="-1064.432"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1221.8047" x="396.11081" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1221.8047" x="396.11081"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-595.11322" x="1882.2343" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-595.11322" x="1882.2343"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-635.85498" x="1906.1951" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-635.85498" x="1906.1951"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-643.06488" x="414.73196" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-643.06488" x="414.73196"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-916.29889" x="1875.2748" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-916.29889" x="1875.2748"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-691.15619" x="-523.08435" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-691.15619" x="-523.08435"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="54.397346" x="-2346.77" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="54.397346" x="-2346.77"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="147.26947" x="-632.01459" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="147.26947" x="-632.01459"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-31.912661" x="477.00974" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-31.912661" x="477.00974"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-72.654366" x="500.97067" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-72.654366" x="500.97067"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-79.864342" x="-990.49255" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-79.864342" x="-990.49255"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-353.09839" x="470.05026" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-353.09839" x="470.05026"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-82.578583" x="-557.68433" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-82.578583" x="-557.68433"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="662.97491" x="-2381.3704" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="662.97491" x="-2381.3704"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-944.10907" x="-406.59128" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-944.10907" x="-406.59128"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1357.5793" x="401.01086" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1357.5793" x="401.01086"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1398.321" x="424.97177" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1398.321" x="424.97177"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1405.531" x="-1066.4913" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1405.531" x="-1066.4913"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1678.7651" x="394.05136" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1678.7651" x="394.05136"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1052.0737" x="1880.1747" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1052.0737" x="1880.1747"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1092.8154" x="1904.1355" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1092.8154" x="1904.1355"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1100.0254" x="412.67252" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1100.0254" x="412.67252"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1373.2595" x="1873.2152" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1373.2595" x="1873.2152"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1148.1167" x="-525.1438" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1148.1167" x="-525.1438"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-402.56311" x="-2348.8296" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-402.56311" x="-2348.8296"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-309.69095" x="-634.07404" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-309.69095" x="-634.07404"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-68.776787" x="205.94048" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-68.776787" x="205.94048"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-109.51851" x="229.90141" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-109.51851" x="229.90141"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-303.54712" x="-1039.9153" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-303.54712" x="-1039.9153"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-717.01727" x="-232.31322" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-717.01727" x="-232.31322"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-757.75897" x="-208.35228" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-757.75897" x="-208.35228"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-764.96887" x="-1699.8154" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-764.96887" x="-1699.8154"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1038.203" x="-239.27266" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1038.203" x="-239.27266"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-411.51163" x="1246.8507" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-411.51163" x="1246.8507"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-452.25336" x="1270.8115" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-452.25336" x="1270.8115"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-459.46332" x="-220.65154" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-459.46332" x="-220.65154"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-732.69739" x="1239.8912" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-732.69739" x="1239.8912"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-507.5546" x="-1158.4679" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-507.5546" x="-1158.4679"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="237.99895" x="-2982.1536" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="237.99895" x="-2982.1536"/></text>
+  <g transform="matrix(.90475 0 0 .90475 -666.4 -718.11)">
+   <text opacity=".8" xml:space="preserve" font-size="14px" y="1159.4154" x="-664.2738" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="1159.4154" x="-664.2738"/></text>
+  </g>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-23.769924" x="927.57446" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-23.769924" x="927.57446"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-64.511627" x="951.5354" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-64.511627" x="951.5354"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-94.589775" x="-519.02295" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-94.589775" x="-519.02295"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="650.96368" x="-2342.709" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="650.96368" x="-2342.709"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-479.91071" x="-404.53186" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-479.91071" x="-404.53186"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-893.3808" x="403.07028" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-893.3808" x="403.07028"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-934.12256" x="427.03122" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-934.12256" x="427.03122"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-941.33246" x="-1064.432" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-941.33246" x="-1064.432"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1214.5667" x="396.11081" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1214.5667" x="396.11081"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-587.87524" x="1882.2343" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-587.87524" x="1882.2343"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-628.617" x="1906.1951" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-628.617" x="1906.1951"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-635.8269" x="414.73196" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-635.8269" x="414.73196"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-909.06085" x="1875.2748" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-909.06085" x="1875.2748"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-683.91821" x="-523.08435" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-683.91821" x="-523.08435"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="61.635338" x="-2346.77" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="61.635338" x="-2346.77"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="154.50746" x="-632.01459" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="154.50746" x="-632.01459"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-24.674673" x="477.00974" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-24.674673" x="477.00974"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-65.416374" x="500.97067" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-65.416374" x="500.97067"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-72.62635" x="-990.49255" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-72.62635" x="-990.49255"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-345.86038" x="470.05026" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-345.86038" x="470.05026"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-75.340591" x="-557.68433" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-75.340591" x="-557.68433"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="670.21295" x="-2381.3704" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="670.21295" x="-2381.3704"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-936.87109" x="-406.59128" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-936.87109" x="-406.59128"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1350.3413" x="401.01086" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1350.3413" x="401.01086"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1391.0831" x="424.97177" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1391.0831" x="424.97177"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1398.293" x="-1066.4913" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1398.293" x="-1066.4913"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1671.5271" x="394.05136" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1671.5271" x="394.05136"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1044.8357" x="1880.1747" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1044.8357" x="1880.1747"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1085.5775" x="1904.1355" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1085.5775" x="1904.1355"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1092.7874" x="412.67252" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1092.7874" x="412.67252"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1366.0215" x="1873.2152" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1366.0215" x="1873.2152"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1140.8787" x="-525.1438" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1140.8787" x="-525.1438"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-395.3251" x="-2348.8296" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-395.3251" x="-2348.8296"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-302.45294" x="-634.07404" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-302.45294" x="-634.07404"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-61.538803" x="205.94048" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-61.538803" x="205.94048"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-102.28053" x="229.90141" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-102.28053" x="229.90141"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-296.30911" x="-1039.9153" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-296.30911" x="-1039.9153"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-709.7793" x="-232.31322" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-709.7793" x="-232.31322"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-750.521" x="-208.35228" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-750.521" x="-208.35228"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-757.73096" x="-1699.8154" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-757.73096" x="-1699.8154"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1030.965" x="-239.27266" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1030.965" x="-239.27266"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-404.27365" x="1246.8507" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-404.27365" x="1246.8507"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-445.01538" x="1270.8115" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-445.01538" x="1270.8115"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-452.22531" x="-220.65154" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-452.22531" x="-220.65154"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-725.45941" x="1239.8912" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-725.45941" x="1239.8912"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-500.31659" x="-1158.4679" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-500.31659" x="-1158.4679"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="245.23692" x="-2982.1536" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="245.23692" x="-2982.1536"/></text>
+  <g transform="matrix(.90475 0 0 .90475 -666.4 -710.87)">
+   <text opacity=".8" xml:space="preserve" font-size="14px" y="1159.4154" x="-664.2738" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="1159.4154" x="-664.2738"/></text>
+  </g>
+  <text xml:space="preserve" font-size="12.666px" y="-403.04596" x="486.25247" font-family="Droid Sans" fill="#000000"><tspan y="-403.04596" x="486.25247"/><tspan y="-387.21289" x="486.25247"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-885.09052" x="951.4364" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-885.09052" x="951.4364"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-139.53706" x="-872.24957" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-139.53706" x="-872.24957"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1170.0864" x="1678.5159" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1170.0864" x="1678.5159"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1210.8281" x="1702.4767" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1210.8281" x="1702.4767"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1218.0381" x="211.0136" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1218.0381" x="211.0136"/></text>
+  <text opacity=".8" xml:space="preserve" font-size="12.666px" y="-1491.2722" x="1671.5564" font-family="Bitstream Vera Sans" fill="#000000"><tspan y="-1491.2722" x="1671.5564"/></text>
+  <g stroke-linejoin="round" opacity=".05" transform="matrix(.17468 0 0 .17538 69.972 -.58402)" stroke="#000" stroke-width="11.426">
+   <path d="m17.469-230.45c2.6238 12.626 3.9993 25.752 1.123 38.502-3.4988 17.375-13.624 32.5-25.875 45.125-22.124 23-50 39.625-72.625 62.25-8.125 8.5-16.25 17.625-19.875 29-3.625 11.125-1.5 23.375 3.25 33.875 7 15 17.625 27.75 28.875 39.75 10.75 11.375 22.25 22.125 34 32.5-0.33203-0.71485-0.67273-1.4252-1.0215-2.1308-10.811-21.876-29.365-39.502-37.479-62.994-5.125-14.125-3.375-30.125 4.125-43.125 8.875-16 22.75-28.25 36.875-39.625 12.124-9.75 23.75-20.25 33.875-32.125 12.624-14.75 23.375-31.875 27-51.25 3.3775-17.25-0.50055-36.376-12.248-49.752z"/>
+   <path d="m80.342-125.57c-28.75 8.25-57.125 19.625-81.375 37.5-15.376 11.5-29.624 27.5-31.75 47.375-2.125 19.875 8.25 38.625 20.625 53.375 6.0012 6.625 11.126 14.75 11.375 24 0.25125 12.375-6.7475 23.875-15.75 32 0.26593-0.0312 0.52152-0.0889 0.76953-0.16602 1.736-0.54003 3.0742-2.084 4.6055-2.959 13.499-8.625 26.499-19.5 33.125-34.375 4.375-10.125 3.3738-22.125-2.375-31.5-6.7512-11-15.624-20.75-20.873-32.75-2.8762-6.75-3.877-14.625-1.502-21.75 3.125-9.625 9.8762-17.5 17-24.375 19.626-18.625 43.376-31.875 66.125-46.375z"/>
+   <path d="m113.73 46.991c-2.5127-0.0363-5.0276 0.11133-7.5117 0.43945-7.6275 1-16.001 2.625-21.25 9 0.78125-0.15625 1.5596-0.33276 2.3379-0.51952 5.4478-1.3074 10.847-3.1524 16.535-2.6055 13.626 0.75 27 10.75 29.5 24.5 2.375 11.875-3.3738 23.625-10.75 32.625-12.126 14.5-28.501 24.875-45 33.75-1.6262 0.99875-3 2.2495-4.25 3.627 21.75-5.5013 43.501-13.752 61.125-27.877 9.7488-8.125 18.375-18.875 20.25-31.75 1.7512-11.125-2.8725-22.625-11.125-30-8.125-7.4141-18.973-11.032-29.861-11.189z"/>
+   <path d="m-93.158 51.93c-25.126-0.375-50.125 6-73.125 15.875-5.125 2.5-10.874 4.5-15 8.75-1.6245 1.75-1.625 4.75 0.25 6.25 3.75 3.375 8.7505 4.875 13.5 6.25 16.376 4.375 33.25 5.625 50 6.75 15.001 1 30 1.25 45.125 1.125 39-0.625 78.251-3.25 116.5-11.75 3.6262-0.875 7.6244-1.5 10.877-3.75 6.3738-4.125 13.373-7.375 20.248-10.625-31.126 5-62.376 9.25-93.875 11.25-31.875 2-64 3.25-96 1.125-9.1255-0.875-18.501-1.375-27-4.875-2-0.875-4.7505-2.625-3.75-5.25 1.875-3.375 5.625-5 8.875-6.75 13.75-6.5 28.75-10.125 43.375-14.375z"/>
+   <path d="m-114.78 110.43c-7.7505 2.75-15.5 5.625-22 10.75-2.7505 2.125-5.5 5.5-4.75 9.25 1.125 4.375 5.375 7 9.125 9 9.2495 4.75 19.625 6.873 29.75 8.748 25.625 4.1262 51.751 4.2513 77.5 2.5 27.251-2.1237 54.374-6.623 80.752-14.373-7.5-3.375-14.628-7.25-20.625-12.875-21.875 3.875-43.878 7.5-66.002 8.625-24.25 1.625-48.5 0.25-72.5-2.25-4.625-0.625-9.2495-1.375-13.375-3.5-2.1245-1.25-4.25-3.25-4.125-5.875 0.2495-4.125 3.75-7 6.25-10z"/>
+   <path d="m-102.41 166.68c-7 2-14.125 4.3743-19.875 8.998-2.8755 2.2513-5.125 6.127-3.75 9.752 1.75 4.6238 6.1255 7.3755 10.25 9.748 10.751 5.8763 22.875 8.6264 34.75 10.754 26.875 4.2475 54.499 3.6218 81.25-1.127 13.89-2.625 27.782-6.2087 40.918-11.5 0.93831-0.37795 1.8724-0.7645 2.8027-1.1602 0.93033-0.39565 1.8575-0.79897 2.7793-1.2129-9.6238-4.0025-18.999-8.5012-27.998-13.75-15.625 2.7488-31.378 5.6236-47.377 6.6211-21.125 1.6263-42.5-0.12304-63.625-2.748-5-1.125-11.25-1.627-14.625-6.002-1.75-3.625 2.25-6.2493 4.5-8.373z"/>
+   <path d="m-154.33 203.65c-0.61153 0.00028-1.2227 0.01-1.832 0.0254-12.126 0.37625-24 3.5012-35.5 7.375-9.875 3.6262-20 7.6257-27.875 14.877-3.125 2.7488-6 7.9961-2.75 11.746 5 5.3763 12.75 6.7507 19.625 8.377 38.5 6.6238 77.499 10.374 116.5 11.752 51.75 1.4988 103.88-0.75391 154.75-10.754 17.5-3.6225 35.128-7.748 51.125-15.873 5-2.8762 11.126-6.0012 12.752-12 0.87375-5.7488-5.1275-8.75-9.375-11.125 2.6238 3 4.3756 7.3743 1.748 10.873-4.375 5.8763-11.876 8.1257-18.5 10.377-20.749 5.8738-42.251 8.2488-63.625 10.625-56.626 5.1238-113.62 6.3744-170.25 1.627-19-2.0025-38.375-4.1276-56.5-10.879-2.8755-1.25-7.25-2.4993-7.25-6.373 1.125-3.3738 4.3745-5.2488 7.25-6.875 13-6.6262 27.5-10.249 42-11.127-3.7188-2.1875-8.0123-2.6504-12.293-2.6484z"/>
+   <path d="m155.34 234.81c-9.375 10-22.872 14.623-35.5 18.998-23.499 7.5-47.875 11.626-72.125 15-41.875 5.2525-84.125 6.875-126.25 5.625-25.625-0.99751-51.25-2.748-76.5-6.998 5.8755 3.9988 13.125 5.248 19.875 7.123 28.376 6.0013 57.5 7.1263 86.375 8 42.374 0.75 84.749-0.87374 126.5-7.5 19.751-3.4975 39.624-7.748 57.375-16.998 9.2512-4.8762 18.628-12.376 20.25-23.25z"/>
+  </g>
+  <g opacity=".1" transform="matrix(.17468 0 0 .17538 69.972 -0.584)">
+   <path d="m17.469-230.45c2.6238 12.626 3.9993 25.752 1.123 38.502-3.4988 17.375-13.624 32.5-25.875 45.125-22.124 23-50 39.625-72.625 62.25-8.125 8.5-16.25 17.625-19.875 29-3.625 11.125-1.5 23.375 3.25 33.875 7 15 17.625 27.75 28.875 39.75 10.75 11.375 22.25 22.125 34 32.5-0.33203-0.71485-0.67273-1.4252-1.0215-2.1308-10.811-21.876-29.365-39.502-37.479-62.994-5.125-14.125-3.375-30.125 4.125-43.125 8.875-16 22.75-28.25 36.875-39.625 12.124-9.75 23.75-20.25 33.875-32.125 12.624-14.75 23.375-31.875 27-51.25 3.3775-17.25-0.50055-36.376-12.248-49.752z"/>
+   <path d="m80.342-125.57c-28.75 8.25-57.125 19.625-81.375 37.5-15.376 11.5-29.624 27.5-31.75 47.375-2.125 19.875 8.25 38.625 20.625 53.375 6.0012 6.625 11.126 14.75 11.375 24 0.25125 12.375-6.7475 23.875-15.75 32 0.26593-0.0312 0.52152-0.0889 0.76953-0.16602 1.736-0.54003 3.0742-2.084 4.6055-2.959 13.499-8.625 26.499-19.5 33.125-34.375 4.375-10.125 3.3738-22.125-2.375-31.5-6.7512-11-15.624-20.75-20.873-32.75-2.8762-6.75-3.877-14.625-1.502-21.75 3.125-9.625 9.8762-17.5 17-24.375 19.626-18.625 43.376-31.875 66.125-46.375z"/>
+   <path d="m113.73 46.991c-2.5127-0.0363-5.0276 0.11133-7.5117 0.43945-7.6275 1-16.001 2.625-21.25 9 0.78125-0.15625 1.5596-0.33276 2.3379-0.51952 5.4478-1.3074 10.847-3.1524 16.535-2.6055 13.626 0.75 27 10.75 29.5 24.5 2.375 11.875-3.3738 23.625-10.75 32.625-12.126 14.5-28.501 24.875-45 33.75-1.6262 0.99875-3 2.2495-4.25 3.627 21.75-5.5013 43.501-13.752 61.125-27.877 9.7488-8.125 18.375-18.875 20.25-31.75 1.7512-11.125-2.8725-22.625-11.125-30-8.125-7.4141-18.973-11.032-29.861-11.189z"/>
+   <path d="m-93.158 51.93c-25.126-0.375-50.125 6-73.125 15.875-5.125 2.5-10.874 4.5-15 8.75-1.6245 1.75-1.625 4.75 0.25 6.25 3.75 3.375 8.7505 4.875 13.5 6.25 16.376 4.375 33.25 5.625 50 6.75 15.001 1 30 1.25 45.125 1.125 39-0.625 78.251-3.25 116.5-11.75 3.6262-0.875 7.6244-1.5 10.877-3.75 6.3738-4.125 13.373-7.375 20.248-10.625-31.126 5-62.376 9.25-93.875 11.25-31.875 2-64 3.25-96 1.125-9.1255-0.875-18.501-1.375-27-4.875-2-0.875-4.7505-2.625-3.75-5.25 1.875-3.375 5.625-5 8.875-6.75 13.75-6.5 28.75-10.125 43.375-14.375z"/>
+   <path d="m-114.78 110.43c-7.7505 2.75-15.5 5.625-22 10.75-2.7505 2.125-5.5 5.5-4.75 9.25 1.125 4.375 5.375 7 9.125 9 9.2495 4.75 19.625 6.873 29.75 8.748 25.625 4.1262 51.751 4.2513 77.5 2.5 27.251-2.1237 54.374-6.623 80.752-14.373-7.5-3.375-14.628-7.25-20.625-12.875-21.875 3.875-43.878 7.5-66.002 8.625-24.25 1.625-48.5 0.25-72.5-2.25-4.625-0.625-9.2495-1.375-13.375-3.5-2.1245-1.25-4.25-3.25-4.125-5.875 0.2495-4.125 3.75-7 6.25-10z"/>
+   <path d="m-102.41 166.68c-7 2-14.125 4.3743-19.875 8.998-2.8755 2.2513-5.125 6.127-3.75 9.752 1.75 4.6238 6.1255 7.3755 10.25 9.748 10.751 5.8763 22.875 8.6264 34.75 10.754 26.875 4.2475 54.499 3.6218 81.25-1.127 13.89-2.625 27.782-6.2087 40.918-11.5 0.93831-0.37795 1.8724-0.7645 2.8027-1.1602 0.93033-0.39565 1.8575-0.79897 2.7793-1.2129-9.6238-4.0025-18.999-8.5012-27.998-13.75-15.625 2.7488-31.378 5.6236-47.377 6.6211-21.125 1.6263-42.5-0.12304-63.625-2.748-5-1.125-11.25-1.627-14.625-6.002-1.75-3.625 2.25-6.2493 4.5-8.373z"/>
+   <path d="m-154.33 203.65c-0.61153 0.00028-1.2227 0.01-1.832 0.0254-12.126 0.37625-24 3.5012-35.5 7.375-9.875 3.6262-20 7.6257-27.875 14.877-3.125 2.7488-6 7.9961-2.75 11.746 5 5.3763 12.75 6.7507 19.625 8.377 38.5 6.6238 77.499 10.374 116.5 11.752 51.75 1.4988 103.88-0.75391 154.75-10.754 17.5-3.6225 35.128-7.748 51.125-15.873 5-2.8762 11.126-6.0012 12.752-12 0.87375-5.7488-5.1275-8.75-9.375-11.125 2.6238 3 4.3756 7.3743 1.748 10.873-4.375 5.8763-11.876 8.1257-18.5 10.377-20.749 5.8738-42.251 8.2488-63.625 10.625-56.626 5.1238-113.62 6.3744-170.25 1.627-19-2.0025-38.375-4.1276-56.5-10.879-2.8755-1.25-7.25-2.4993-7.25-6.373 1.125-3.3738 4.3745-5.2488 7.25-6.875 13-6.6262 27.5-10.249 42-11.127-3.7188-2.1875-8.0123-2.6504-12.293-2.6484z"/>
+   <path d="m155.34 234.81c-9.375 10-22.872 14.623-35.5 18.998-23.499 7.5-47.875 11.626-72.125 15-41.875 5.2525-84.125 6.875-126.25 5.625-25.625-0.99751-51.25-2.748-76.5-6.998 5.8755 3.9988 13.125 5.248 19.875 7.123 28.376 6.0013 57.5 7.1263 86.375 8 42.374 0.75 84.749-0.87374 126.5-7.5 19.751-3.4975 39.624-7.748 57.375-16.998 9.2512-4.8762 18.628-12.376 20.25-23.25z"/>
+  </g>
+  <g transform="matrix(.17468 0 0 .17538 69.972 -1.584)">
+   <path d="m17.469-230.45c2.6238 12.626 3.9993 25.752 1.123 38.502-3.4988 17.375-13.624 32.5-25.875 45.125-22.124 23-50 39.625-72.625 62.25-8.125 8.5-16.25 17.625-19.875 29-3.625 11.125-1.5 23.375 3.25 33.875 7 15 17.625 27.75 28.875 39.75 10.75 11.375 22.25 22.125 34 32.5-0.33203-0.71485-0.67273-1.4252-1.0215-2.1308-10.811-21.876-29.365-39.502-37.479-62.994-5.125-14.125-3.375-30.125 4.125-43.125 8.875-16 22.75-28.25 36.875-39.625 12.124-9.75 23.75-20.25 33.875-32.125 12.624-14.75 23.375-31.875 27-51.25 3.3775-17.25-0.50055-36.376-12.248-49.752z" fill="#e76f00"/>
+   <path d="m80.342-125.57c-28.75 8.25-57.125 19.625-81.375 37.5-15.376 11.5-29.624 27.5-31.75 47.375-2.125 19.875 8.25 38.625 20.625 53.375 6.0012 6.625 11.126 14.75 11.375 24 0.25125 12.375-6.7475 23.875-15.75 32 0.26593-0.0312 0.52152-0.0889 0.76953-0.16602 1.736-0.54003 3.0742-2.084 4.6055-2.959 13.499-8.625 26.499-19.5 33.125-34.375 4.375-10.125 3.3738-22.125-2.375-31.5-6.7512-11-15.624-20.75-20.873-32.75-2.8762-6.75-3.877-14.625-1.502-21.75 3.125-9.625 9.8762-17.5 17-24.375 19.626-18.625 43.376-31.875 66.125-46.375z" fill="#e76f00"/>
+   <path d="m113.73 46.991c-2.5127-0.0363-5.0276 0.11133-7.5117 0.43945-7.6275 1-16.001 2.625-21.25 9 0.78125-0.15625 1.5596-0.33276 2.3379-0.51952 5.4478-1.3074 10.847-3.1524 16.535-2.6055 13.626 0.75 27 10.75 29.5 24.5 2.375 11.875-3.3738 23.625-10.75 32.625-12.126 14.5-28.501 24.875-45 33.75-1.6262 0.99875-3 2.2495-4.25 3.627 21.75-5.5013 43.501-13.752 61.125-27.877 9.7488-8.125 18.375-18.875 20.25-31.75 1.7512-11.125-2.8725-22.625-11.125-30-8.125-7.4141-18.973-11.032-29.861-11.189z" fill="#5382a1"/>
+   <path d="m-93.158 51.93c-25.126-0.375-50.125 6-73.125 15.875-5.125 2.5-10.874 4.5-15 8.75-1.6245 1.75-1.625 4.75 0.25 6.25 3.75 3.375 8.7505 4.875 13.5 6.25 16.376 4.375 33.25 5.625 50 6.75 15.001 1 30 1.25 45.125 1.125 39-0.625 78.251-3.25 116.5-11.75 3.6262-0.875 7.6244-1.5 10.877-3.75 6.3738-4.125 13.373-7.375 20.248-10.625-31.126 5-62.376 9.25-93.875 11.25-31.875 2-64 3.25-96 1.125-9.1255-0.875-18.501-1.375-27-4.875-2-0.875-4.7505-2.625-3.75-5.25 1.875-3.375 5.625-5 8.875-6.75 13.75-6.5 28.75-10.125 43.375-14.375z" fill="#5382a1"/>
+   <path d="m-114.78 110.43c-7.7505 2.75-15.5 5.625-22 10.75-2.7505 2.125-5.5 5.5-4.75 9.25 1.125 4.375 5.375 7 9.125 9 9.2495 4.75 19.625 6.873 29.75 8.748 25.625 4.1262 51.751 4.2513 77.5 2.5 27.251-2.1237 54.374-6.623 80.752-14.373-7.5-3.375-14.628-7.25-20.625-12.875-21.875 3.875-43.878 7.5-66.002 8.625-24.25 1.625-48.5 0.25-72.5-2.25-4.625-0.625-9.2495-1.375-13.375-3.5-2.1245-1.25-4.25-3.25-4.125-5.875 0.2495-4.125 3.75-7 6.25-10z" fill="#5382a1"/>
+   <path d="m-102.41 166.68c-7 2-14.125 4.3743-19.875 8.998-2.8755 2.2513-5.125 6.127-3.75 9.752 1.75 4.6238 6.1255 7.3755 10.25 9.748 10.751 5.8763 22.875 8.6264 34.75 10.754 26.875 4.2475 54.499 3.6218 81.25-1.127 13.89-2.625 27.782-6.2087 40.918-11.5 0.93831-0.37795 1.8724-0.7645 2.8027-1.1602 0.93033-0.39565 1.8575-0.79897 2.7793-1.2129-9.6238-4.0025-18.999-8.5012-27.998-13.75-15.625 2.7488-31.378 5.6236-47.377 6.6211-21.125 1.6263-42.5-0.12304-63.625-2.748-5-1.125-11.25-1.627-14.625-6.002-1.75-3.625 2.25-6.2493 4.5-8.373z" fill="#5382a1"/>
+   <path d="m-154.33 203.65c-0.61153 0.00028-1.2227 0.01-1.832 0.0254-12.126 0.37625-24 3.5012-35.5 7.375-9.875 3.6262-20 7.6257-27.875 14.877-3.125 2.7488-6 7.9961-2.75 11.746 5 5.3763 12.75 6.7507 19.625 8.377 38.5 6.6238 77.499 10.374 116.5 11.752 51.75 1.4988 103.88-0.75391 154.75-10.754 17.5-3.6225 35.128-7.748 51.125-15.873 5-2.8762 11.126-6.0012 12.752-12 0.87375-5.7488-5.1275-8.75-9.375-11.125 2.6238 3 4.3756 7.3743 1.748 10.873-4.375 5.8763-11.876 8.1257-18.5 10.377-20.749 5.8738-42.251 8.2488-63.625 10.625-56.626 5.1238-113.62 6.3744-170.25 1.627-19-2.0025-38.375-4.1276-56.5-10.879-2.8755-1.25-7.25-2.4993-7.25-6.373 1.125-3.3738 4.3745-5.2488 7.25-6.875 13-6.6262 27.5-10.249 42-11.127-3.7188-2.1875-8.0123-2.6504-12.293-2.6484z" fill="#5382a1"/>
+   <path d="m155.34 234.81c-9.375 10-22.872 14.623-35.5 18.998-23.499 7.5-47.875 11.626-72.125 15-41.875 5.2525-84.125 6.875-126.25 5.625-25.625-0.99751-51.25-2.748-76.5-6.998 5.8755 3.9988 13.125 5.248 19.875 7.123 28.376 6.0013 57.5 7.1263 86.375 8 42.374 0.75 84.749-0.87374 126.5-7.5 19.751-3.4975 39.624-7.748 57.375-16.998 9.2512-4.8762 18.628-12.376 20.25-23.25z" fill="#5382a1"/>
+  </g>
+ </g>
+</svg>

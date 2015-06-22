@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="b" y2="43" gradientUnits="userSpaceOnUse" x2="24" gradientTransform="matrix(.29730 0 0 .29730 .86487 .86487)" y1="5" x1="24">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".063165"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".95056"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <radialGradient id="a" fx="6.2002" gradientUnits="userSpaceOnUse" cy="9.9571" cx="6.7304" gradientTransform="matrix(0 3.1659 -3.8867 0 46.977 -26.72)" r="12.672">
+   <stop stop-color="#fafafa" offset="0"/>
+   <stop stop-color="#e1e1e1" offset="1"/>
+  </radialGradient>
+ </defs>
+ <path style="color:#000000" d="m2.5 2c-0.2856 0-0.5 0.2144-0.5 0.5v11c0 0.286 0.2144 0.5 0.5 0.5h11c0.286 0 0.5-0.214 0.5-0.5v-11c0-0.2856-0.214-0.5-0.5-0.5h-11z" fill="url(#a)"/>
+ <rect opacity=".5" stroke-linejoin="round" height="11" width="11" stroke="url(#b)" stroke-linecap="round" y="2.5" x="2.5" fill="none"/>
+ <rect opacity=".4" stroke-linejoin="round" style="color:#000000" rx="1" ry="1" height="13" width="13" stroke="#000" stroke-linecap="round" y="1.5" x="1.5" fill="none"/>
+ <g opacity=".1" transform="translate(0 1)" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none">
+  <path d="m11.779 7.5039c1.221 0 1.221 3.0461-0.279 3.0271"/>
+  <path d="m5.4441 8.4999h5.0559"/>
+  <path d="m6.5269 10.5h2.9731"/>
+  <path d="m4.5 12.5h7"/>
+  <path d="m6.5 5.5s0.5-0.96875 1-1 1.0641-1 1.0641-1"/>
+  <path d="m8.5 6.5s0.5-1 1-1 0.93834-1.0361 0.93834-1.0361"/>
+ </g>
+ <g stroke-linecap="round" stroke-width="1px" fill="none">
+  <path d="m11.779 7.5039c1.221 0 1.221 3.0461-0.279 3.0271" stroke="#5382a1"/>
+  <path d="m5.4441 8.4999h5.0559" stroke="#5382a1"/>
+  <path d="m6.5269 10.5h2.9731" stroke="#5382a1"/>
+  <path d="m4.5 12.5h7" stroke="#5382a1"/>
+  <path d="m6.5 5.5s0.5-0.96875 1-1 1.0641-1 1.0641-1" stroke="#e76f00"/>
+  <path d="m8.5 6.5s0.5-1 1-1 0.93834-1.0361 0.93834-1.0361" stroke="#e76f00"/>
+ </g>
+</svg>
