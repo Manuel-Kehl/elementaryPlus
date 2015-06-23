@@ -65,6 +65,12 @@ iconMegaList = [
         "google-musicmanager"
     ],
     [
+        "HP Linux Printing and Imaging",
+        "/usr/bin/hp-systray",
+        "The HP Linux Printing and Imaging System provides full support for printing on most HP SFP inkjets and many LaserJets, and for scanning, sending faxes and for photo-card access on most HP MFP printers.",
+        "HPmenu"
+    ],
+    [
         "MEGAsync",
         "/usr/bin/megasync",
         "MEGAsync is a free online storage service",
