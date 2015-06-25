@@ -145,6 +145,7 @@ for a in iconMegaList:
     else:
         components.append([name, codeName, shortDesc, icon, enabled])
 
+components.sort(key=lambda x: x[4], reverse=True)
 
 toInstall = []
 toRemove = []
@@ -291,7 +292,10 @@ class InstallerWindow(Gtk.Window):
         scroller.add(self.lbox)
 
         for i in range(len(components)):
-            longDesc = iconMegaList[i][2]
+            for sublist in iconMegaList:
+                if sublist[0] == components[i][0]:
+                    longDesc = sublist[2]
+
             item = self.create_item(components[i][0], components[i][3], components[i][2], components[i][4])
 
             componentSwitch = Gtk.Switch()
@@ -368,9 +372,8 @@ class InstallerWindow(Gtk.Window):
     def filter(self, row, text):
         name = row.get_children()[0].get_children()[0].get_children()[1].get_text()
         desc = row.get_children()[0].get_tooltip_text()
-        print desc
 
-        if text.lower() in name.lower() or text in desc.lower():
+        if text.lower() in name.lower() or text.lower() in desc.lower():
             return True
         else:
             return False
