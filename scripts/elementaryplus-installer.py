@@ -25,7 +25,6 @@ from gi.repository import Gtk, Gdk, Gio, Notify
 import os
 import sys
 import subprocess
-from operator import itemgetter
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
