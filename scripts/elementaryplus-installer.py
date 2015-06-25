@@ -71,6 +71,12 @@ iconMegaList = [
         "mega"
     ],
     [
+        "Mumble",
+        "/usr/bin/mumble",
+        "Mumble is a low-latency, high quality voice chat program for gaming",
+        "mumble"
+    ],
+    [
         "OwnCloud",
         "/usr/bin/owncloud",
         "An enterprise file sharing solution for online collaboration and storage",
