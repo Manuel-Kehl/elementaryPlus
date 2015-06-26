@@ -24,7 +24,7 @@
 from gi.repository import Gtk, Gdk, Gio, Notify
 import os
 import sys
-import subprocess
+from subprocess import check_output
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -287,6 +287,7 @@ class InstallerWindow(Gtk.Window):
             item = self.create_item(components[i][0], components[i][3], components[i][2], components[i][4])
 
             componentSwitch = Gtk.Switch()
+            componentSwitch.set_name(components[i][0].lower())
             componentSwitch.props.halign = Gtk.Align.END
             componentSwitch.props.valign = Gtk.Align.CENTER
             componentSwitch.connect("notify::active", self.callback, components[i][1])
@@ -397,6 +398,8 @@ class InstallerWindow(Gtk.Window):
             dialog = confirmDialog(self)
             response = dialog.run()
             dialog.destroy()
+            error = False
+            showNotif = False
 
             if response == Gtk.ResponseType.OK:
                 if len(toInstall) != 0:
@@ -404,11 +407,21 @@ class InstallerWindow(Gtk.Window):
                         patchedSniqt = settings.get_boolean("sniqt-patched")
                         if data != "core" and data != "telegram_desktop" and patchedSniqt is False:
                             print "Installing patched sni-qt"
-                            self.notify('This may take a while', 'Please don\'t close the window', 'gnome-tweak-tool')
+                            self.notify('This may take a while', 'Please don\'t close the window', 'preferences-desktop')
                             if subprocess.call(['pkexec', scripts + "sni-qt.sh"]) == 0:
                                 settings.set_boolean("sniqt-patched", True)
 
-                        subprocess.call(['bash', scripts + data + "/setup.sh", "--install"])
+                        out = check_output(['bash', scripts + data + "/setup.sh", "--install"])
+                        if out[:1] is "F":
+                            print "Passed"
+                            error = True
+                            for row in self.lbox:
+                                for grid in row:
+                                    for switch in grid:
+                                        if switch.get_name() == data:
+                                            switch.set_active(False)
+                            continue
+                        showNotif = True
                         print data + " was installed"
 
                         if data == "core":
@@ -428,7 +441,17 @@ class InstallerWindow(Gtk.Window):
 
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
-                        subprocess.call(['bash', scripts + data + "/setup.sh", "--remove"])
+                        out = check_output(['bash', scripts + data + "/setup.sh", "--remove"])
+                        if out[:1] is "F":
+                            print "Passed"
+                            error = True
+                            for row in self.lbox:
+                                for grid in row:
+                                    for switch in grid:
+                                        if switch.get_name() == data:
+                                            switch.set_active(True)
+                            continue
+                        showNotif = True
                         print data + " was removed"
                         if data == "core":
                             currentTheme = systemSettings.get_string("icon-theme")
@@ -439,10 +462,14 @@ class InstallerWindow(Gtk.Window):
                         installedComponents.remove(data)
                     settings.set_strv("installed", installedComponents)
 
+                if showNotif is True:
+                    if error is False:
+                        self.notify('All changes applied', 'Check out your new icons!', 'preferences-desktop')
+                    else:
+                        self.notify('Some changes applied', 'Not all changes have been applied!', 'preferences-desktop')
+
                 toRemove[:] = []
                 toInstall[:] = []
-
-                self.notify('All changes applied', 'Check out your new icons!', 'gnome-tweak-tool')
 
                 self.installButton.set_sensitive(False)
 
