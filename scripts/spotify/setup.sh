@@ -4,6 +4,8 @@ cd $DIR
 
 sniqtPrefix="spotify"
 
+source ../whattouse.sh
+
 if [ $1 == "--install" ]
     then
         curr=`pwd`
@@ -16,8 +18,15 @@ if [ $1 == "--install" ]
             filename="${filename%.*}"
             uuid=`cut -d '_' -f3 <<< $filename`
             cd $curr
+            rm -rf ~/.local/share/sni-qt/icons/$sniqtPrefix
             mkdir -p ~/.local/share/sni-qt/icons/$sniqtPrefix
-            cp ./icons/icon.png ~/.local/share/sni-qt/icons/$sniqtPrefix/$uuid.png
+            if [ $whatToUse == "cp" ]
+                then
+                    cp ./icons/icon.png ~/.local/share/sni-qt/icons/$sniqtPrefix/$uuid.png
+            elif [ $whatToUse == "ln" ]
+                then
+                    ln -sf $DIR/icons/icon.png ~/.local/share/sni-qt/icons/$sniqtPrefix/$uuid.png
+            fi
         else
             echo "Failed"
             notify-send "Failed to install Spotify icons" "Please run Spotify and try again" -i "preferences-desktop"
