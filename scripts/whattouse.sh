@@ -1,1 +1,1 @@
-whatToUse="ln"
+whatToUse="cp"
