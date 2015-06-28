@@ -424,6 +424,7 @@ class InstallerWindow(Gtk.Window):
                                 settings.set_boolean("sniqt-patched", True)
 
                         out = check_output(['bash', scripts + data + "/setup.sh", "--install"])
+                        print out
                         if out[:1] is "F":
                             print "Passed"
                             error = True
@@ -454,6 +455,7 @@ class InstallerWindow(Gtk.Window):
                 if len(toRemove) != 0:
                     for data in toRemove[:]:
                         out = check_output(['bash', scripts + data + "/setup.sh", "--remove"])
+                        print out
                         if out[:1] is "F":
                             print "Passed"
                             error = True
