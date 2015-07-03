@@ -421,7 +421,7 @@ class InstallerWindow(Gtk.Window):
                         patchedSniqt = settings.get_boolean("sniqt-patched")
                         if data != "core" and data != "telegram_desktop" and patchedSniqt is False:
                             print "Installing patched sni-qt"
-                            # self.notify('This may take a while', 'Please don"t close the window', 'preferences-desktop')
+                            self.notify('This may take a while', 'Please don"t close the window', 'preferences-desktop')
                             if subprocess.call(['pkexec', scripts + "sni-qt.sh"]) == 0:
                                 cache = apt.Cache()
                                 version = cache["sni-qt"].candidate.version
