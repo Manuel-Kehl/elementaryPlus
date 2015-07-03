@@ -24,7 +24,9 @@
 from gi.repository import Gtk, Gdk, Gio, Notify
 import os
 import sys
+import subprocess
 from subprocess import check_output
+import apt
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -421,7 +423,15 @@ class InstallerWindow(Gtk.Window):
                             print "Installing patched sni-qt"
                             self.notify('This may take a while', 'Please don\'t close the window', 'preferences-desktop')
                             if subprocess.call(['pkexec', scripts + "sni-qt.sh"]) == 0:
-                                settings.set_boolean("sniqt-patched", True)
+                                cache = apt.Cache()
+                                version = cache["sni-qt"].candidate.version
+                                if "0.2.7" in version:
+                                    print "Succesfully patched sni-qt"
+                                    settings.set_boolean("sniqt-patched", True)
+                                else:
+                                    print "Failed to patch sni-qt"
+                            else:
+                                print "Unknown error"
 
                         out = check_output(['bash', scripts + data + "/setup.sh", "--install"])
                         print out
@@ -476,16 +486,16 @@ class InstallerWindow(Gtk.Window):
                         installedComponents.remove(data)
                     settings.set_strv("installed", installedComponents)
 
+                toRemove[:] = []
+                toInstall[:] = []
+
+                self.installButton.set_sensitive(False)
+
                 if showNotif is True:
                     if error is False:
                         self.notify('All changes applied', 'Check out your new icons!', 'preferences-desktop')
                     else:
                         self.notify('Some changes applied', 'Not all changes have been applied!', 'preferences-desktop')
-
-                toRemove[:] = []
-                toInstall[:] = []
-
-                self.installButton.set_sensitive(False)
 
             elif response == Gtk.ResponseType.CANCEL:
                 self.installButton.set_sensitive(True)
