@@ -21,15 +21,12 @@
 #
 # Some code taken from Evolve-SC (https://github.com/solus-project/evolve-sc)
 
-import gi.repository
 from gi.repository import Gtk, Gdk, Gio, Notify
 import os
 import sys
 import subprocess
 from subprocess import check_output
 import apt
-
-os.environ.setdefault("DBUS_SESSION_BUS_ADDRESS", os.getenv("DBUS_SESSION_BUS_ADDRESS"))
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -234,7 +231,7 @@ class InstallerWindow(Gtk.Window):
         self.installButton.connect("clicked", self.install, "yes")
         self.hb.pack_end(self.installButton)
 
-        Notify.init("dasd")
+        Notify.init(appName)
 
         self.add(self.build_ui())
 
