@@ -252,8 +252,13 @@ class InstallerWindow(Gtk.Window):
         )
 
     def notify(self, messageOne, messageTwo, icon):
-        notification = Notify.Notification.new(messageOne, messageTwo, icon)
-        notification.show()
+        try:
+            notification = Notify.Notification.new(messageOne, messageTwo, icon)
+            notification.set_urgency(1)
+            notification.show()
+            del notification
+        except:
+            pass
 
     def build_ui(self):
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
