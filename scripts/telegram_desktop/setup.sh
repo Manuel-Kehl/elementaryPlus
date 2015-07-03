@@ -1,7 +1,7 @@
 #!/bin/bash
 DSTDIR=~/.TelegramDesktop/tdata/ticons
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-cd $DIR
+cd "$DIR"
 
 source ../whattouse.sh
 
