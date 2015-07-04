@@ -24,7 +24,7 @@
 from gi.repository import Gtk, Gdk, Gio, Notify
 import os
 import sys
-import inspect
+import subprocess
 from subprocess import check_output
 from qtStandardInstall import *
 
