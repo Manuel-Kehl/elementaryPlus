@@ -24,7 +24,9 @@
 from gi.repository import Gtk, Gdk, Gio, Notify
 import os
 import sys
+import inspect
 from subprocess import check_output
+from qtStandardInstall import *
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -50,79 +52,92 @@ iconMegaList = [
         "Core icon theme",
         "",
         "The core elementary+ icon theme",
-        "preferences-desktop"
+        "preferences-desktop",
+        "custom"
     ],
     [
         "flareGet",
         "/usr/bin/flareget",
         "FlareGet is a full featured, multi-threaded download manager and accelerator for Windows, Mac and Linux",
-        "flareget"
+        "flareget",
+        "standard"
     ],
     [
         "Google Music Manager",
         "/opt/google/musicmanager/google-musicmanager",
         "With Google Play Music for Chrome or Music Manager, you can add your personal music library to the cloud",
-        "google-musicmanager"
+        "google-musicmanager",
+        "standard"
     ],
     [
         "HP Linux Printing and Imaging",
         "/usr/bin/hp-systray",
         "The HP Linux Printing and Imaging System provides full support for printing on most HP SFP inkjets and many LaserJets, and for scanning, sending faxes and for photo-card access on most HP MFP printers.",
-        "HPmenu"
+        "HPmenu",
+        "standard"
     ],
     [
         "MEGAsync",
         "/usr/bin/megasync",
         "MEGAsync is a free online storage service",
-        "mega"
+        "mega",
+        "standard"
     ],
     [
         "Mumble",
         "/usr/bin/mumble",
         "Mumble is a low-latency, high quality voice chat program for gaming",
-        "mumble"
+        "mumble",
+        "standard"
     ],
     [
         "OwnCloud",
         "/usr/bin/owncloud",
         "An enterprise file sharing solution for online collaboration and storage",
-        "owncloud"
+        "owncloud",
+        "standard"
     ],
     [
         "Seafile Client",
         "/usr/bin/seafile-applet",
         "The Seafile desktop client",
-        "seafile"
+        "seafile",
+        "standard"
     ],
     [
         "Skype",
         "/usr/bin/skype",
         "Stay in touch with your family and friends for free on Skype",
-        "skype"
+        "skype",
+        "standard"
     ],
     [
         "Spotify",
         "/opt/spotify/spotify-client/spotify",
         "Spotify is a digital music service that gives you access to millions of songs",
-        "spotify-client"
+        "spotify-client",
+        "custom"
     ],
     [
         "Telegram Desktop",
         "%s/.TelegramDesktop/tdata/icon.png" % (os.getenv('HOME')),
         "Telegram is a messaging app with a focus on speed and security, it's super fast, simple and free",
-        "telegram"
+        "telegram",
+        "custom"
     ],
     [
         "Tomahawk",
         "/usr/bin/tomahawk",
         "A new kind of music player that invites all your streams, downloads, cloud music storage, playlists, radio stations and friends to the same party. It's about time they all mingle",
-        "tomahawk"
+        "tomahawk",
+        "standard"
     ],
     [
         "WizNote",
         "/usr/bin/WizNote",
         "Wiznote is a cloud based notes solution which helps personal and professional to take notes and collaborate with team members",
-        "wiznote"
+        "wiznote",
+        "standard"
     ]
 ]
 
@@ -139,13 +154,14 @@ for a in iconMegaList:
     codeName = a[0].lower().replace(" ", "_")
     shortDesc = (a[2][:60] + '..') if len(a[2]) > 60 else a[2]
     icon = ("package-x-generic") if iconTheme.has_icon(defaultIconTheme, a[3]) == False else a[3]
+    installMethod = a[4]
     enabled = (True) if os.path.isfile(a[1]) else False
     if codeName == "core_icon_theme":
-        components.append([name, "core", shortDesc, icon, True])
+        components.append([name, "core", shortDesc, icon, installMethod, True])
     else:
-        components.append([name, codeName, shortDesc, icon, enabled])
+        components.append([name, codeName, shortDesc, icon, installMethod, enabled])
 
-components.sort(key=lambda x: x[4], reverse=True)
+components.sort(key=lambda x: x[5], reverse=True)
 
 toInstall = []
 toRemove = []
@@ -164,8 +180,21 @@ class confirmDialog(Gtk.Dialog):
         self.set_resizable(False)
         self.set_border_width(6)
 
-        toInstallList = ", ".join([x[0] for x in components if x[1] in toInstall])
-        toRemoveList = ", ".join([x[0] for x in components if x[1] in toRemove])
+        dataToInstall = []
+        dataToRemove = []
+
+        for sublist in toInstall:
+            for x in components:
+                if x[1] in sublist:
+                    dataToInstall.append(x[0])
+        toInstallList = ", ".join(dataToInstall)
+
+        for sublist in toRemove:
+            for x in components:
+                if x[1] in sublist:
+                    dataToRemove.append(x[0])
+        toRemoveList = ", ".join(dataToRemove)
+
         labelToInstall = Gtk.Label("To install: " + toInstallList)
         labelToRemove = Gtk.Label("To remove: " + toRemoveList + "\n")
         labelQuestion = Gtk.Label("Are you sure you want to appply these changes?\n")
@@ -250,8 +279,13 @@ class InstallerWindow(Gtk.Window):
         )
 
     def notify(self, messageOne, messageTwo, icon):
-        notification = Notify.Notification.new(messageOne, messageTwo, icon)
-        notification.show()
+        try:
+            notification = Notify.Notification.new(messageOne, messageTwo, icon)
+            notification.set_urgency(1)
+            notification.show()
+            del notification
+        except:
+            pass
 
     def build_ui(self):
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
@@ -296,13 +330,13 @@ class InstallerWindow(Gtk.Window):
                 if sublist[0] == components[i][0]:
                     longDesc = sublist[2]
 
-            item = self.create_item(components[i][0], components[i][3], components[i][2], components[i][4])
+            item = self.create_item(components[i][0], components[i][3], components[i][2], components[i][5])
 
             componentSwitch = Gtk.Switch()
             componentSwitch.set_name(components[i][0].lower())
             componentSwitch.props.halign = Gtk.Align.END
             componentSwitch.props.valign = Gtk.Align.CENTER
-            componentSwitch.connect("notify::active", self.callback, components[i][1])
+            componentSwitch.connect("notify::active", self.callback, components[i][1], components[i][4])
 
             if components[i][1] in installedComponents:
                 componentSwitch.set_active(True)
@@ -311,7 +345,7 @@ class InstallerWindow(Gtk.Window):
             wrap.pack_start(item, True, True, 0)
             wrap.pack_end(componentSwitch, False, False, 2)
 
-            if components[i][4] is False:
+            if components[i][5] is False:
                 wrap.set_sensitive(False)
 
             wrap.set_tooltip_text(longDesc)
@@ -379,7 +413,7 @@ class InstallerWindow(Gtk.Window):
         else:
             return False
 
-    def callback(self, widget, event, data=None):
+    def callback(self, widget, event, data, method):
 
         installedComponents = settings.get_strv("installed")
 
@@ -387,14 +421,14 @@ class InstallerWindow(Gtk.Window):
 
         if widget.get_active() == 1:
             if toRemove != [] and data in installedComponents:
-                toRemove.remove(data)
+                toRemove.remove([data, method])
             elif data not in installedComponents:
-                toInstall.append(data)
+                toInstall.append([data, method])
         else:
             if data in installedComponents:
-                toRemove.append(data)
+                toRemove.append([data, method])
             else:
-                toInstall.remove(data)
+                toInstall.remove([data, method])
 
         if len(toInstall) != 0 or len(toRemove) != 0:
             self.installButton.set_sensitive(True)
@@ -415,28 +449,33 @@ class InstallerWindow(Gtk.Window):
 
             if response == Gtk.ResponseType.OK:
                 if len(toInstall) != 0:
+                    failed = []
                     for data in toInstall[:]:
                         patchedSniqt = settings.get_boolean("sniqt-patched")
-                        if data != "core" and data != "telegram_desktop" and patchedSniqt is False:
+                        if data[0] != "core" and data[0] != "telegram_desktop" and patchedSniqt is False:
                             print "Installing patched sni-qt"
                             self.notify('This may take a while', 'Please don\'t close the window', 'preferences-desktop')
                             if subprocess.call(['pkexec', scripts + "sni-qt.sh"]) == 0:
                                 settings.set_boolean("sniqt-patched", True)
 
-                        out = check_output(['bash', scripts + data + "/setup.sh", "--install"])
-                        if out[:1] is "F":
-                            print "Passed"
+                        if data[1] == "standard":
+                            out = installQtIndicatorIcons(data[0])
+                        else:
+                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--install"])
+
+                        if out is False:
                             error = True
+                            failed.append(data[0].replace("_", " ").capitalize())
                             for row in self.lbox:
                                 for grid in row:
                                     for switch in grid:
-                                        if switch.get_name() == data:
+                                        if switch.get_name() == data[0]:
                                             switch.set_active(False)
-                            continue
+                                continue
                         showNotif = True
-                        print data + " was installed"
+                        print data[0] + " was installed"
 
-                        if data == "core":
+                        if data[0] == "core":
                             dialog = useThemeDialog(self)
                             response = dialog.run()
                             dialog.destroy()
@@ -448,37 +487,45 @@ class InstallerWindow(Gtk.Window):
                             elif response == Gtk.ResponseType.NO:
                                 print "Theme not changed"
 
-                        installedComponents.append(data)
+                        if not data[0].replace("_", " ").capitalize() in failed:
+                            installedComponents.append(data[0])
                     settings.set_strv("installed", installedComponents)
 
                 if len(toRemove) != 0:
+                    failed = []
                     for data in toRemove[:]:
-                        out = check_output(['bash', scripts + data + "/setup.sh", "--remove"])
-                        if out[:1] is "F":
-                            print "Passed"
+                        
+                        if data[1] == "standard":
+                            out = removeQtIndicatorIcons(data[0])
+                        else:
+                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--remove"])
+
+                        if out is False:
                             error = True
+                            failed.append(data[0].replace("_", " ").capitalize())
                             for row in self.lbox:
                                 for grid in row:
                                     for switch in grid:
-                                        if switch.get_name() == data:
+                                        if switch.get_name() == data[0]:
                                             switch.set_active(True)
-                            continue
+                                continue
                         showNotif = True
-                        print data + " was removed"
-                        if data == "core":
+                        print data[0] + " was removed"
+                        if data[0] == "core":
                             currentTheme = systemSettings.get_string("icon-theme")
                             if currentTheme == iconThemeName:
                                 previousIconTheme = settings.get_string("previous-icon-theme")
                                 systemSettings.set_string("icon-theme", previousIconTheme)
 
-                        installedComponents.remove(data)
+                        if not data[0].replace("_", " ").capitalize() in failed:
+                            installedComponents.remove(data[0])
                     settings.set_strv("installed", installedComponents)
 
                 if showNotif is True:
                     if error is False:
                         self.notify('All changes applied', 'Check out your new icons!', 'preferences-desktop')
                     else:
-                        self.notify('Some changes applied', 'Not all changes have been applied!', 'preferences-desktop')
+                        self.notify('elementary+ Configurator', 'Error while configuring: ' + ", ".join([x for x in failed]), 'preferences-desktop')
 
                 toRemove[:] = []
                 toInstall[:] = []
