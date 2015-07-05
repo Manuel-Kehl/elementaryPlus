@@ -14,81 +14,10 @@
    height="16px"
    id="svg3959"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="virtualbox.svg">
   <defs
      id="defs3961">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2490-3-0"
-       id="linearGradient3109"
-       gradientUnits="userSpaceOnUse"
-       x1="25.075518"
-       y1="45.914536"
-       x2="25.075518"
-       y2="6.4426208" />
-    <linearGradient
-       id="linearGradient2490-3-0">
-      <stop
-         offset="0"
-         style="stop-color:#365f0e;stop-opacity:1"
-         id="stop2492-3-1" />
-      <stop
-         offset="1"
-         style="stop-color:#84a718;stop-opacity:1"
-         id="stop2494-8-7" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient3242-7-9">
-      <stop
-         offset="0"
-         style="stop-color:#eef87e;stop-opacity:1"
-         id="stop3244-5-3" />
-      <stop
-         offset="0.26238"
-         style="stop-color:#cde34f;stop-opacity:1"
-         id="stop3246-9-6" />
-      <stop
-         offset="0.66093999"
-         style="stop-color:#93b723;stop-opacity:1"
-         id="stop3248-7-8" />
-      <stop
-         offset="1"
-         style="stop-color:#5a7e0d;stop-opacity:1"
-         id="stop3250-8-0" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient2490-3-10">
-      <stop
-         offset="0"
-         style="stop-color:#365f0e;stop-opacity:1"
-         id="stop2492-3-5" />
-      <stop
-         offset="1"
-         style="stop-color:#84a718;stop-opacity:1"
-         id="stop2494-8-1" />
-    </linearGradient>
-    <radialGradient
-       r="19.99999"
-       fy="8.4497671"
-       fx="7.4956832"
-       cy="8.4497671"
-       cx="7.4956832"
-       gradientTransform="matrix(0,0.76658888,-1.0260686,-3.2347008e-8,16.670075,-4.0519301)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient3955"
-       xlink:href="#linearGradient3242-7-9"
-       inkscape:collect="always" />
-    <linearGradient
-       y2="3.8990016"
-       x2="24"
-       y1="44"
-       x1="24"
-       gradientTransform="matrix(0.33333341,0,0,0.33333341,-4.6e-6,-2e-6)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3957"
-       xlink:href="#linearGradient2490-3-10"
-       inkscape:collect="always" />
     <linearGradient
        id="linearGradient3924-4">
       <stop
@@ -118,17 +47,6 @@
        id="linearGradient3178"
        xlink:href="#linearGradient3924-4"
        inkscape:collect="always" />
-    <radialGradient
-       r="19.99999"
-       fy="8.4497671"
-       fx="7.4956832"
-       cy="8.4497671"
-       cx="7.4956832"
-       gradientTransform="matrix(1.2454145e-8,1.4980705,-1.5847799,-2.7600176e-8,29.391092,-6.3556398)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient4064"
-       xlink:href="#linearGradient3242-7"
-       inkscape:collect="always" />
     <linearGradient
        id="linearGradient3242-7">
       <stop
@@ -148,16 +66,6 @@
          style="stop-color:#37a4cd;stop-opacity:1;"
          offset="1" />
     </linearGradient>
-    <linearGradient
-       y2="3.8990016"
-       x2="24"
-       y1="44"
-       x1="24"
-       gradientTransform="matrix(0.64102564,0,0,0.64102564,0.61538425,1.6153851)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient4066"
-       xlink:href="#linearGradient2490-3-9"
-       inkscape:collect="always" />
     <linearGradient
        id="linearGradient2490-3-9">
       <stop
@@ -199,16 +107,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="31.643028"
-     inkscape:cx="6.1767043"
-     inkscape:cy="8.8281395"
+     inkscape:cx="0.59885631"
+     inkscape:cy="8.796537"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1600"
-     inkscape:window-height="854"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="1672"
+     inkscape:window-y="274"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"

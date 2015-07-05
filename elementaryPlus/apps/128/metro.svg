@@ -14,21 +14,10 @@
    height="128"
    id="svg4113"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="metro.svg">
   <defs
      id="defs4115">
-    <linearGradient
-       id="linearGradient3680-6-6-6-3-7-1-9">
-      <stop
-         offset="0"
-         style="stop-color:#dcdcdc;stop-opacity:1"
-         id="stop3682-4-6-1-3-7-7-1" />
-      <stop
-         offset="1"
-         style="stop-color:#ffffff;stop-opacity:1"
-         id="stop3684-8-5-8-0-2-6-7" />
-    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3924"
@@ -178,17 +167,6 @@
        id="radialGradient4111"
        xlink:href="#linearGradient3811"
        inkscape:collect="always" />
-    <radialGradient
-       r="20.523518"
-       fy="13.460493"
-       fx="32.007732"
-       cy="13.460493"
-       cx="32.007732"
-       gradientTransform="matrix(0,4.2773057,-5.2892453,0,135.19574,-112.22175)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient4808"
-       xlink:href="#linearGradient4777"
-       inkscape:collect="always" />
     <linearGradient
        id="linearGradient4777">
       <stop
@@ -228,16 +206,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.8890873"
-     inkscape:cx="68.307498"
-     inkscape:cy="37.134449"
+     inkscape:cx="22.924099"
+     inkscape:cy="36.877319"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1025"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="1672"
+     inkscape:window-y="274"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4118">

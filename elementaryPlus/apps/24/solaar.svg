@@ -14,7 +14,7 @@
    width="24"
    height="24"
    id="svg7107"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="solaar.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -25,15 +25,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
+     inkscape:window-width="1366"
      inkscape:window-height="745"
      id="namedview46"
      showgrid="true"
      inkscape:zoom="27.812866"
-     inkscape:cx="7.998289"
-     inkscape:cy="11.353177"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:cx="1.6523051"
+     inkscape:cy="11.317222"
+     inkscape:window-x="1672"
+     inkscape:window-y="274"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <inkscape:grid
@@ -70,15 +70,6 @@
          style="stop-color:#ffffff;stop-opacity:0.39215687"
          offset="1" />
     </linearGradient>
-    <linearGradient
-       x1="227.20357"
-       y1="63.106243"
-       x2="227.20357"
-       y2="76.996925"
-       id="linearGradient5874-6"
-       xlink:href="#linearGradient5803-0"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-214,-49.99999)" />
     <linearGradient
        id="linearGradient5803-0">
       <stop
