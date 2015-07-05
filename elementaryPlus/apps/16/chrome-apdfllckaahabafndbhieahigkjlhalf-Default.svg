@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="b" y2="43" gradientUnits="userSpaceOnUse" x2="24" gradientTransform="matrix(.29730 0 0 .29730 .86487 .86487)" y1="5" x1="24">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".063165"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".95056"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <radialGradient id="a" fx="6.2002" gradientUnits="userSpaceOnUse" cy="9.9571" cx="6.7304" gradientTransform="matrix(0 3.1659 -3.8867 0 46.977 -26.72)" r="12.672">
+   <stop stop-color="#fafafa" offset="0"/>
+   <stop stop-color="#e1e1e1" offset="1"/>
+  </radialGradient>
+ </defs>
+ <path style="color:#000000" d="m2.5 2c-0.2856 0-0.5 0.2144-0.5 0.5v11c0 0.286 0.2144 0.5 0.5 0.5h11c0.286 0 0.5-0.214 0.5-0.5v-11c0-0.2856-0.214-0.5-0.5-0.5h-11z" fill="url(#a)"/>
+ <rect opacity=".5" stroke-linejoin="round" height="11" width="11" stroke="url(#b)" stroke-linecap="round" y="2.5" x="2.5" fill="none"/>
+ <rect opacity=".4" stroke-linejoin="round" style="color:#000000" rx="1" ry="1" height="13" width="13" stroke="#000" stroke-linecap="round" y="1.5" x="1.5" fill="none"/>
+ <path opacity=".15" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m6.334 4.3379l-3.334 5.7751 1.666 2.887h6.668l1.666-2.887-3.334-5.7751h-3.332zm1.666 2.8867l1.666 2.8884h-3.332l1.666-2.8884z" fill-rule="evenodd" clip-rule="evenodd"/>
+ <g clip-rule="evenodd" fill-rule="evenodd">
+  <polygon style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" transform="matrix(0.0000751 0 0 0.0000751 3 3.3379)" class="fil0" points="44385 76894 1.3316e5 76894 1.1096e5 1.1534e5 22194 1.1534e5" fill="#3777e3"/>
+  <polygon style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" transform="matrix(0.0000751 0 0 0.0000751 3 3.3379)" class="fil1" points="1.3316e5 76894 88772 0 44385 0 88772 76894" fill="#ffcf63"/>
+  <polygon style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision" transform="matrix(0.0000751 0 0 0.0000751 3 3.3379)" class="fil2" points="22194 1.1534e5 66578 38447 44385 0 0 76894" fill="#11a861"/>
+ </g>
+</svg>

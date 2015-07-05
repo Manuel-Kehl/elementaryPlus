@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="32" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="f" y2="43" gradientUnits="userSpaceOnUse" x2="24" gradientTransform="matrix(.62162 0 0 .62162 1.0811 2.0811)" y1="5" x1="24">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".063165"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".95056"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <radialGradient id="b" gradientUnits="userSpaceOnUse" cy="8.4498" cx="7.4957" gradientTransform="matrix(-.0000034738 1.3563 -1.5848 -.0000040959 29.391 -5.2932)" r="20">
+   <stop stop-color="#4ad58e" offset="0"/>
+   <stop stop-color="#2dc477" offset=".26238"/>
+   <stop stop-color="#26a464" offset=".70495"/>
+   <stop stop-color="#1d7d4c" offset="1"/>
+  </radialGradient>
+  <linearGradient id="e" y2="3.899" gradientUnits="userSpaceOnUse" x2="24" gradientTransform="matrix(.64103 0 0 .64103 .61539 1.6154)" y1="47.4" x1="24">
+   <stop stop-color="#1a6f44" offset="0"/>
+   <stop stop-color="#1f8753" offset="1"/>
+  </linearGradient>
+  <radialGradient id="d" gradientUnits="userSpaceOnUse" cy="43.5" cx="4.993" gradientTransform="matrix(2.0038 0 0 1.4 27.988 -17.4)" r="2.5">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="c" gradientUnits="userSpaceOnUse" cy="43.5" cx="4.993" gradientTransform="matrix(2.0038 0 0 1.4 -20.012 -104.4)" r="2.5">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <linearGradient id="g" y2="39.999" gradientUnits="userSpaceOnUse" x2="25.058" y1="47.028" x1="25.058">
+   <stop stop-color="#181818" stop-opacity="0" offset="0"/>
+   <stop stop-color="#181818" offset=".5"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <clipPath id="a" clipPathUnits="userSpaceOnUse">
+   <rect height="29.364" width="37.091" y="8.4553" x="5.4545" fill="#fff"/>
+  </clipPath>
+ </defs>
+ <g transform="matrix(0.7 0 0 .33333 -0.8 15.333)">
+  <g opacity=".4" transform="matrix(1.0526 0 0 1.2857 -1.2632 -13.429)">
+   <rect height="7" width="5" y="40" x="38" fill="url(#d)"/>
+   <rect transform="scale(-1)" height="7" width="5" y="-47" x="-10" fill="url(#c)"/>
+   <rect height="7" width="28" y="40" x="10" fill="url(#g)"/>
+  </g>
+ </g>
+ <rect stroke-linejoin="round" height="25" stroke="url(#e)" stroke-linecap="round" fill="url(#b)" style="color:#000000" rx="2" ry="2" width="25" y="4.5" x="3.5"/>
+ <rect opacity=".5" stroke-linejoin="round" rx="1" ry="1" height="23" width="23" stroke="url(#f)" stroke-linecap="round" y="5.5" x="4.5" fill="none"/>
+ <path opacity=".15" d="m4.4546 36.545 12.545-12.545 7 7 20-20" clip-path="url(#a)" transform="matrix(.64706 0 0 .64706 .47059 2.5286)" stroke="#000" stroke-width="2.3182" fill="none"/>
+ <path opacity=".05" fill-rule="evenodd" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m43.156 8.6348a1.5456 1.5456 0 0 0 -1.07 0.4511l-18.086 18.088-5.908-5.906a1.5456 1.5456 0 0 0 -2.1855 0l-13.365 13.365a1.5456 1.5456 0 0 0 0 2.1875l1.6387 1.6387a1.5456 1.5456 0 0 0 2.1855 0l10.635-10.633 5.9082 5.9062a1.5456 1.5456 0 0 0 2.1836 0l20.82-20.818a1.5456 1.5456 0 0 0 0.002 -2.1875l-1.641-1.6401a1.5456 1.5456 0 0 0 -1.117 -0.4511z" clip-path="url(#a)" transform="matrix(.64706 0 0 .64706 .47059 2.5286)"/>
+ <path d="m4.4546 36.545 12.545-12.545 7 7 20-20" clip-path="url(#a)" transform="matrix(.64706 0 0 .64706 .47059 1.529)" stroke="#fff" stroke-width="2.3182" fill="none"/>
+</svg>
