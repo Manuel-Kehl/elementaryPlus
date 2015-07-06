@@ -22,12 +22,14 @@
 # Some code taken from Evolve-SC (https://github.com/solus-project/evolve-sc)
 
 from gi.repository import Gtk, Gdk, Gio, Notify
-import os
 import sys
+import os
+from os import symlink
+from os.path import expanduser
+import shutil
 import subprocess
 from subprocess import check_output
 import apt
-from qtStandardInstall import *
 
 if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
     sys.exit("You need to have GTK 3.14 or newer to run this script")
@@ -35,6 +37,11 @@ if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
 appName = "elementary+ Configurator"
 
 fromPPA = False
+
+if fromPPA is True:
+    whatToUse = "link"
+else:
+    whatToUse = "copy"
 
 scripts = os.getcwd() + "/scripts/"
 schema = "/usr/share/glib-2.0/schemas/apps.elementaryPlusConfigurator.gschema.xml"
@@ -168,7 +175,7 @@ toInstall = []
 toRemove = []
 
 iconThemeName = "elementaryPlus"
-
+home = expanduser("~")
 
 class confirmDialog(Gtk.Dialog):
 
@@ -468,9 +475,11 @@ class InstallerWindow(Gtk.Window):
                                 print "Unknown error"
 
                         if data[1] == "standard":
-                            out = installQtIndicatorIcons(data[0])
+                            out = self.installQtIndicatorIcons(data[0])
                         else:
-                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--install"])
+                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--install", whatToUse, scripts])
+
+                        print out
 
                         if out is False:
                             error = True
@@ -505,9 +514,11 @@ class InstallerWindow(Gtk.Window):
                     for data in toRemove[:]:
                         
                         if data[1] == "standard":
-                            out = removeQtIndicatorIcons(data[0])
+                            out = self.removeQtIndicatorIcons(data[0])
                         else:
-                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--remove"])
+                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--remove", whatToUse, scripts])
+
+                        print out
 
                         if out is False:
                             error = True
@@ -543,6 +554,43 @@ class InstallerWindow(Gtk.Window):
 
             elif response == Gtk.ResponseType.CANCEL:
                 self.installButton.set_sensitive(True)
+
+    def installQtIndicatorIcons(self, appName):
+        iconDir = scripts + "icons/" + appName + "/"
+        destDir = home + "/.local/share/sni-qt/icons/" + appName + "/"
+
+        if whatToUse == "copy":
+            if os.path.exists(destDir):
+                try:
+                    shutil.rmtree(destDir)
+                except:
+                    return False
+            copy = shutil.copytree(iconDir, destDir)
+            return copy
+        elif whatToUse == "link":
+            if not os.path.exists(destDir):
+                os.makedirs(destDir)
+            else:
+                try:
+                    shutil.rmtree(destDir)
+                except:
+                    return False
+                os.makedirs(destDir)
+            for icon in os.listdir(iconDir):
+                link = symlink(iconDir + icon, destDir + icon)
+            return link
+        else:
+            print "Invalid operation!"
+
+    def removeQtIndicatorIcons(self, appName):
+        destDir = home + "/.local/share/sni-qt/icons/" + appName
+        if os.path.exists(destDir):
+            try:
+                shutil.rmtree(destDir)
+            except:
+                return False
+        else:
+            return True
 
 win = InstallerWindow()
 win.connect("delete-event", Gtk.main_quit)
