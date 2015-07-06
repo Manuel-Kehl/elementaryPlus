@@ -25,9 +25,8 @@ from os.path import expanduser
 import shutil
 from whatToUse import *
 
-home = expanduser("~")
-
 themeDir = os.getcwd() + "/elementaryPlus"
+home = expanduser("~")
 destDir = home + "/.icons/"
 
 def installCustomIndicatorIcons():

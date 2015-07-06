@@ -23,19 +23,17 @@ import os
 from os import symlink
 from os.path import expanduser
 import shutil
-from whatToUse import *
 
+icon = sys.argv[3] + "icons/spotify/icon.png"
 home = expanduser("~")
+destDir = home + "/.local/share/sni-qt/icons/spotify/"
 
 def listfiles(folder):
     for root, folders, files in os.walk(folder):
         for filename in folders + files:
             yield os.path.join(root, filename)
 
-def installCustomIndicatorIcons():
-    icon = os.getcwd() + "/scripts/icons/spotify/icon.png"
-    destDir = home + "/.local/share/sni-qt/icons/spotify/"
-
+def installCustomIndicatorIcons(installMethod):
     for filename in listfiles('/tmp/'):
         if "/icons/hicolor/512x512/apps/" in filename:
             uuid = filename.split("/")
@@ -63,7 +61,6 @@ def installCustomIndicatorIcons():
         print "Invalid operation!"
 
 def removeCustomIndicatorIcons():
-    destDir = home + "/.local/share/sni-qt/icons/spotify"
     if os.path.exists(destDir):
         try:
             shutil.rmtree(destDir)
@@ -73,6 +70,6 @@ def removeCustomIndicatorIcons():
         return True
 
 if sys.argv[1] == "--install":
-    installCustomIndicatorIcons()
+    installCustomIndicatorIcons(sys.argv[2])
 elif sys.argv[1] == "--remove":
     removeCustomIndicatorIcons()

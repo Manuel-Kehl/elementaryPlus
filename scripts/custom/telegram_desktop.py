@@ -23,13 +23,13 @@ import os
 from os import symlink
 from os.path import expanduser
 import shutil
-from whatToUse import *
 
+iconDir = sys.argv[3] + "icons/telegram_desktop/"
 home = expanduser("~")
-iconDir = os.getcwd() + "/scripts/icons/telegram_desktop/"
 destDir = home + "/.TelegramDesktop/tdata/ticons/"
 
-def installCustomIndicatorIcons():
+def installCustomIndicatorIcons(installMethod):
+    print installMethod
     if not os.path.exists(destDir):
         os.makedirs(destDir)
     else:
@@ -38,6 +38,8 @@ def installCustomIndicatorIcons():
         except:
             return False
         os.makedirs(destDir)
+
+    print "1"
 
     if installMethod == "copy":
         try:
@@ -53,7 +55,7 @@ def installCustomIndicatorIcons():
         try:
             for icon in os.listdir(iconDir):
                 symlink(iconDir + icon, destDir + icon)
-            symlink(destDir + "ico_22_0.png", destDir + "icomute_22_0.png")
+            symlink(iconDir + "ico_22_0.png", destDir + "icomute_22_0.png")
             for i in range(2, 100):
                 symlink(iconDir + "ico_22_1.png", destDir + "ico_22_" + str(i) + ".png")
                 symlink(iconDir + "ico_22_1.png", destDir + "icomute_22_" + str(i) + ".png")
@@ -71,6 +73,6 @@ def removeCustomIndicatorIcons():
 
 
 if sys.argv[1] == "--install":
-    installCustomIndicatorIcons()
+    installCustomIndicatorIcons(sys.argv[2])
 elif sys.argv[1] == "--remove":
     removeCustomIndicatorIcons()
