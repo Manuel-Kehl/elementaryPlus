@@ -36,7 +36,7 @@ if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
 
 appName = "elementary+ Configurator"
 
-fromPPA = True
+fromPPA = False
 
 if fromPPA is True:
     whatToUse = "link"
