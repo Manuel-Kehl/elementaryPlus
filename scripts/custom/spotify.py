@@ -40,8 +40,6 @@ def installCustomIndicatorIcons(installMethod):
             uuid = uuid[-1].split("_")
             uuid = uuid[-1]
 
-    print uuid
-
     if not os.path.exists(destDir):
         os.makedirs(destDir)
     else:

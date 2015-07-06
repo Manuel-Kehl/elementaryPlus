@@ -29,7 +29,6 @@ home = expanduser("~")
 destDir = home + "/.TelegramDesktop/tdata/ticons/"
 
 def installCustomIndicatorIcons(installMethod):
-    print installMethod
     if not os.path.exists(destDir):
         os.makedirs(destDir)
     else:
@@ -38,8 +37,6 @@ def installCustomIndicatorIcons(installMethod):
         except:
             return False
         os.makedirs(destDir)
-
-    print "1"
 
     if installMethod == "copy":
         try:
