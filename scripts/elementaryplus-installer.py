@@ -106,6 +106,13 @@ iconMegaList = [
         "standard"
     ],
     [
+        "ScreenCloud",
+        "/usr/bin/screencloud",
+        "ScreenCloud is a Screenshot sharing tool.",
+        "screencloud",
+        "standard"
+    ],
+    [
         "Seafile Client",
         "/usr/bin/seafile-applet",
         "The Seafile desktop client",
@@ -512,7 +519,7 @@ class InstallerWindow(Gtk.Window):
                 if len(toRemove) != 0:
                     failed = []
                     for data in toRemove[:]:
-                        
+
                         if data[1] == "standard":
                             out = self.removeQtIndicatorIcons(data[0])
                         else:
