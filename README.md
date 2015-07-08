@@ -21,7 +21,7 @@ sudo add-apt-repository ppa:cybre/elementaryplus
 sudo apt-get update
 sudo apt-get upgrade && sudo apt-get install elementaryplus
 ```
-or just download the directory or clone this repository:
+or just [download](https://github.com/mank319/elementaryPlus/archive/master.zip) or clone this repository.
 
 To enable the theme, launch "elementary+ Configurator" from the application menu or run `./install.sh` from the parent directory of this repository, respectively, and switch on the "Core Icon Theme" option.
 
