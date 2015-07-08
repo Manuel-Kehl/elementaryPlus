@@ -6,6 +6,6 @@ Icon=preferences-desktop
 Exec=/usr/bin/elementaryplus-configurator
 NoDisplay=false
 Categories=Utility;
-StartupNotify=false
+StartupNotify=true
 Terminal=false
 
