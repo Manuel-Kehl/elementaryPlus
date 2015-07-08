@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="apps.elementaryPlusConfigurator" path="/apps/elementaryPlusConfigurator/">
-    <key type="as" name="installed">
-      <default>[]</default>
-      <summary>Installed components</summary>
-      <description>List of installed components.</description>
-    </key>
     <key type="b" name="sniqt-patched">
       <default>false</default>
       <summary>Sni-qt patched</summary>
