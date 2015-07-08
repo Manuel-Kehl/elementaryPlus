@@ -74,6 +74,14 @@ iconMegaList = [
         "custom"
     ],
     [
+        "Bitcoin",
+        "bitcoin-qt",
+        "/usr/bin/bitcoin-qt",
+        "Bitcoin is a free open source peer-to-peer electronic cash system that is completely decentralized, without the need for a central server or trusted parties",
+        "bitcoin128",
+        "standard"
+    ],
+    [
         "flareGet",
         "flareget",
         "/usr/bin/flareget",
@@ -93,7 +101,7 @@ iconMegaList = [
         "HP Linux Printing and Imaging",
         "python2.7",
         "/usr/bin/hp-systray",
-        "The HP Linux Printing and Imaging System provides full support for printing on most HP SFP inkjets and many LaserJets, and for scanning, sending faxes and for photo-card access on most HP MFP printers.",
+        "The HP Linux Printing and Imaging System provides full support for printing on most HP SFP inkjets and many LaserJets, and for scanning, sending faxes and for photo-card access on most HP MFP printers",
         "HPmenu",
         "standard"
     ],
@@ -125,7 +133,7 @@ iconMegaList = [
         "ScreenCloud",
         "screencloud",
         "/usr/bin/screencloud",
-        "ScreenCloud is a Screenshot sharing tool.",
+        "ScreenCloud is a Screenshot sharing tool",
         "screencloud",
         "standard"
     ],
@@ -432,13 +440,13 @@ class InstallerWindow(Gtk.Window):
         if out == 1:
             self.error = 1
             if appName != "spotify":
-                self.notify('elementary+ Configurator', 'Error while installing ' + appName.replace("_", " ").capitalize(), 'error')         
+                self.notify('elementary+ Configurator', 'Error while installing ' + appName.replace("_", " ").capitalize(), 'error')
 
         if self.error == 0:
             installedComponents.append(appName)
 
     def remove(self, appName, installMethod, sniqtPrefix):
-        out = 0     
+        out = 0
         if installMethod == "standard":
             out = self.removeQtIndicatorIcons(sniqtPrefix)
         else:
@@ -453,7 +461,7 @@ class InstallerWindow(Gtk.Window):
 
     def installQtIndicatorIcons(self, appName, sniqtPrefix):
         iconDir = scripts + "icons/" + appName + "/"
-        destDir = home + "/.local/share/sni-qt/icons/" + appName + "/"
+        destDir = home + "/.local/share/sni-qt/icons/" + sniqtPrefix + "/"
 
         if whatToUse == "copy":
             if os.path.exists(destDir):
