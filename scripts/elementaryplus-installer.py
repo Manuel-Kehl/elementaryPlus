@@ -28,13 +28,13 @@ from os import symlink
 from os.path import expanduser
 import shutil
 import subprocess
-from subprocess import check_output
 import apt
 
-if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
-    sys.exit("You need to have GTK 3.14 or newer to run this script")
+if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 12):
+    sys.exit("You need to have GTK 3.12 or newer to run this script")
 
 appName = "elementary+ Configurator"
+iconThemeName = "elementaryPlus"
 
 fromPPA = False
 
@@ -50,14 +50,24 @@ if os.path.isfile(schema) is False:
     subprocess.call(["pkexec", scripts + "first_start.sh", scripts])
 
 settings = Gio.Settings.new("apps.elementaryPlusConfigurator")
-installedComponents = settings.get_strv("installed")
 patchedSniqt = settings.get_boolean("sniqt-patched")
 
 systemSettings = Gio.Settings.new("org.gnome.desktop.interface")
 
+home = expanduser("~")
+
 iconMegaList = [
+#   [
+#       "Name",
+#       "Sni-qt prefix",
+#       "Binary/Static File", [path]
+#       "Description",
+#       "Icon",
+#       "Install Method", ["custom", "standard"]
+#   ],
     [
         "Core icon theme",
+        "",
         "",
         "The core elementary+ icon theme",
         "preferences-desktop",
@@ -65,6 +75,7 @@ iconMegaList = [
     ],
     [
         "flareGet",
+        "flareget",
         "/usr/bin/flareget",
         "FlareGet is a full featured, multi-threaded download manager and accelerator for Windows, Mac and Linux",
         "flareget",
@@ -72,6 +83,7 @@ iconMegaList = [
     ],
     [
         "Google Music Manager",
+        "MusicManager",
         "/opt/google/musicmanager/google-musicmanager",
         "With Google Play Music for Chrome or Music Manager, you can add your personal music library to the cloud",
         "google-musicmanager",
@@ -79,6 +91,7 @@ iconMegaList = [
     ],
     [
         "HP Linux Printing and Imaging",
+        "python2.7",
         "/usr/bin/hp-systray",
         "The HP Linux Printing and Imaging System provides full support for printing on most HP SFP inkjets and many LaserJets, and for scanning, sending faxes and for photo-card access on most HP MFP printers.",
         "HPmenu",
@@ -86,6 +99,7 @@ iconMegaList = [
     ],
     [
         "MEGAsync",
+        "megasync",
         "/usr/bin/megasync",
         "MEGAsync is a free online storage service",
         "mega",
@@ -93,6 +107,7 @@ iconMegaList = [
     ],
     [
         "Mumble",
+        "mumble",
         "/usr/bin/mumble",
         "Mumble is a low-latency, high quality voice chat program for gaming",
         "mumble",
@@ -100,6 +115,7 @@ iconMegaList = [
     ],
     [
         "OwnCloud",
+        "owncloud",
         "/usr/bin/owncloud",
         "An enterprise file sharing solution for online collaboration and storage",
         "owncloud",
@@ -107,6 +123,7 @@ iconMegaList = [
     ],
     [
         "ScreenCloud",
+        "screencloud",
         "/usr/bin/screencloud",
         "ScreenCloud is a Screenshot sharing tool.",
         "screencloud",
@@ -114,6 +131,7 @@ iconMegaList = [
     ],
     [
         "Seafile Client",
+        "seafile-applet",
         "/usr/bin/seafile-applet",
         "The Seafile desktop client",
         "seafile",
@@ -121,6 +139,7 @@ iconMegaList = [
     ],
     [
         "Skype",
+        "skype",
         "/usr/bin/skype",
         "Stay in touch with your family and friends for free on Skype",
         "skype",
@@ -128,6 +147,7 @@ iconMegaList = [
     ],
     [
         "Spotify",
+        "spotify",
         "/opt/spotify/spotify-client/spotify",
         "Spotify is a digital music service that gives you access to millions of songs",
         "spotify-client",
@@ -135,19 +155,22 @@ iconMegaList = [
     ],
     [
         "Telegram Desktop",
-        "%s/.TelegramDesktop/tdata/icon.png" % (os.getenv('HOME')),
+        "",
+        "%s/.TelegramDesktop/tdata/icon.png" % (home),
         "Telegram is a messaging app with a focus on speed and security, it's super fast, simple and free",
         "telegram",
         "custom"
     ],
     [
         "Tomahawk",
+        "tomahawk",
         "/usr/bin/tomahawk",
         "A new kind of music player that invites all your streams, downloads, cloud music storage, playlists, radio stations and friends to the same party. It's about time they all mingle",
         "tomahawk",
         "standard"
     ],
     [
+        "WizNote",
         "WizNote",
         "/usr/bin/WizNote",
         "Wiznote is a cloud based notes solution which helps personal and professional to take notes and collaborate with team members",
@@ -156,103 +179,50 @@ iconMegaList = [
     ]
 ]
 
-if fromPPA is True:
-    iconMegaList.pop(0)
+customCheckLocations = [
+    [
+        "telegram_desktop",
+        ["%s/.TelegramDesktop/tdata/ticons/elementaryPlus.installed" % (home)]
+    ]
+]
 
-components = []
+installedComponents = []
+availableComponents = []
 
 iconTheme = Gtk.IconTheme
 defaultIconTheme = iconTheme.get_default()
 
+def checkIfInstalled(appName):
+    for customLocation in customCheckLocations:
+        if appName in customLocation:
+            for location in customLocation[1]:
+                if os.path.isfile(location):
+                    installedComponents.append(appName)
+    if os.path.isdir("%s/.local/share/sni-qt/icons/" % (home) + codeName ):
+        installedComponents.append(codeName)
+
 for a in iconMegaList:
     name = a[0]
     codeName = a[0].lower().replace(" ", "_")
-    shortDesc = (a[2][:60] + '..') if len(a[2]) > 60 else a[2]
-    icon = ("package-x-generic") if iconTheme.has_icon(defaultIconTheme, a[3]) == False else a[3]
-    installMethod = a[4]
-    enabled = (True) if os.path.isfile(a[1]) else False
-    if codeName == "core_icon_theme":
-        components.append([name, "core", shortDesc, icon, installMethod, True])
-    else:
-        components.append([name, codeName, shortDesc, icon, installMethod, enabled])
+    shortDesc = (a[3][:60] + '...') if len(a[3]) > 60 else a[3]
+    icon = ("package-x-generic") if iconTheme.has_icon(defaultIconTheme, a[4]) == False else a[4]
+    installMethod = a[5]
+    sniqtPrefix = a[1]
+    enabled = (True) if os.path.isfile(a[2]) or codeName == "core_icon_theme" else False
+    checkIfInstalled(codeName)
+    availableComponents.append([name, codeName, shortDesc, icon, installMethod, sniqtPrefix, enabled])
 
-components.sort(key=lambda x: x[5], reverse=True)
+availableComponents.sort(key=lambda x: x[6], reverse=True)
 
-toInstall = []
-toRemove = []
-
-iconThemeName = "elementaryPlus"
-home = expanduser("~")
-
-class confirmDialog(Gtk.Dialog):
-
-    def __init__(self, parent):
-        Gtk.Dialog.__init__(self, "Confirm", parent, 0,
-                            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-                                Gtk.STOCK_OK, Gtk.ResponseType.OK))
-
-        self.set_default_size(200, 100)
-        self.set_resizable(False)
-        self.set_border_width(6)
-
-        dataToInstall = []
-        dataToRemove = []
-
-        for sublist in toInstall:
-            for x in components:
-                if x[1] in sublist:
-                    dataToInstall.append(x[0])
-        toInstallList = ", ".join(dataToInstall)
-
-        for sublist in toRemove:
-            for x in components:
-                if x[1] in sublist:
-                    dataToRemove.append(x[0])
-        toRemoveList = ", ".join(dataToRemove)
-
-        labelToInstall = Gtk.Label("To install: " + toInstallList)
-        labelToRemove = Gtk.Label("To remove: " + toRemoveList + "\n")
-        labelQuestion = Gtk.Label("Are you sure you want to appply these changes?\n")
-
-        box = self.get_content_area()
-        if toInstall != []:
-            box.add(labelToInstall)
-        if toRemove != []:
-            box.add(labelToRemove)
-        box.add(labelQuestion)
-        self.show_all()
-
-
-class useThemeDialog(Gtk.Dialog):
-
-    def __init__(self, parent):
-        Gtk.Dialog.__init__(self, "Switch to elementary+", parent, 0,
-                            (Gtk.STOCK_NO, Gtk.ResponseType.NO,
-                                Gtk.STOCK_YES, Gtk.ResponseType.YES))
-
-        self.set_default_size(150, 100)
-        self.set_resizable(False)
-        self.set_border_width(6)
-
-        labelQuestion = Gtk.Label("Would you like to switch to elementary+ now?", xalign=0)
-        labelInfo = Gtk.Label("This will replace your current icon theme.\n", xalign=0)
-        labelInfo1 = Gtk.Label("You can swith back to your previous icon theme \
-            \nby removing the \"Core icon theme\" from the installer \
-            \nor by selecting it in elementary Tweaks.")
-
-        box = self.get_content_area()
-        box.add(labelQuestion)
-        box.add(labelInfo)
-        box.add(labelInfo1)
-        self.show_all()
-
+print "installed", installedComponents
 
 class InstallerWindow(Gtk.Window):
-
     def __init__(self):
         Gtk.Window.__init__(self, title=appName)
         self.set_size_request(500, 500)
         self.set_icon_name("preferences-desktop")
+
+        self.error = 0
 
         self.hb = Gtk.HeaderBar()
         self.hb.set_show_close_button(True)
@@ -266,12 +236,6 @@ class InstallerWindow(Gtk.Window):
         searchButton.connect('clicked', self.search_handler)
         self.searchButton = searchButton
         self.hb.pack_start(searchButton)
-
-        self.installButton = Gtk.Button(label="  Apply  ")
-        self.installButton.set_sensitive(False)
-        self.installButton.get_style_context().add_class("suggested-action")
-        self.installButton.connect("clicked", self.install, "yes")
-        self.hb.pack_end(self.installButton)
 
         Notify.init(appName)
 
@@ -339,28 +303,31 @@ class InstallerWindow(Gtk.Window):
         placeholder.show_all()
 
         scroller.add(self.lbox)
-
-        for i in range(len(components)):
+        for i in range(len(availableComponents)):
             for sublist in iconMegaList:
-                if sublist[0] == components[i][0]:
-                    longDesc = sublist[2]
-
-            item = self.create_item(components[i][0], components[i][3], components[i][2], components[i][5])
+                if sublist[0] == availableComponents[i][0]:
+                    longDesc = sublist[3]
+            item = self.create_item(availableComponents[i][0], availableComponents[i][3], availableComponents[i][2], availableComponents[i][6])
 
             componentSwitch = Gtk.Switch()
-            componentSwitch.set_name(components[i][0].lower())
+            componentSwitch.set_name(availableComponents[i][0].lower())
             componentSwitch.props.halign = Gtk.Align.END
             componentSwitch.props.valign = Gtk.Align.CENTER
-            componentSwitch.connect("notify::active", self.callback, components[i][1], components[i][4])
+            componentSwitch.connect("notify::active", self.callback, availableComponents[i][1], availableComponents[i][4], availableComponents[i][5])
 
-            if components[i][1] in installedComponents:
+            if availableComponents[i][1] in installedComponents:
                 componentSwitch.set_active(True)
+
+            if availableComponents[i][1] == "core_icon_theme":
+                currentTheme = systemSettings.get_string("icon-theme")
+                if currentTheme == iconThemeName:
+                    componentSwitch.set_active(True)
 
             wrap = Gtk.HBox(0)
             wrap.pack_start(item, True, True, 0)
             wrap.pack_end(componentSwitch, False, False, 2)
 
-            if components[i][5] is False:
+            if availableComponents[i][6] is False:
                 wrap.set_sensitive(False)
 
             wrap.set_tooltip_text(longDesc)
@@ -428,141 +395,63 @@ class InstallerWindow(Gtk.Window):
         else:
             return False
 
-    def callback(self, widget, event, data, method):
-
-        installedComponents = settings.get_strv("installed")
-
-        print "\n%s was toggled %s" % (data, ("OFF", "ON")[widget.get_active()])
-
+    def callback(self, widget, event, data, method, sniqtPrefix):
         if widget.get_active() == 1:
-            if toRemove != [] and data in installedComponents:
-                toRemove.remove([data, method])
+            if data == "core_icon_theme":
+                self.toggleTheme("install")
             elif data not in installedComponents:
-                toInstall.append([data, method])
+                self.install(data, method, sniqtPrefix)
         else:
-            if data in installedComponents:
-                toRemove.append([data, method])
+            if data == "core_icon_theme":
+                self.toggleTheme("remove")
+            elif data in installedComponents and self.error == 0:
+                self.remove(data, method, sniqtPrefix)
+
+    def install(self, appName, installMethod, sniqtPrefix):
+        patchedSniqt = settings.get_boolean("sniqt-patched")
+        if appName != "core_icon_theme" and appName != "telegram_desktop" and patchedSniqt is False and fromPPA is False:
+            print "Installing patched sni-qt"
+            self.notify('This may take a while', 'Please don\'t close the window', 'preferences-desktop')
+            if subprocess.call(['pkexec', scripts + "sni-qt.sh"]) == 0:
+                cache = apt.Cache()
+                version = cache["sni-qt"].candidate.version
+                if "0.2.7" in version:
+                    print "Succesfully patched sni-qt"
+                    settings.set_boolean("sniqt-patched", True)
+                else:
+                    print "Failed to patch sni-qt"
             else:
-                toInstall.remove([data, method])
+                print "Unknown error"
 
-        if len(toInstall) != 0 or len(toRemove) != 0:
-            self.installButton.set_sensitive(True)
+        out = 0
+        if installMethod == "standard":
+            out = self.installQtIndicatorIcons(appName, sniqtPrefix)
         else:
-            self.installButton.set_sensitive(False)
+            out = subprocess.call(['python', scripts + "custom/" + appName + ".py", "--install", whatToUse, scripts])
 
-        print "To install: ", toInstall
-        print "To remove: ", toRemove
+        if out == 1:
+            self.error = 1
+            if appName != "spotify":
+                self.notify('elementary+ Configurator', 'Error while installing ' + appName.replace("_", " ").capitalize(), 'error')         
 
-    def install(self, widget, event, data=None):
+        if self.error == 0:
+            installedComponents.append(appName)
 
-        if len(toInstall) != 0 or len(toRemove) != 0:
-            dialog = confirmDialog(self)
-            response = dialog.run()
-            dialog.destroy()
-            error = False
-            showNotif = False
+    def remove(self, appName, installMethod, sniqtPrefix):
+        out = 0     
+        if installMethod == "standard":
+            out = self.removeQtIndicatorIcons(sniqtPrefix)
+        else:
+            out = subprocess.call(['python', scripts + "custom/" + appName + ".py", "--remove", whatToUse, scripts])
 
-            if response == Gtk.ResponseType.OK:
-                if len(toInstall) != 0:
-                    failed = []
-                    for data in toInstall[:]:
-                        patchedSniqt = settings.get_boolean("sniqt-patched")
-                        if data[0] != "core" and data[0] != "telegram_desktop" and patchedSniqt is False:
-                            print "Installing patched sni-qt"
-                            self.notify('This may take a while', 'Please don\'t close the window', 'preferences-desktop')
-                            if subprocess.call(['pkexec', scripts + "sni-qt.sh"]) == 0:
-                                cache = apt.Cache()
-                                version = cache["sni-qt"].candidate.version
-                                if "0.2.7" in version:
-                                    print "Succesfully patched sni-qt"
-                                    settings.set_boolean("sniqt-patched", True)
-                                else:
-                                    print "Failed to patch sni-qt"
-                            else:
-                                print "Unknown error"
+        if out == 1:
+            self.error = 1
+            self.notify('elementary+ Configurator', 'Error while removing ' + appName.replace("_", " ").capitalize(), 'error')
 
-                        if data[1] == "standard":
-                            out = self.installQtIndicatorIcons(data[0])
-                        else:
-                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--install", whatToUse, scripts])
+        if self.error == 0:
+            installedComponents.remove(appName)
 
-                        print out
-
-                        if out is False:
-                            error = True
-                            failed.append(data[0].replace("_", " ").capitalize())
-                            for row in self.lbox:
-                                for grid in row:
-                                    for switch in grid:
-                                        if switch.get_name() == data[0]:
-                                            switch.set_active(False)
-                                continue
-                        showNotif = True
-                        print data[0] + " was installed"
-
-                        if data[0] == "core":
-                            dialog = useThemeDialog(self)
-                            response = dialog.run()
-                            dialog.destroy()
-
-                            if response == Gtk.ResponseType.YES:
-                                currentTheme = systemSettings.get_string("icon-theme")
-                                settings.set_string("previous-icon-theme", currentTheme)
-                                systemSettings.set_string("icon-theme", iconThemeName)
-                            elif response == Gtk.ResponseType.NO:
-                                print "Theme not changed"
-
-                        if not data[0].replace("_", " ").capitalize() in failed:
-                            installedComponents.append(data[0])
-                    settings.set_strv("installed", installedComponents)
-
-                if len(toRemove) != 0:
-                    failed = []
-                    for data in toRemove[:]:
-
-                        if data[1] == "standard":
-                            out = self.removeQtIndicatorIcons(data[0])
-                        else:
-                            out = check_output(['python', scripts + "custom/" + data[0] + ".py", "--remove", whatToUse, scripts])
-
-                        print out
-
-                        if out is False:
-                            error = True
-                            failed.append(data[0].replace("_", " ").capitalize())
-                            for row in self.lbox:
-                                for grid in row:
-                                    for switch in grid:
-                                        if switch.get_name() == data[0]:
-                                            switch.set_active(True)
-                                continue
-                        showNotif = True
-                        print data[0] + " was removed"
-                        if data[0] == "core":
-                            currentTheme = systemSettings.get_string("icon-theme")
-                            if currentTheme == iconThemeName:
-                                previousIconTheme = settings.get_string("previous-icon-theme")
-                                systemSettings.set_string("icon-theme", previousIconTheme)
-
-                        if not data[0].replace("_", " ").capitalize() in failed:
-                            installedComponents.remove(data[0])
-                    settings.set_strv("installed", installedComponents)
-
-                if showNotif is True:
-                    if error is False:
-                        self.notify('All changes applied', 'Check out your new icons!', 'preferences-desktop')
-                    else:
-                        self.notify('elementary+ Configurator', 'Error while configuring: ' + ", ".join([x for x in failed]), 'preferences-desktop')
-
-                toRemove[:] = []
-                toInstall[:] = []
-
-                self.installButton.set_sensitive(False)
-
-            elif response == Gtk.ResponseType.CANCEL:
-                self.installButton.set_sensitive(True)
-
-    def installQtIndicatorIcons(self, appName):
+    def installQtIndicatorIcons(self, appName, sniqtPrefix):
         iconDir = scripts + "icons/" + appName + "/"
         destDir = home + "/.local/share/sni-qt/icons/" + appName + "/"
 
@@ -589,8 +478,8 @@ class InstallerWindow(Gtk.Window):
         else:
             print "Invalid operation!"
 
-    def removeQtIndicatorIcons(self, appName):
-        destDir = home + "/.local/share/sni-qt/icons/" + appName
+    def removeQtIndicatorIcons(self, sniqtPrefix):
+        destDir = home + "/.local/share/sni-qt/icons/" + sniqtPrefix
         if os.path.exists(destDir):
             try:
                 shutil.rmtree(destDir)
@@ -598,6 +487,44 @@ class InstallerWindow(Gtk.Window):
                 return False
         else:
             return True
+
+    def toggleTheme(self, operation):
+        currentTheme = systemSettings.get_string("icon-theme")
+        previousIconTheme = settings.get_string("previous-icon-theme")
+
+        if os.path.isdir(home + "/.local/share/icons/elementaryPlus"):
+            shutil.rmtree(home + "/.local/share/icons/elementaryPlus")
+
+        if os.path.isdir("/usr/share/icons/elementaryPlus"):
+            print "/usr/share... exists"
+            if operation == "install":
+                if fromPPA is True:
+                    if os.path.isdir(home + "/.icons/elementaryPlus"):
+                        print "Remove from .icons"
+                        shutil.rmtree(home + "/.icons/elementaryPlus")
+                    if currentTheme != iconThemeName:
+                        settings.set_string("previous-icon-theme", currentTheme)
+                        systemSettings.set_string("icon-theme", iconThemeName)
+                else:
+                    out = subprocess.call(['python', scripts + "custom/core_icon_theme.py", "--install", whatToUse, scripts])
+                    if currentTheme != iconThemeName:
+                        settings.set_string("previous-icon-theme", currentTheme)
+                        systemSettings.set_string("icon-theme", iconThemeName)
+            else:
+                if fromPPA is True:
+                    systemSettings.set_string("icon-theme", previousIconTheme)
+                else:
+                    out = subprocess.call(['python', scripts + "custom/core_icon_theme.py", "--remove", whatToUse, scripts])
+                    systemSettings.set_string("icon-theme", previousIconTheme)
+        else:
+            print "/usr/share... does not exist"
+            if operation == "install":
+                out = subprocess.call(['python', scripts + "custom/core_icon_theme.py", "--install", whatToUse, scripts])
+                settings.set_string("previous-icon-theme", currentTheme)
+                systemSettings.set_string("icon-theme", iconThemeName)
+            else:
+                out = subprocess.call(['python', scripts + "custom/core_icon_theme.py", "--remove", whatToUse, scripts])
+                systemSettings.set_string("icon-theme", previousIconTheme)
 
 win = InstallerWindow()
 win.connect("delete-event", Gtk.main_quit)

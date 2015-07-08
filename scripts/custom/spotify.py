@@ -20,6 +20,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
 import sys
 import os
+from gi.repository import Notify
 from os import symlink
 from os.path import expanduser
 import shutil
@@ -27,6 +28,7 @@ import shutil
 icon = sys.argv[3] + "icons/spotify/icon.png"
 home = expanduser("~")
 destDir = home + "/.local/share/sni-qt/icons/spotify/"
+Notify.init("elementary+ Configurator")
 
 def listfiles(folder):
     for root, folders, files in os.walk(folder):
@@ -34,38 +36,39 @@ def listfiles(folder):
             yield os.path.join(root, filename)
 
 def installCustomIndicatorIcons(installMethod):
+    uuid = ""
     for filename in listfiles('/tmp/'):
         if "/icons/hicolor/512x512/apps/" in filename:
             uuid = filename.split("/")
             uuid = uuid[-1].split("_")
             uuid = uuid[-1]
 
-    if not os.path.exists(destDir):
-        os.makedirs(destDir)
+    if uuid != "":
+        if not os.path.exists(destDir):
+            os.makedirs(destDir)
+        else:
+            shutil.rmtree(destDir)
+            os.makedirs(destDir)
+
+        if installMethod == "copy":
+            shutil.copy(icon, destDir + uuid)
+        elif installMethod == "link":
+            symlink(icon, destDir + uuid)
+        else:
+            print "Invalid operation!"
     else:
         try:
-            shutil.rmtree(destDir)
+            notification = Notify.Notification.new("elementary+ Configurator", "Failed to install Spotify\nPlease run Spotify and try again!", "error")
+            notification.set_urgency(1)
+            notification.show()
+            del notification
         except:
-            return False
-        os.makedirs(destDir)
-
-    if installMethod == "copy":
-        copy = shutil.copy(icon, destDir + uuid)
-        return copy
-    elif installMethod == "link":
-        link = symlink(icon, destDir + uuid)
-        return link
-    else:
-        print "Invalid operation!"
+            pass
+        exit(1)
 
 def removeCustomIndicatorIcons():
     if os.path.exists(destDir):
-        try:
-            shutil.rmtree(destDir)
-        except:
-            return False
-    else:
-        return True
+        shutil.rmtree(destDir)
 
 if sys.argv[1] == "--install":
     installCustomIndicatorIcons(sys.argv[2])
