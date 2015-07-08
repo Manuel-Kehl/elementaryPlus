@@ -23,7 +23,7 @@ sudo apt-get upgrade && sudo apt-get install elementaryplus
 ```
 or just download the directory or clone this repository:
 
-To enable the theme run "elementary+ Configurator" from the application menu or run `./install.sh` from the parent directory of this repository, respectively.
+To enable the theme, run "elementary+ Configurator" from the application menu or run `./install.sh` from the parent directory of this repository, respectively.
 
 Please also make sure, that the original elementary icon theme is installed, because elementary+ only provides additions and inherits the base theme.
 
