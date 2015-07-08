@@ -23,28 +23,29 @@ import os
 from os import symlink
 from os.path import expanduser
 import shutil
-from whatToUse import *
 
 themeDir = os.getcwd() + "/elementaryPlus"
 home = expanduser("~")
 destDir = home + "/.icons/"
+destDir2 = home + "/.local/share/icons/"
 
-def installCustomIndicatorIcons():
+def installCoreIconTheme():
     if not os.path.exists(destDir):
         os.makedirs(destDir)
     try:
         shutil.copytree(themeDir, destDir + "elementaryPlus")
     except:
-        return False
+        exit(1)
 
-def removeCustomIndicatorIcons():
+def removeCoreIconTheme():
     if os.path.exists(destDir):
         try:
-            shutil.rmtree(destDir)
-        except:
-            return False
+            shutil.rmtree(destDir + "elementaryPlus")
+            shutil.rmtree(destDir2 + "elementaryPlus")
+        except OSError:
+            pass
 
 if sys.argv[1] == "--install":
-    installCustomIndicatorIcons()
+    installCoreIconTheme()
 elif sys.argv[1] == "--remove":
-    removeCustomIndicatorIcons()
+    removeCoreIconTheme()

@@ -34,8 +34,8 @@ def installCustomIndicatorIcons(installMethod):
     else:
         try:
             shutil.rmtree(destDir)
-        except:
-            return False
+        except OSError:
+            exit(1)
         os.makedirs(destDir)
 
     if installMethod == "copy":
@@ -47,7 +47,7 @@ def installCustomIndicatorIcons(installMethod):
                 symlink(destDir + "ico_22_1.png", destDir + "ico_22_" + str(i) + ".png")
                 symlink(destDir + "ico_22_1.png", destDir + "icomute_22_" + str(i) + ".png")
         except:
-            return False
+            exit(1)
     elif installMethod == "link":
         try:
             for icon in os.listdir(iconDir):
@@ -57,16 +57,19 @@ def installCustomIndicatorIcons(installMethod):
                 symlink(iconDir + "ico_22_1.png", destDir + "ico_22_" + str(i) + ".png")
                 symlink(iconDir + "ico_22_1.png", destDir + "icomute_22_" + str(i) + ".png")
         except:
-            return False
+            exit(1)
     else:
         print "Invalid operation!"
+
+    file = open(destDir + "elementaryPlus.installed", "w")
+    file.close()
 
 def removeCustomIndicatorIcons():
     if os.path.exists(destDir):
         try:
             shutil.rmtree(destDir)
-        except:
-            return False
+        except OSError:
+            exit(1)
 
 
 if sys.argv[1] == "--install":
