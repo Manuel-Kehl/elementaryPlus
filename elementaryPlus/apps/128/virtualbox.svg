@@ -14,7 +14,7 @@
    height="128"
    id="svg4094"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="virtualbox.svg">
   <defs
      id="defs4096">
@@ -265,17 +265,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.910757"
-     inkscape:cx="114.68851"
-     inkscape:cy="92.22878"
+     inkscape:zoom="2.796875"
+     inkscape:cx="229.61505"
+     inkscape:cy="12.152816"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1600"
-     inkscape:window-height="854"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="30"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -298,15 +298,6 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      transform="translate(0,64)">
-    <rect
-       style="color:#000000;fill:url(#radialGradient4006);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient4008);stroke-width:0.99999982;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect5505-21"
-       y="-48.500023"
-       x="12.499999"
-       ry="6"
-       rx="6"
-       height="103"
-       width="103" />
     <g
        transform="matrix(2.9499988,0,0,1.2222234,-6.8000012,1.555537)"
        id="g2036"
@@ -339,6 +330,15 @@
            style="fill:url(#linearGradient2459);fill-opacity:1;stroke:none" />
       </g>
     </g>
+    <rect
+       style="color:#000000;fill:url(#radialGradient4006);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient4008);stroke-width:0.99999982;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5505-21"
+       y="-48.500023"
+       x="12.499999"
+       ry="6"
+       rx="6"
+       height="103"
+       width="103" />
     <rect
        style="opacity:0.5;fill:none;stroke:url(#linearGradient3234);stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect6741-7"
