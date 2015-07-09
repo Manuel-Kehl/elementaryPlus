@@ -453,7 +453,7 @@ class InstallerWindow(Gtk.Window):
 
     def installQtIndicatorIcons(self, appName, sniqtPrefix):
         iconDir = scripts + "icons/" + appName + "/"
-        destDir = home + "/.local/share/sni-qt/icons/" + appName + "/"
+        destDir = home + "/.local/share/sni-qt/icons/" + sniqtPrefix + "/"
 
         if whatToUse == "copy":
             if os.path.exists(destDir):
