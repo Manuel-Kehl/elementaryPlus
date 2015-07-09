@@ -14,8 +14,8 @@
    width="128"
    height="128"
    id="svg4053"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="nuvola-player.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="nuvolaplayer.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,15 +25,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1036"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
      id="namedview64"
      showgrid="false"
      inkscape:zoom="1.84375"
-     inkscape:cx="109.14673"
+     inkscape:cx="22.638255"
      inkscape:cy="103.87166"
      inkscape:window-x="0"
-     inkscape:window-y="22"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4053" />
   <defs
@@ -342,12 +342,13 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="g3828">
+     id="g3828"
+     transform="matrix(0.9,0,0,0.9,6.4000002,6.6350106)">
     <g
        transform="matrix(3.263158,0,0,1.4761878,-14.31579,56.119174)"
        id="g3712-8"
