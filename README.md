@@ -1,9 +1,13 @@
 # elementary+ Icon Theme
+
+[![Gitter](https://img.shields.io/badge/GITTER-JOIN_CHAT_%E2%86%92-1dce73.svg
+)](https://gitter.im/mank319/elementaryPlus)
+
 This theme is a community maintained addition to elementary OS's default icon theme. It contains icons for several third party applications that resemble elementary OS's style.
 
-![Screenshot of the indicator icons](screenshot_wingpanel.png)
+![Preview of the indicator icons](StatusIconPreview.png)
 
-![Screenshot of the application icons](screenshot_dock.png)
+![Preview of our app icons](AppIconPreview.png)
 
 ## Intention
 [DanRabbit](http://danrabbit.deviantart.com/) indicated [on deviantART](http://danrabbit.deviantart.com/art/elementary-Icons-65437279), that the original theme is most likely to be limited to applications installed on elementary OS by default.
@@ -27,10 +31,13 @@ To enable the theme, launch "elementary+ Configurator" from the application menu
 
 Please also make sure, that the original elementary icon theme is installed, because elementary+ only provides additions and inherits the base theme.
 
+####The elementary+ Configurator
+![Screenshot of the elementary+ Configurator](screenshot_configurator.png)
+
 ## Contribute
 I am waiting for your pull requests and would love to see this theme become as complete as possible.
 
 Please make sure that your icons fit the overall look and feel of elementary OS.
 It is advised to have a look at elementary OS's [human interface guidelines for icons](https://elementary.io/docs/human-interface-guidelines#icons) before you start designing.
 
-If you are planning to implement status icons you may want to check [faba](http://mokaproject.com/faba-icon-theme/) or [Numix](https://github.com/numixproject) beforehand. They make a good base for monochromatic status icons. The owncloud icons e.g. were simply converted to a white foreground color which looks good, imho.
+If you are planning to implement status icons you may want to check [faba](http://mokaproject.com/faba-icon-theme/) or [Numix](https://github.com/numixproject) beforehand. They make a good base for monochromatic status icons.
