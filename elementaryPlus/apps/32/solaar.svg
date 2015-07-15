@@ -14,7 +14,7 @@
    width="32"
    height="32"
    id="svg6860"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="solaar.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -25,15 +25,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
+     inkscape:window-width="1366"
      inkscape:window-height="745"
      id="namedview46"
      showgrid="true"
      inkscape:zoom="7.375"
-     inkscape:cx="31.759648"
-     inkscape:cy="3.3710361"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:cx="7.8274446"
+     inkscape:cy="3.2354429"
+     inkscape:window-x="1672"
+     inkscape:window-y="274"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <inkscape:grid
@@ -52,26 +52,6 @@
          offset="1"
          style="stop-color:#dffefd;stop-opacity:1"
          id="stop11255" />
-    </linearGradient>
-    <linearGradient
-       x1="167.98311"
-       y1="8.50811"
-       x2="167.98311"
-       y2="54.780239"
-       id="linearGradient5915"
-       xlink:href="#linearGradient5803-0"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.42210105,0,0,0.42210105,-52.55959,2.7747873)" />
-    <linearGradient
-       id="linearGradient5803-0">
-      <stop
-         id="stop5805-3"
-         style="stop-color:#fff5ef;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop5807-4"
-         style="stop-color:#fef8dd;stop-opacity:1"
-         offset="1" />
     </linearGradient>
     <linearGradient
        x1="23.99999"

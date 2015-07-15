@@ -11,7 +11,7 @@
    viewBox="0 0 32 32"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
    sodipodi:docname="minecraft.svg">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,16 +36,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
      id="namedview498"
      showgrid="false"
      inkscape:zoom="7.375"
      inkscape:cx="16"
-     inkscape:cy="16"
-     inkscape:window-x="0"
-     inkscape:window-y="28"
-     inkscape:window-maximized="0"
+     inkscape:cy="15.864407"
+     inkscape:window-x="1672"
+     inkscape:window-y="274"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
@@ -99,20 +99,6 @@
          stop-color="#181818"
          stop-opacity="0"
          id="stop23" />
-    </linearGradient>
-    <linearGradient
-       gradientUnits="userSpaceOnUse"
-       y1="29.821"
-       x2="0"
-       y2="4.115"
-       id="linearGradient25">
-      <stop
-         stop-color="#185f9a"
-         id="stop27" />
-      <stop
-         offset="1"
-         stop-color="#599ec9"
-         id="stop29" />
     </linearGradient>
     <linearGradient
        id="1">

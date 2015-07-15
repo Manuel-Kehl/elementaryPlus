@@ -7,69 +7,17 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="24"
    height="24"
    id="svg3250"
    version="1.1"
-   inkscape:version="0.91+devel r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="caffeine-cup-full.svg"
    viewBox="0 0 24 24">
   <defs
-     id="defs3252">
-    <linearGradient
-       id="linearGradient3678">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0"
-         id="stop3680" />
-      <stop
-         style="stop-color:#e6e6e6;stop-opacity:1;"
-         offset="1"
-         id="stop3682" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3678"
-       id="linearGradient3784"
-       x1="341.31662"
-       y1="267.60748"
-       x2="341.31662"
-       y2="281.36218"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3678"
-       id="linearGradient3084"
-       gradientUnits="userSpaceOnUse"
-       x1="341.31662"
-       y1="267.60748"
-       x2="341.31662"
-       y2="281.36218"
-       gradientTransform="matrix(1.1034483,0,0,1.1034483,-34.724597,-28.209891)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3678"
-       id="linearGradient3087"
-       gradientUnits="userSpaceOnUse"
-       x1="341.31662"
-       y1="267.60748"
-       x2="341.31662"
-       y2="281.36218"
-       gradientTransform="matrix(1.1034483,0,0,1.1034483,-34.310807,-28.209891)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3678"
-       id="linearGradient3090"
-       gradientUnits="userSpaceOnUse"
-       x1="341.31662"
-       y1="267.60748"
-       x2="341.31662"
-       y2="281.36218"
-       gradientTransform="matrix(1.1034483,0,0,1.1034483,-33.897017,-28.209891)" />
-  </defs>
+     id="defs3252" />
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"
@@ -78,8 +26,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="12"
-     inkscape:cy="12"
+     inkscape:cx="-164.5"
+     inkscape:cy="11"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -88,10 +36,10 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      gridtolerance="1"
-     inkscape:window-width="1920"
-     inkscape:window-height="1025"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="1672"
+     inkscape:window-y="274"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -111,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

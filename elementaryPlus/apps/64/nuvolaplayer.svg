@@ -14,8 +14,8 @@
    width="64"
    height="64"
    id="svg4053"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="nuvola-player.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="nuvolaplayer.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,109 +25,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1036"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
      id="namedview64"
      showgrid="false"
      inkscape:zoom="7.375"
-     inkscape:cx="14.573789"
-     inkscape:cy="42.608273"
-     inkscape:window-x="0"
-     inkscape:window-y="22"
+     inkscape:cx="-9.3584144"
+     inkscape:cy="42.47268"
+     inkscape:window-x="1672"
+     inkscape:window-y="274"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4053" />
   <defs
      id="defs4055">
-    <linearGradient
-       x1="25.287861"
-       y1="10.84078"
-       x2="25.287861"
-       y2="44.584663"
-       id="linearGradient3047-2"
-       xlink:href="#linearGradient3940-2-8-4"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.3109917,0,0,1.359547,1.5800788,-1.352131)" />
-    <linearGradient
-       id="linearGradient3940-2-8-4">
-      <stop
-         id="stop3942-1-0-9"
-         style="stop-color:#f7f7f7;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop3944-7-3-0"
-         style="stop-color:#fef2cc;stop-opacity:1"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       x1="27.096104"
-       y1="10.880992"
-       x2="27.096104"
-       y2="39.150768"
-       id="linearGradient3050-8"
-       xlink:href="#linearGradient3895-9-0-3-5-2"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.4102564,0,0,1.4102564,0.3911341,-3.25641)" />
-    <linearGradient
-       id="linearGradient3895-9-0-3-5-2">
-      <stop
-         id="stop3897-0-5-7-89-6"
-         style="stop-color:#dc5639;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop3899-8-7-06-3-8"
-         style="stop-color:#9d0f0f;stop-opacity:1"
-         offset="1" />
-    </linearGradient>
-    <radialGradient
-       cx="7.4956832"
-       cy="8.4497671"
-       r="19.99999"
-       fx="7.4956832"
-       fy="8.4497671"
-       id="radialGradient3059"
-       xlink:href="#linearGradient4067-0-2-0-7"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(8.4397352e-7,0.95747007,-2.3051772,1.8919631e-6,51.478342,-66.340297)" />
-    <linearGradient
-       id="linearGradient4067-0-2-0-7">
-      <stop
-         id="stop4069-2-9-3-6"
-         style="stop-color:#ffe452;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop4071-8-9-5-0"
-         style="stop-color:#ffeb41;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       x1="16.626165"
-       y1="15.298182"
-       x2="20.054544"
-       y2="24.627615"
-       id="linearGradient3062"
-       xlink:href="#linearGradient8265-821-176-38-919-66-249-7-7-0-4"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.1723417,0,0,1.8434143,3.8089885,-5.529971)" />
-    <linearGradient
-       id="linearGradient8265-821-176-38-919-66-249-7-7-0-4">
-      <stop
-         id="stop2687-1-9-7-8"
-         style="stop-color:#ff9116;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop2689-5-4-3-5"
-         style="stop-color:#ffdf80;stop-opacity:0.375"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       x1="23.99999"
-       y1="4.999989"
-       x2="23.99999"
-       y2="43"
-       id="linearGradient3065"
-       xlink:href="#linearGradient3924-2"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.4324324,0,0,1.4362832,-2.3783747,-2.470783)" />
     <linearGradient
        id="linearGradient3924-2">
       <stop
@@ -147,16 +57,6 @@
          style="stop-color:#ffffff;stop-opacity:0.39215687"
          offset="1" />
     </linearGradient>
-    <radialGradient
-       cx="7.4956832"
-       cy="8.4497671"
-       r="19.99999"
-       fx="7.4956832"
-       fy="8.4497671"
-       id="radialGradient3068"
-       xlink:href="#linearGradient4644-104-3-3-6-2-3-4"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(2.739912e-8,3.2957551,-3.4865158,-6.0720387e-8,61.460398,-19.3824)" />
     <linearGradient
        id="linearGradient4644-104-3-3-6-2-3-4">
       <stop
@@ -168,15 +68,6 @@
          style="stop-color:#0eaad9;stop-opacity:1;"
          offset="1" />
     </linearGradient>
-    <linearGradient
-       x1="13.990655"
-       y1="3.9626207"
-       x2="13.990655"
-       y2="43.2943"
-       id="linearGradient3070"
-       xlink:href="#linearGradient3895-9-0-3-7-3"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.4102564,0,0,1.4102564,-1.8461672,-1.84615)" />
     <linearGradient
        id="linearGradient3895-9-0-3-7-3">
       <stop
@@ -254,24 +145,6 @@
        xlink:href="#linearGradient3702-501-757-8"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       x1="27.096104"
-       y1="10.880992"
-       x2="27.096104"
-       y2="39.150768"
-       id="linearGradient4049"
-       xlink:href="#linearGradient3895-9-0-3-5-2"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.4102564,0,0,1.4102564,0.3911341,-3.25641)" />
-    <linearGradient
-       x1="27.096104"
-       y1="10.880992"
-       x2="27.096104"
-       y2="39.150768"
-       id="linearGradient4051"
-       xlink:href="#linearGradient3895-9-0-3-5-2"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.4102564,0,0,1.4102564,0.3911341,-3.25641)" />
-    <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3924-2"
        id="linearGradient3061"
@@ -311,7 +184,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
