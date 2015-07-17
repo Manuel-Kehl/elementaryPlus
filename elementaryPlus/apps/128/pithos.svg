@@ -25,13 +25,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1025"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
      id="namedview64"
      showgrid="true"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="109.08384"
-     inkscape:cy="0.28776429"
+     inkscape:zoom="2"
+     inkscape:cx="14.914075"
+     inkscape:cy="60.197329"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
@@ -1300,7 +1300,7 @@
   </metadata>
   <g
      id="g3222"
-     transform="translate(0,-0.3671875)">
+     transform="matrix(0.9,0,0,0.9,6.4000002,6.3178228)">
     <g
        transform="matrix(3.2631579,0,0,1.4761878,-14.315788,56.619171)"
        id="g3712-8"
