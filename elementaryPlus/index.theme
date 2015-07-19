@@ -6,7 +6,7 @@ Comment=A collection of additions to the default icon theme of elementary OS.
 Example=directory-x-normal
 
 #Directory list
-Directories=apps/16,apps@2x/16,apps/24,apps@2x/24,apps/32,apps@2x/32,apps/48,apps@2x/48,apps/64,apps@2x/64,apps/128,apps@2x/128,emblems/16,emblems@2x/16,mimes/16,mimes@2x/16,mimes/24,mimes@2x/24,mimes/32,mimes@2x/32,mimes/48,mimes@2x/48,mimes/64,mimes@2x/64,mimes/128,mimes@2x/128,places@2x/16,places/24,places@2x/24,places/32,places@2x/32,places/48,places@2x/48,places/64,places@2x/64,places/128,places@2x/128,status/24,status@2x/24,status/48,status@2x/48,status/symbolic,status@2x/symbolic
+Directories=apps/16,apps@2x/16,apps/24,apps@2x/24,apps/32,apps@2x/32,apps/48,apps@2x/48,apps/64,apps@2x/64,apps/128,apps@2x/128,devices/24,devices@2x/24,emblems/16,emblems@2x/16,mimes/16,mimes@2x/16,mimes/24,mimes@2x/24,mimes/32,mimes@2x/32,mimes/48,mimes@2x/48,mimes/64,mimes@2x/64,mimes/128,mimes@2x/128,places@2x/16,places/24,places@2x/24,places/32,places@2x/32,places/48,places@2x/48,places/64,places@2x/64,places/128,places@2x/128,status/24,status@2x/24,status/48,status@2x/48,status/symbolic,status@2x/symbolic
 
 [apps/16]
 Size=16
@@ -96,6 +96,21 @@ Scale=2
 Context=Applications
 MinSize=8
 MaxSize=512
+Type=Scalable
+
+[devices/24]
+Size=24
+Context=Devices
+MinSize=8
+MaxSize=31
+Type=Scalable
+
+[devices@2x/24]
+Size=24
+Scale=2
+Context=Devices
+MinSize=8
+MaxSize=31
 Type=Scalable
 
 [emblems/16]
