@@ -1,11 +1,11 @@
 [Desktop Entry]
 Version=1.0
-Type=Application
 Name=elementary+ Configurator
+Comment=Beautify your elementary!
+Exec=elementaryplus-configurator
 Icon=preferences-desktop
-Exec=/usr/bin/elementaryplus-configurator
-NoDisplay=false
-Categories=Utility;
-StartupNotify=true
 Terminal=false
-
+Type=Application
+StartupNotify=true
+Categories=GTK;Utility;
+X-GNOME-Gettext-Domain=elementaryplus-configurator
