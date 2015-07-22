@@ -45,6 +45,7 @@ def installCustomIndicatorIcons(installMethod):
             symlink(destDir + "ico_22_0.png", destDir + "icomute_22_0.png")
             for i in range(2, 100):
                 symlink(destDir + "ico_22_1.png", destDir + "ico_22_" + str(i) + ".png")
+            for i in range(1, 100):
                 symlink(destDir + "ico_22_1.png", destDir + "icomute_22_" + str(i) + ".png")
         except:
             exit(1)
@@ -55,6 +56,7 @@ def installCustomIndicatorIcons(installMethod):
             symlink(iconDir + "ico_22_0.png", destDir + "icomute_22_0.png")
             for i in range(2, 100):
                 symlink(iconDir + "ico_22_1.png", destDir + "ico_22_" + str(i) + ".png")
+            for i in range(1, 100):
                 symlink(iconDir + "ico_22_1.png", destDir + "icomute_22_" + str(i) + ".png")
         except:
             exit(1)
