@@ -2,6 +2,7 @@
 Version=1.0
 Name=elementary+ Configurator
 Comment=Beautify your elementary!
+TryExec=/usr/bin/elementaryplus-configurator
 Exec=elementaryplus-configurator
 Icon=preferences-desktop
 Terminal=false
