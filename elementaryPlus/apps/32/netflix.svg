@@ -8,16 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="128"
-   width="128"
+   height="32"
+   width="32"
    version="1.1"
-   viewBox="0 0 128 128"
+   viewBox="0 0 32 32.000001"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="netflix.svg"
-   inkscape:export-filename="C:\Data\Dev\github\elementaryPlus\elementaryPlus\apps\128\netflix.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   sodipodi:docname="netflix.svg">
   <metadata
      id="metadata115">
     <rdf:RDF>
@@ -26,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,30 +36,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="745"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
      id="namedview113"
      showgrid="true"
-     inkscape:zoom="8.1026074"
-     inkscape:cx="53.731058"
-     inkscape:cy="65.486351"
-     inkscape:window-x="1672"
-     inkscape:window-y="274"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g39">
-    <inkscape:grid
-       type="xygrid"
-       id="grid4343" />
-  </sodipodi:namedview>
+     inkscape:current-layer="g4181" />
   <defs
      id="defs4">
     <linearGradient
        id="f"
-       y2="42.262"
+       y2="43"
        gradientUnits="userSpaceOnUse"
        x2="24"
-       gradientTransform="matrix(2.7297 0 0 2.7297 -1.5135 925.85)"
-       y1="5.5907"
+       gradientTransform="matrix(.62162 0 0 .62162 1.0811 1022.4)"
+       y1="5"
        x1="24">
       <stop
          stop-color="#fff"
@@ -71,12 +58,12 @@
       <stop
          stop-color="#fff"
          stop-opacity=".23529"
-         offset=".037503"
+         offset=".063165"
          id="stop9" />
       <stop
          stop-color="#fff"
          stop-opacity=".15686"
-         offset=".96667"
+         offset=".95056"
          id="stop11" />
       <stop
          stop-color="#fff"
@@ -84,24 +71,41 @@
          offset="1"
          id="stop13" />
     </linearGradient>
-    <radialGradient
-       id="e"
+    <linearGradient
+       id="g"
+       y2="30.093"
        gradientUnits="userSpaceOnUse"
-       cy="4.3419"
-       cx="32"
-       gradientTransform="matrix(1.8995e-8 4.364 -4.364 1.8995e-8 82.948 800.42)"
-       r="27.5">
+       x2="30.643"
+       gradientTransform="translate(-27.316 1020.4)"
+       y1="3.9158"
+       x1="30.643">
       <stop
-         stop-color="#fafafa"
+         stop-opacity=".27206"
          offset="0"
          id="stop16" />
       <stop
-         stop-color="#e1e1e1"
+         stop-opacity=".36765"
          offset="1"
          id="stop18" />
-    </radialGradient>
+    </linearGradient>
     <radialGradient
        id="d"
+       gradientUnits="userSpaceOnUse"
+       cy="8.4498"
+       cx="20.931"
+       gradientTransform="matrix(1.1657e-8 1.4381 -1.4834 -2.6496e-8 28.534 -1059.8)"
+       r="20">
+      <stop
+         stop-color="#f4f4f4"
+         offset="0"
+         id="stop21" />
+      <stop
+         stop-color="#d0d0d0"
+         offset="1"
+         id="stop23" />
+    </radialGradient>
+    <radialGradient
+       id="c"
        xlink:href="#a"
        gradientUnits="userSpaceOnUse"
        cy="43.5"
@@ -113,15 +117,15 @@
       <stop
          stop-color="#181818"
          offset="0"
-         id="stop22" />
+         id="stop27" />
       <stop
          stop-color="#181818"
          stop-opacity="0"
          offset="1"
-         id="stop24" />
+         id="stop29" />
     </linearGradient>
     <radialGradient
-       id="c"
+       id="b"
        xlink:href="#a"
        gradientUnits="userSpaceOnUse"
        cy="43.5"
@@ -129,7 +133,7 @@
        gradientTransform="matrix(2.0038 0 0 1.4 -20.012 -104.4)"
        r="2.5" />
     <linearGradient
-       id="g"
+       id="e"
        y2="39.999"
        gradientUnits="userSpaceOnUse"
        x2="25.058"
@@ -139,119 +143,99 @@
          stop-color="#181818"
          stop-opacity="0"
          offset="0"
-         id="stop28" />
+         id="stop33" />
       <stop
          stop-color="#181818"
          offset=".5"
-         id="stop30" />
+         id="stop35" />
       <stop
          stop-color="#181818"
          stop-opacity="0"
          offset="1"
-         id="stop32" />
-    </linearGradient>
-    <radialGradient
-       id="b"
-       gradientUnits="userSpaceOnUse"
-       cy="93.468"
-       cx="-4.0288"
-       gradientTransform="matrix(1.5564 0 0 .16979 70.27 1026.5)"
-       r="35.338">
-      <stop
-         offset="0"
-         id="stop35" />
-      <stop
-         stop-opacity="0"
-         offset="1"
          id="stop37" />
-    </radialGradient>
+    </linearGradient>
   </defs>
   <g
-     transform="translate(0 -924.36)"
+     transform="translate(0 -1020.4)"
      id="g39">
-    <path
-       opacity=".2"
-       style="color:#000000"
-       d="m119 1042.4a55 6 0 0 1 -110 0 55 6 0 1 1 110 0z"
-       fill="url(#b)"
-       id="path41" />
     <g
-       transform="matrix(2.7 0 0 .55556 -.80001 1019.3)"
-       id="g43">
+       transform="matrix(0.7 0 0 .44444 -0.8 1030.5)"
+       id="g41">
       <g
          opacity=".4"
          transform="matrix(1.0526 0 0 1.2857 -1.2632 -13.429)"
-         id="g45">
+         id="g43">
         <rect
            height="7"
            width="5"
            y="40"
            x="38"
-           fill="url(#d)"
-           id="rect47" />
+           fill="url(#c)"
+           id="rect45" />
         <rect
            transform="scale(-1)"
            height="7"
            width="5"
            y="-47"
            x="-10"
-           fill="url(#c)"
-           id="rect49" />
+           fill="url(#b)"
+           id="rect47" />
         <rect
            height="7"
            width="28"
            y="40"
            x="10"
-           fill="url(#g)"
-           id="rect51" />
+           fill="url(#e)"
+           id="rect49" />
       </g>
     </g>
     <rect
        style="color:#000000"
-       rx="4.5"
-       ry="4.5"
-       height="102"
-       width="102"
-       y="940.36"
-       x="13"
-       id="rect53"
-       fill="url(#e)"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       transform="scale(1,-1)"
+       rx="1.4911"
+       ry="1.4911"
+       height="24"
+       width="24"
+       y="-1049.4"
+       x="4"
+       fill="url(#d)"
+       id="rect51" />
     <rect
-       rx="4"
-       ry="4"
-       height="101"
-       width="101"
-       y="940.86"
-       x="13.5"
-       id="rect55"
        stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke="url(#f)"
-       fill="none" />
-    <rect
        style="color:#000000"
-       rx="5"
-       ry="5"
-       height="103"
-       width="103"
-       y="939.86"
-       x="12.5"
-       id="rect57"
-       stroke="#000"
+       rx="2"
+       ry="2"
+       height="25"
+       width="25"
+       stroke="url(#g)"
+       stroke-linecap="round"
+       y="1024.9"
+       x="3.5"
        fill="none"
-       opacity=".25" />
+       id="rect53" />
+    <rect
+       stroke-linejoin="round"
+       rx="1"
+       ry="1"
+       height="23"
+       width="23"
+       stroke="url(#f)"
+       stroke-linecap="round"
+       y="1025.9"
+       x="4.5"
+       fill="none"
+       id="rect55" />
     <g
+       transform="matrix(0.2444444,0,0,0.2444444,0.24430092,794.65025)"
        id="g4181">
       <g
          style="fill:#000000;fill-opacity:0.17647059"
          id="layer1-4"
-         transform="matrix(0.3,0,0,0.3,-95.785715,850.80047)">
+         transform="matrix(0.3,0,0,0.3,-95.785715,851.07426)">
         <g
            style="fill:#000000;fill-opacity:0.17647059"
            id="g3235-6"
-           transform="matrix(2.5445375,0,0,2.5445375,1157.1714,-1457.8678)">
+           transform="matrix(2.5445375,0,0,2.5445375,1157.0219,-1447.0287)">
           <path
              style="fill:#000000;fill-opacity:0.17647059;fill-rule:nonzero;stroke:none"
              id="path3015-5"
@@ -292,7 +276,7 @@
       <g
          style="fill:#e50914;fill-opacity:1"
          id="layer1"
-         transform="matrix(0.3,0,0,0.3,-95.785715,849.80047)">
+         transform="matrix(0.3,0,0,0.3,-95.830579,852.27905)">
         <g
            style="fill:#e50914;fill-opacity:1"
            id="g3235"
