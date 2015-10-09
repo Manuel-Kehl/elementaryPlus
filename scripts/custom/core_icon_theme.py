@@ -29,6 +29,7 @@ home = expanduser("~")
 destDir = home + "/.icons/"
 destDir2 = home + "/.local/share/icons/"
 
+
 def installCoreIconTheme():
     if not os.path.exists(destDir):
         os.makedirs(destDir)
@@ -36,6 +37,7 @@ def installCoreIconTheme():
         shutil.copytree(themeDir, destDir + "elementaryPlus")
     except:
         exit(1)
+
 
 def removeCoreIconTheme():
     if os.path.exists(destDir):

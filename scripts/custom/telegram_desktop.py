@@ -28,6 +28,7 @@ iconDir = sys.argv[3] + "icons/telegram_desktop/"
 home = expanduser("~")
 destDir = home + "/.TelegramDesktop/tdata/ticons/"
 
+
 def installCustomIndicatorIcons(installMethod):
     if not os.path.exists(destDir):
         os.makedirs(destDir)
@@ -65,6 +66,7 @@ def installCustomIndicatorIcons(installMethod):
 
     file = open(destDir + "elementaryPlus.installed", "w")
     file.close()
+
 
 def removeCustomIndicatorIcons():
     if os.path.exists(destDir):

@@ -30,10 +30,12 @@ home = expanduser("~")
 destDir = home + "/.local/share/sni-qt/icons/spotify/"
 Notify.init("elementary+ Configurator")
 
+
 def listfiles(folder):
     for root, folders, files in os.walk(folder):
         for filename in folders + files:
             yield os.path.join(root, filename)
+
 
 def installCustomIndicatorIcons(installMethod):
     uuid = ""
@@ -65,6 +67,7 @@ def installCustomIndicatorIcons(installMethod):
         except:
             pass
         exit(1)
+
 
 def removeCustomIndicatorIcons():
     if os.path.exists(destDir):
