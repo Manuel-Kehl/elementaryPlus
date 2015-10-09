@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   viewBox="0 0 24 24"
-   version="1.1"
+   height="24"
    width="24"
-   height="24">
+   version="1.1"
+   viewBox="0 0 24 24"
+   id="svg2">
   <metadata
      id="metadata106">
     <rdf:RDF>
@@ -26,200 +26,169 @@
   <defs
      id="defs4">
     <linearGradient
-       x1="24"
-       y1="5"
-       gradientTransform="matrix(.45946 0 0 .45946 .97422 1029.3)"
-       x2="24"
-       gradientUnits="userSpaceOnUse"
+       id="e"
        y2="43"
-       id="e">
+       gradientUnits="userSpaceOnUse"
+       x2="24"
+       gradientTransform="matrix(.45946 0 0 .45946 .97422 1029.3)"
+       y1="5"
+       x1="24">
       <stop
-         id="stop7"
+         stop-color="#fff"
          offset="0"
-         stop-color="#fff" />
+         id="stop7" />
       <stop
-         id="stop9"
-         offset=".063165"
+         stop-color="#fff"
          stop-opacity=".23529"
-         stop-color="#fff" />
+         offset=".063165"
+         id="stop9" />
       <stop
-         id="stop11"
-         offset=".95056"
+         stop-color="#fff"
          stop-opacity=".15686"
-         stop-color="#fff" />
+         offset=".95056"
+         id="stop11" />
       <stop
-         id="stop13"
-         offset="1"
+         stop-color="#fff"
          stop-opacity=".39216"
-         stop-color="#fff" />
+         offset="1"
+         id="stop13" />
     </linearGradient>
     <radialGradient
-       r="20"
-       gradientTransform="matrix(0 1.1385 -1.2044 -2.0976e-8 22.177 1022.6)"
-       cx="7.4957"
-       cy="8.4498"
+       id="b"
        gradientUnits="userSpaceOnUse"
-       id="b">
+       cy="8.4498"
+       cx="7.4957"
+       gradientTransform="matrix(0 1.1385 -1.2044 -2.0976e-8 22.177 1022.6)"
+       r="20">
       <stop
-         id="stop16"
+         stop-color="#f4f4f4"
          offset="0"
-         stop-color="#f4f4f4" />
+         id="stop16" />
       <stop
-         id="stop18"
+         stop-color="#d0d0d0"
          offset="1"
-         stop-color="#d0d0d0" />
+         id="stop18" />
     </radialGradient>
     <radialGradient
-       r="2.5"
-       gradientTransform="matrix(2.0038 0 0 1.4 27.988 -17.4)"
-       cx="4.993"
-       cy="43.5"
-       gradientUnits="userSpaceOnUse"
+       id="d"
        xlink:href="#a"
-       id="d" />
+       gradientUnits="userSpaceOnUse"
+       cy="43.5"
+       cx="4.993"
+       gradientTransform="matrix(2.0038 0 0 1.4 27.988 -17.4)"
+       r="2.5" />
     <linearGradient
        id="a">
       <stop
-         id="stop22"
+         stop-color="#181818"
          offset="0"
-         stop-color="#181818" />
+         id="stop22" />
       <stop
-         id="stop24"
-         offset="1"
+         stop-color="#181818"
          stop-opacity="0"
-         stop-color="#181818" />
+         offset="1"
+         id="stop24" />
     </linearGradient>
     <radialGradient
-       r="2.5"
-       gradientTransform="matrix(2.0038 0 0 1.4 -20.012 -104.4)"
-       cx="4.993"
-       cy="43.5"
-       gradientUnits="userSpaceOnUse"
+       id="c"
        xlink:href="#a"
-       id="c" />
-    <linearGradient
-       x1="25.058"
-       y1="47.028"
-       x2="25.058"
        gradientUnits="userSpaceOnUse"
+       cy="43.5"
+       cx="4.993"
+       gradientTransform="matrix(2.0038 0 0 1.4 -20.012 -104.4)"
+       r="2.5" />
+    <linearGradient
+       id="f"
        y2="39.999"
-       id="f">
+       gradientUnits="userSpaceOnUse"
+       x2="25.058"
+       y1="47.028"
+       x1="25.058">
       <stop
-         id="stop28"
+         stop-color="#181818"
+         stop-opacity="0"
          offset="0"
-         stop-opacity="0"
-         stop-color="#181818" />
+         id="stop28" />
       <stop
-         id="stop30"
+         stop-color="#181818"
          offset=".5"
-         stop-color="#181818" />
+         id="stop30" />
       <stop
-         id="stop32"
-         offset="1"
+         stop-color="#181818"
          stop-opacity="0"
-         stop-color="#181818" />
+         offset="1"
+         id="stop32" />
     </linearGradient>
   </defs>
   <g
-     id="g34"
-     transform="translate(0 -1028.4)">
+     transform="translate(0 -1028.4)"
+     id="g34">
     <g
-       id="g36"
-       transform="matrix(.55 0 0 .33333 -1.2 1035.7)">
+       transform="matrix(.55 0 0 .33333 -1.2 1035.7)"
+       id="g36">
       <g
-         id="g38"
+         opacity=".4"
          transform="matrix(1.0526 0 0 1.2857 -1.2632 -13.429)"
-         opacity=".4">
+         id="g38">
         <rect
-           id="rect40"
-           fill="url(#d)"
-           x="38"
-           y="40"
-           width="5"
-           height="7" />
-        <rect
-           id="rect42"
-           fill="url(#c)"
-           x="-10"
-           y="-47"
-           width="5"
            height="7"
-           transform="scale(-1)" />
-        <rect
-           id="rect44"
-           fill="url(#f)"
-           x="10"
+           width="5"
            y="40"
+           x="38"
+           fill="url(#d)"
+           id="rect40" />
+        <rect
+           transform="scale(-1)"
+           height="7"
+           width="5"
+           y="-47"
+           x="-10"
+           fill="url(#c)"
+           id="rect42" />
+        <rect
+           height="7"
            width="28"
-           height="7" />
+           y="40"
+           x="10"
+           fill="url(#f)"
+           id="rect44" />
       </g>
     </g>
     <rect
-       id="rect46"
-       x="2.5"
-       y="1030.9"
-       stroke-opacity=".23907"
-       width="19"
-       ry="1"
-       rx="1"
-       style="color:#000000"
-       fill="url(#b)"
-       stroke-linecap="round"
-       stroke="#000"
-       height="19"
-       stroke-linejoin="round" />
-    <rect
-       id="rect66"
-       fill="none"
-       x="3.5012"
-       y="1031.9"
-       stroke-linecap="round"
-       stroke="url(#e)"
-       width="17"
-       height="17"
        stroke-linejoin="round"
-       opacity=".5" />
-    <g
-       id="g4181"
-       transform="matrix(0.17777775,0,0,0.17777775,0.54130967,864.03144)">
-      <g
-         transform="matrix(0.33750005,0,0,0.33750005,-115.86631,833.31943)"
-         id="layer1"
-         style="fill:#e50914;fill-opacity:1">
-        <g
-           transform="matrix(2.5445375,0,0,2.5445375,1157.1714,-1457.8678)"
-           id="g3235"
-           style="fill:#e50914;fill-opacity:1">
-          <path
-             d="m -203.09972,771.41415 c 1.6425,0.15875 3.2825,0.33 4.92,0.5075 l 3.615,-8.92625 3.43625,9.74875 c 1.76375,0.22125 3.525,0.4525 5.2825,0.695 l -6.02375,-17.09625 6.02625,-14.88 -5.10375,0 -0.0525,0.0725 -3.255,8.03875 -2.8575,-8.11125 -5.03875,0 5.2025,14.7625 -6.15125,15.18875 z"
-             id="path3015"
-             style="fill:#e50914;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
-             d="m -206.91147,771.06478 0,-29.60125 -5.0375,0 0,29.18625 c 1.68125,0.12875 3.36125,0.26875 5.0375,0.415"
-             id="path3019"
-             style="fill:#e50914;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
-             d="m -244.7486,769.4089 c 1.36,0 2.7175,0.01 4.07375,0.0213 l 0,-10.875 6.05125,0 0,-4.63125 -6.05125,0 0,-7.825 6.96875,0 0,-4.63625 -12.02625,0 0,27.95 c 0.3275,0 0.655,-0.004 0.98375,-0.004"
-             id="path3023"
-             style="fill:#e50914;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
-             d="m -260.3881,769.69191 c 1.6775,-0.06 3.3575,-0.11 5.04,-0.15125 l 0,-23.44125 4.7075,0 0,-4.63625 -14.45625,0 0,4.63625 4.70875,0 0,23.5925 z"
-             id="path3035"
-             style="fill:#e50914;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
-             d="m -298.91059,772.81378 0,-17.63625 5.96375,16.92375 c 1.83375,-0.20625 3.67125,-0.4 5.5125,-0.5825 l 0,-30.055 -4.8325,0 0,18.2675 -6.43625,-18.2675 -0.2075,0 -4.8325,0 0,31.98375 0.03,0 c 1.5975,-0.22125 3.19875,-0.43125 4.8025,-0.63375"
-             id="path3039"
-             style="fill:#e50914;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
-             d="m -269.95297,746.09903 0,-4.63625 -12.0275,0 0,24.9125 0,4.6375 0,0.004 c 3.99125,-0.345 7.99625,-0.63375 12.0175,-0.86875 l 0,-0.004 0,-1.33625 0,-3.3 c -2.325,0.135 -4.645,0.29125 -6.96,0.46375 l 0,-7.415 6.05125,0 0,-4.63375 -6.05125,0 0,-7.82375 6.97,0 z"
-             id="path3051"
-             style="fill:#e50914;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
-             d="m -223.72272,765.2864 0,-23.82375 -5.05875,0 0,23.605 0,4.63625 0,0.005 c 4.02375,0.1475 8.0325,0.35375 12.0275,0.6125 l 0,-0.006 0,-1.4975 0,-3.13875 c -2.31875,-0.15 -4.64125,-0.28 -6.96875,-0.3925"
-             id="path3055"
-             style="fill:#e50914;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-        </g>
-      </g>
-    </g>
+       height="19"
+       stroke="#000"
+       stroke-linecap="round"
+       fill="url(#b)"
+       style="color:#000000"
+       rx="1"
+       ry="1"
+       width="19"
+       stroke-opacity=".23907"
+       y="1030.9"
+       x="2.5"
+       id="rect46" />
+    <rect
+       opacity=".5"
+       stroke-linejoin="round"
+       height="17"
+       width="17"
+       stroke="url(#e)"
+       stroke-linecap="round"
+       y="1031.9"
+       x="3.5012"
+       fill="none"
+       id="rect66" />
   </g>
+  <text
+     transform="scale(1.0705755,0.93407705)"
+     id="text4176"
+     y="20.340935"
+     x="6.6375675"
+     style="font-style:normal;font-weight:normal;font-size:21.41150856px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#e50914;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bebas Neue';-inkscape-font-specification:'Bebas Neue';fill:#e50914;fill-opacity:1"
+       y="20.340935"
+       x="6.6375675"
+       id="tspan4178">N</tspan></text>
 </svg>

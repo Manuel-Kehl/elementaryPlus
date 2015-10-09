@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   version="1.1"
+   width="16"
+   height="16">
+  <metadata
+     id="metadata64">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <linearGradient
+       x1="24"
+       y1="5"
+       gradientTransform="matrix(.29730 0 0 .29730 .86487 .86487)"
+       x2="24"
+       gradientUnits="userSpaceOnUse"
+       y2="43"
+       id="b">
+      <stop
+         id="stop7"
+         offset="0"
+         stop-color="#fff" />
+      <stop
+         id="stop9"
+         offset=".063165"
+         stop-opacity=".23529"
+         stop-color="#fff" />
+      <stop
+         id="stop11"
+         offset=".95056"
+         stop-opacity=".15686"
+         stop-color="#fff" />
+      <stop
+         id="stop13"
+         offset="1"
+         stop-opacity=".39216"
+         stop-color="#fff" />
+    </linearGradient>
+    <radialGradient
+       r="12.672"
+       gradientTransform="matrix(0 3.1659 -3.8867 0 46.977 -26.72)"
+       cx="6.7304"
+       cy="9.9571"
+       gradientUnits="userSpaceOnUse"
+       fx="6.2002"
+       id="a">
+      <stop
+         id="stop16"
+         offset="0"
+         stop-color="#fafafa" />
+      <stop
+         id="stop18"
+         offset="1"
+         stop-color="#e1e1e1" />
+    </radialGradient>
+  </defs>
+  <path
+     id="path20"
+     fill="url(#a)"
+     d="m2.5 2c-0.2856 0-0.5 0.2144-0.5 0.5v11c0 0.286 0.2144 0.5 0.5 0.5h11c0.286 0 0.5-0.214 0.5-0.5v-11c0-0.2856-0.214-0.5-0.5-0.5h-11z"
+     style="color:#000000" />
+  <rect
+     id="rect22"
+     fill="none"
+     x="2.5"
+     y="2.5"
+     stroke-linecap="round"
+     stroke="url(#b)"
+     width="11"
+     height="11"
+     stroke-linejoin="round"
+     opacity=".5" />
+  <rect
+     id="rect24"
+     fill="none"
+     x="1.5"
+     y="1.5"
+     stroke-linecap="round"
+     stroke="#000"
+     width="13"
+     height="13"
+     ry="1"
+     rx="1"
+     style="color:#000000"
+     stroke-linejoin="round"
+     opacity=".4" />
+  <text
+     transform="scale(1.0970134,0.9115659)"
+     id="text4200"
+     y="14.261174"
+     x="3.9466362"
+     style="font-style:normal;font-weight:normal;font-size:41.79098511px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#e50914;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.67162037px;font-family:'Bebas Neue';-inkscape-font-specification:'Bebas Neue';fill:#e50914;fill-opacity:1"
+       y="14.261174"
+       x="3.9466362"
+       id="tspan4202">N</tspan></text>
+</svg>
