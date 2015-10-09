@@ -30,8 +30,8 @@ import shutil
 import subprocess
 import apt
 
-if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 12):
-    sys.exit("You need to have GTK 3.12 or newer to run this script")
+if not (Gtk.get_major_version() == 3 and Gtk.get_minor_version() >= 14):
+    sys.exit("You need to have GTK 3.14 or newer to run this script")
 
 appName = "elementary+ Configurator"
 iconThemeName = "elementaryPlus"
@@ -57,14 +57,14 @@ systemSettings = Gio.Settings.new("org.gnome.desktop.interface")
 home = expanduser("~")
 
 iconMegaList = [
-#   [
-#       "Name",
-#       "Sni-qt prefix",
-#       "Binary/Static File", [path]
-#       "Description",
-#       "Icon",
-#       "Install Method", ["custom", "standard"]
-#   ],
+    # [
+    #   "Name",
+    #   "Sni-qt prefix",
+    #   "Binary/Static File", [/path/to/file]
+    #   "Description",
+    #   "Icon",
+    #   "Install Method", ["custom", "standard"]
+    # ],
     [
         "Core icon theme",
         "",
@@ -156,7 +156,7 @@ iconMegaList = [
     [
         "Spotify",
         "spotify",
-        "/opt/spotify/spotify-client/spotify",
+        ["/opt/spotify/spotify-client/spotify", "/usr/bin/spotify"],
         "Spotify is a digital music service that gives you access to millions of songs",
         "spotify-client",
         "custom"
@@ -200,13 +200,14 @@ availableComponents = []
 iconTheme = Gtk.IconTheme
 defaultIconTheme = iconTheme.get_default()
 
+
 def checkIfInstalled(appName):
     for customLocation in customCheckLocations:
         if appName in customLocation:
             for location in customLocation[1]:
                 if os.path.isfile(location):
                     installedComponents.append(appName)
-    if os.path.isdir("%s/.local/share/sni-qt/icons/" % (home) + codeName ):
+    if os.path.isdir("%s/.local/share/sni-qt/icons/" % (home) + codeName):
         installedComponents.append(codeName)
 
 for a in iconMegaList:
@@ -216,13 +217,24 @@ for a in iconMegaList:
     icon = ("package-x-generic") if iconTheme.has_icon(defaultIconTheme, a[4]) == False else a[4]
     installMethod = a[5]
     sniqtPrefix = a[1]
-    enabled = (True) if os.path.isfile(a[2]) or codeName == "core_icon_theme" else False
+    if isinstance(a[2], list):
+        for checkLocation in a[2]:
+            print checkLocation
+            if os.path.isfile(checkLocation):
+                enabled = True
+                break
+            else:
+                enabled = False
+    else:
+        enabled = (True) if os.path.isfile(a[2]) or codeName == "core_icon_theme" else False
+
     checkIfInstalled(codeName)
     availableComponents.append([name, codeName, shortDesc, icon, installMethod, sniqtPrefix, enabled])
 
 availableComponents.sort(key=lambda x: x[6], reverse=True)
 
 print "installed", installedComponents
+
 
 class InstallerWindow(Gtk.Window):
     def __init__(self):
