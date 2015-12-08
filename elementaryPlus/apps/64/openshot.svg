@@ -1,0 +1,38 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4845" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<defs id="defs4847">
+<linearGradient id="linearGradient3796" y2="61.89" gradientUnits="userSpaceOnUse" x2="31.972" y1="3.8841" x1="31.972">
+<stop id="stop4808" stop-color="#FFF" offset="0"/>
+<stop id="stop4810" stop-color="#FFF" stop-opacity="0.23529412" offset="0.42448"/>
+<stop id="stop4812" stop-color="#FFF" stop-opacity="0.15686275" offset="0.8209"/>
+<stop id="stop4814" stop-color="#FFF" stop-opacity="0.39215687" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient3091" fx="-0.22335" gradientUnits="userSpaceOnUse" cy="8.4498" cx="15.645" gradientTransform="matrix(-9.6613255e-8,1.5876869,-1.495831,-1.0935756e-7,44.6396,2.8743392)" r="20">
+<stop id="stop3780" stop-color="#409ee4" offset="0"/>
+<stop id="stop3782" stop-color="#478def" offset="0.26238"/>
+<stop id="stop3784" stop-color="#3e76e0" offset="0.70495"/>
+<stop id="stop3786" stop-color="#3f70de" offset="1"/>
+</radialGradient>
+<radialGradient id="radialGradient3094" gradientUnits="userSpaceOnUse" cy="186.17" cx="99.157" gradientTransform="matrix(0.38235362,0,0,0.11948554,-5.913044,34.255311)" r="62.769">
+<stop id="stop3822-2-6" stop-color="#3d3d3d" offset="0"/>
+<stop id="stop3864-8-7" stop-color="#686868" stop-opacity="0.49803922" offset="0.5"/>
+<stop id="stop3824-1-2" stop-color="#686868" stop-opacity="0" offset="1"/>
+</radialGradient>
+</defs>
+<metadata id="metadata4850">
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<path id="path3818-0" fill="url(#radialGradient3094)" d="m56,56.5a24,7.5,0,1,1,-48,0,24,7.5,0,1,1,48,0z"/>
+<path id="path2555-7" d="m32,2.5c-16.277,0-29.5,13.223-29.5,29.5s13.223,29.5,29.5,29.5,29.5-13.223,29.5-29.5-13.223-29.5-29.5-29.5z" style="color:#000000;enable-background:accumulate;" fill="url(#radialGradient3091)" fill-rule="nonzero"/>
+<path id="path2555-7-1" opacity="0.4" stroke-linejoin="round" style="color:#000000;enable-background:accumulate;" d="m32,2.5c-16.277,0-29.5,13.223-29.5,29.5s13.223,29.5,29.5,29.5,29.5-13.223,29.5-29.5-13.223-29.5-29.5-29.5z" stroke-dashoffset="0" stroke="#000" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3020" opacity="0.4" d="m60.523,32.935a28.5,28.5,0,1,1,-57,0,28.5,28.5,0,1,1,57,0z" transform="translate(-0.02354813,-0.9352417)" stroke="url(#linearGradient3796)" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3864" opacity="0.15" d="m25.669,21.001c-0.35268-0.02357-0.71463,0.04914-1.0625,0.25-0.34867,0.20128-0.59143,0.49911-0.75,0.8125s-0.27774,0.64678-0.375,1c-0.20301,0.7372-0.34477,1.6321-0.46875,2.6875-0.24793,2.1107-0.375,4.7931-0.375,7.4688,0,2.6756,0.12707,5.358,0.375,7.4688,0.12398,1.0554,0.26574,1.9503,0.46875,2.6875,0.09727,0.3532,0.21643,0.68662,0.375,1s0.40138,0.61117,0.75,0.8125c0.34695,0.20026,0.68571,0.27053,1.0312,0.25,0.34554-0.02053,0.67824-0.09537,1.0312-0.1875,0.74547-0.19457,1.6207-0.54928,2.5938-0.96875,1.956-0.84328,4.3086-2.0992,6.625-3.4375,2.3153-1.3377,4.6036-2.7569,6.3125-4.0312,0.85034-0.63406,1.5544-1.203,2.0938-1.75,0.25646-0.26006,0.49364-0.48848,0.6875-0.78125s0.34375-0.65856,0.34375-1.0625c0-0.40391-0.14988-0.76959-0.34375-1.0625s-0.43086-0.52142-0.6875-0.78125c-0.53895-0.54565-1.2429-1.1169-2.0938-1.75-1.7057-1.2691-3.994-2.7266-6.3125-4.0625-2.3181-1.3356-4.6713-2.5666-6.625-3.4062-0.97236-0.41785-1.8472-0.77482-2.5938-0.96875-0.35284-0.09168-0.65481-0.16444-1-0.1875z" fill-rule="evenodd" fill="#000"/>
+<path id="path4996" opacity="0.15" d="m44.347,33.22c0,2.2286-17.37,12.257-19.3,11.143-1.93-1.1143-1.93-21.171,0-22.286,1.93-1.1143,19.3,8.9141,19.3,11.143z" fill-rule="evenodd" fill="#00008c"/>
+<path id="path4224" fill-rule="evenodd" fill="#fafafa" d="m44.347,32.22c0,2.2286-17.37,12.257-19.3,11.143-1.93-1.1143-1.93-21.171,0-22.286,1.93-1.1143,19.3,8.9141,19.3,11.143z"/>
+</svg>
