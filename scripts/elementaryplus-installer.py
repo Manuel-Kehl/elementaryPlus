@@ -162,6 +162,14 @@ iconMegaList = [
         "custom"
     ],
     [
+        "Teamviewer",
+        "teamviewer",
+        "/usr/bin/teamviewer",
+        "TeamViewer is a software package for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers",
+        "teamviewer",
+        "custom"
+    ],
+    [
         "Telegram Desktop",
         "",
         "%s/.TelegramDesktop/tdata/icon.png" % (home),
@@ -448,6 +456,7 @@ class InstallerWindow(Gtk.Window):
             out = self.installQtIndicatorIcons(appName, sniqtPrefix)
         else:
             out = subprocess.call(['python', scripts + "custom/" + appName + ".py", "--install", whatToUse, scripts])
+            print out
 
         if out == 1:
             self.error = 1
