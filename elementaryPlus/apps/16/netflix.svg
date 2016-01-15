@@ -5,10 +5,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg2"
-   version="1.1"
+   height="16"
    width="16"
-   height="16">
+   version="1.1"
+   id="svg2">
   <metadata
      id="metadata64">
     <rdf:RDF>
@@ -24,90 +24,88 @@
   <defs
      id="defs4">
     <linearGradient
-       x1="24"
-       y1="5"
-       gradientTransform="matrix(.29730 0 0 .29730 .86487 .86487)"
-       x2="24"
-       gradientUnits="userSpaceOnUse"
+       id="b"
        y2="43"
-       id="b">
+       gradientUnits="userSpaceOnUse"
+       x2="24"
+       gradientTransform="matrix(.29730 0 0 .29730 .86487 .86487)"
+       y1="5"
+       x1="24">
       <stop
-         id="stop7"
+         stop-color="#fff"
          offset="0"
-         stop-color="#fff" />
+         id="stop7" />
       <stop
-         id="stop9"
-         offset=".063165"
+         stop-color="#fff"
          stop-opacity=".23529"
-         stop-color="#fff" />
+         offset=".063165"
+         id="stop9" />
       <stop
-         id="stop11"
-         offset=".95056"
+         stop-color="#fff"
          stop-opacity=".15686"
-         stop-color="#fff" />
+         offset=".95056"
+         id="stop11" />
       <stop
-         id="stop13"
-         offset="1"
+         stop-color="#fff"
          stop-opacity=".39216"
-         stop-color="#fff" />
+         offset="1"
+         id="stop13" />
     </linearGradient>
     <radialGradient
-       r="12.672"
-       gradientTransform="matrix(0 3.1659 -3.8867 0 46.977 -26.72)"
-       cx="6.7304"
-       cy="9.9571"
-       gradientUnits="userSpaceOnUse"
+       id="a"
        fx="6.2002"
-       id="a">
+       gradientUnits="userSpaceOnUse"
+       cy="9.9571"
+       cx="6.7304"
+       gradientTransform="matrix(0 3.1659 -3.8867 0 46.977 -26.72)"
+       r="12.672">
       <stop
-         id="stop16"
+         stop-color="#fafafa"
          offset="0"
-         stop-color="#fafafa" />
+         id="stop16" />
       <stop
-         id="stop18"
+         stop-color="#e1e1e1"
          offset="1"
-         stop-color="#e1e1e1" />
+         id="stop18" />
     </radialGradient>
   </defs>
   <path
-     id="path20"
-     fill="url(#a)"
-     d="m2.5 2c-0.2856 0-0.5 0.2144-0.5 0.5v11c0 0.286 0.2144 0.5 0.5 0.5h11c0.286 0 0.5-0.214 0.5-0.5v-11c0-0.2856-0.214-0.5-0.5-0.5h-11z"
-     style="color:#000000" />
-  <rect
-     id="rect22"
-     fill="none"
-     x="2.5"
-     y="2.5"
-     stroke-linecap="round"
-     stroke="url(#b)"
-     width="11"
-     height="11"
-     stroke-linejoin="round"
-     opacity=".5" />
-  <rect
-     id="rect24"
-     fill="none"
-     x="1.5"
-     y="1.5"
-     stroke-linecap="round"
-     stroke="#000"
-     width="13"
-     height="13"
-     ry="1"
-     rx="1"
      style="color:#000000"
+     d="m2.5 2c-0.2856 0-0.5 0.2144-0.5 0.5v11c0 0.286 0.2144 0.5 0.5 0.5h11c0.286 0 0.5-0.214 0.5-0.5v-11c0-0.2856-0.214-0.5-0.5-0.5h-11z"
+     fill="url(#a)"
+     id="path20" />
+  <rect
+     opacity=".5"
      stroke-linejoin="round"
-     opacity=".4" />
-  <text
-     transform="scale(1.0970134,0.9115659)"
+     height="11"
+     width="11"
+     stroke="url(#b)"
+     stroke-linecap="round"
+     y="2.5"
+     x="2.5"
+     fill="none"
+     id="rect22" />
+  <rect
+     opacity=".4"
+     stroke-linejoin="round"
+     style="color:#000000"
+     rx="1"
+     ry="1"
+     height="13"
+     width="13"
+     stroke="#000"
+     stroke-linecap="round"
+     y="1.5"
+     x="1.5"
+     fill="none"
+     id="rect24" />
+  <g
      id="text4200"
-     y="14.261174"
-     x="3.9466362"
      style="font-style:normal;font-weight:normal;font-size:41.79098511px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#e50914;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     xml:space="preserve"><tspan
+     transform="scale(1.0970134,0.9115659)">
+    <path
+       id="path4150"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.67162037px;font-family:'Bebas Neue';-inkscape-font-specification:'Bebas Neue';fill:#e50914;fill-opacity:1"
-       y="14.261174"
-       x="3.9466362"
-       id="tspan4202">N</tspan></text>
+       d="m 8.2563318,14.261174 1.7708932,0 0,-10.9701341 -1.5358189,0 0,6.566409 -0.031343,0 -1.7395499,-6.566409 -2.1626836,0 0,10.9701341 1.5514904,0 0,-7.9455113 0.031343,0 2.1156687,7.9455113 z" />
+  </g>
 </svg>
