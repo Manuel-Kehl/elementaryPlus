@@ -5,9 +5,9 @@
 
 This theme is a community maintained addition to elementary OS's default icon theme. It contains icons for several third party applications that resemble elementary OS's style.
 
-![Preview of the indicator icons](StatusIconPreview.png)
+![Preview of the indicator icons](images/StatusIconPreview.png)
 
-![Preview of our app icons](AppIconPreview.png)
+![Preview of our app icons](images/AppIconPreview.png)
 
 ## Intention
 [DanRabbit](http://danrabbit.deviantart.com/) indicated [on deviantART](http://danrabbit.deviantart.com/art/elementary-Icons-65437279), that the original theme is most likely to be limited to applications installed on elementary OS by default.
@@ -32,7 +32,7 @@ To enable the theme, launch "elementary+ Configurator" from the application menu
 Please also make sure, that the original elementary icon theme is installed, because elementary+ only provides additions and inherits the base theme.
 
 ####The elementary+ Configurator
-![Screenshot of the elementary+ Configurator](screenshot_configurator.png)
+![Screenshot of the elementary+ Configurator](images/screenshot_configurator.png)
 
 ## Contribute
 I am waiting for your pull requests and would love to see this theme become as complete as possible.
