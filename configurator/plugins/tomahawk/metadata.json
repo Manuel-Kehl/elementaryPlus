@@ -1,0 +1,9 @@
+{
+    "icon": "tomahawk", 
+    "label": "Tomahawk", 
+    "description": "A new kind of music player that invites all your streams, downloads, cloud music storage, playlists, radio stations and friends to the same party. It's about time they all mingle", 
+    "sni-qt-prefix": "tomahawk", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/tomahawk"], 
+    "custom-check-location": ""
+}

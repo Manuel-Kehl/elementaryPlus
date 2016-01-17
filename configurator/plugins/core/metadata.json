@@ -1,0 +1,9 @@
+{
+    "icon": "preferences-desktop", 
+    "label": "elementary+ icon theme", 
+    "description": "Enable the elementary+ icon theme", 
+    "sni-qt-prefix": "",
+    "install-method": "custom",
+    "check-if-installed": [],
+    "custom-check-location": ""
+}

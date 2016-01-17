@@ -1,0 +1,9 @@
+{
+    "icon": "mumble", 
+    "label": "Mumble", 
+    "description": "Mumble is a low-latency, high quality voice chat program for gaming", 
+    "sni-qt-prefix": "mumble", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/mumble"], 
+    "custom-check-location": ""
+}

@@ -1,0 +1,9 @@
+{
+    "icon": "owncloud", 
+    "label": "OwnCloud", 
+    "description": "An enterprise file sharing solution for online collaboration and storage", 
+    "sni-qt-prefix": "owncloud", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/owncloud"], 
+    "custom-check-location": ""
+}

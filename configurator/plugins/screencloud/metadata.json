@@ -1,0 +1,9 @@
+{
+    "icon": "screencloud", 
+    "label": "ScreenCloud", 
+    "description": "ScreenCloud is a Screenshot sharing tool", 
+    "sni-qt-prefix": "screencloud", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/screencloud"], 
+    "custom-check-location": ""
+}

@@ -1,0 +1,9 @@
+{
+    "icon": "wiznote", 
+    "label": "WizNote", 
+    "description": "Wiznote is a cloud based notes solution which helps personal and professional to take notes and collaborate with team members", 
+    "sni-qt-prefix": "WizNote", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/WizNote"], 
+    "custom-check-location": ""
+}

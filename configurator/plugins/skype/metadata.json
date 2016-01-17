@@ -1,0 +1,9 @@
+{
+    "icon": "skype", 
+    "label": "Skype", 
+    "description": "Stay in touch with your family and friends for free on Skype", 
+    "sni-qt-prefix": "skype", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/skype"], 
+    "custom-check-location": ""
+}

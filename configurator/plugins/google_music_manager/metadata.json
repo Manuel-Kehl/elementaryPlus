@@ -1,0 +1,9 @@
+{
+    "icon": "google-musicmanager", 
+    "label": "Google Music Manager", 
+    "description": "With Google Play Music for Chrome or Music Manager, you can add your personal music library to the cloud", 
+    "sni-qt-prefix": "MusicManager", 
+    "install-method": "standard", 
+    "check-if-installed": ["/opt/google/musicmanager/google-musicmanager"], 
+    "custom-check-location": ""
+}
