@@ -1,0 +1,39 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg3935" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<defs id="defs3937">
+<linearGradient id="linearGradient3081" y2="44.341" gradientUnits="userSpaceOnUse" x2="71.204" gradientTransform="matrix(0.35135136,0,0,0.35135136,-17.203671,-0.90930013)" y1="6.2376" x1="71.204">
+<stop id="stop4013" stop-color="#FFF" offset="0"/>
+<stop id="stop4015" stop-color="#FFF" stop-opacity="0.23529412" offset="0.50776"/>
+<stop id="stop4017" stop-color="#FFF" stop-opacity="0.15686275" offset="0.83457"/>
+<stop id="stop4019" stop-color="#FFF" stop-opacity="0.39215687" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient3084" gradientUnits="userSpaceOnUse" cy="8.4498" cx="5.78" gradientTransform="matrix(0,0.89892574,-0.95095622,-1.6561642e-8,16.035401,-6.0146846)" r="20">
+<stop id="stop4087" stop-color="#06abec" offset="0"/>
+<stop id="stop4093" stop-color="#0da6f6" offset="0.14449"/>
+<stop id="stop4091" stop-color="#1e9df5" offset="0.32573"/>
+<stop id="stop4089" stop-color="#1953f1" offset="1"/>
+</radialGradient>
+</defs>
+<metadata id="metadata3940">
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<g id="layer1">
+<path id="path2555-7" style="enable-background:accumulate;color:#000000;" d="m8,0.5c-4.1382,0-7.5,3.3618-7.5,7.5,0,4.138,3.3618,7.5,7.5,7.5,4.138,0,7.5-3.362,7.5-7.5,0-4.1382-3.362-7.5-7.5-7.5z" fill-rule="nonzero" fill="url(#radialGradient3084)"/>
+<path id="path8655-6" opacity="0.5" stroke-linejoin="round" style="enable-background:accumulate;color:#000000;" d="M14.5,7.9998c0,3.5902-2.91,6.5002-6.4999,6.5002s-6.5001-2.91-6.5001-6.5002c0-3.5898,2.9102-6.4998,6.5001-6.4998s6.4999,2.91,6.4999,6.4998z" stroke-dashoffset="0" stroke="url(#linearGradient3081)" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="0.99999994" fill="none"/>
+<path id="path3872" opacity="0.15" stroke-linejoin="miter" d="m6.5,13.5,0-6.9999" stroke="#000" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path4185" opacity="0.50000000000000000" stroke-linejoin="round" style="enable-background:accumulate;color:#000000;" d="m8,0.5c-4.1382,0-7.5,3.3618-7.5,7.5,0,4.138,3.3618,7.5,7.5,7.5,4.138,0,7.5-3.362,7.5-7.5,0-4.1382-3.362-7.5-7.5-7.5z" stroke-dashoffset="0" stroke="#00537d" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="0.99999994000000003" fill="none"/>
+<path id="path3874" opacity="0.15" stroke-linejoin="miter" d="m6.5204,9.8657c-4.6713,3.1028-4.6926-4.7595,0-1.772" stroke="#000" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3864" stroke-linejoin="miter" d="m6.5,12.5,0-6.9999" stroke="#FFF" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3876" opacity="0.15" stroke-linejoin="miter" d="m9.5204,4.5001,0,6.9999" stroke="#000" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3866" stroke-linejoin="miter" d="m6.5204,8.8657c-4.6713,3.1028-4.6926-4.7595,0-1.772" stroke="#FFF" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3878" opacity="0.15" stroke-linejoin="miter" d="m9.5,8.134c4.6713-3.1028,4.6926,4.7595,0,1.772" stroke="#000" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3868" stroke-linejoin="miter" d="m9.5204,3.5001,0,6.9999" stroke="#FFF" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+<path id="path3870" stroke-linejoin="miter" d="m9.5,7.134c4.6713-3.1028,4.6926,4.7595,0,1.772" stroke="#FFF" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+</g>
+</svg>
