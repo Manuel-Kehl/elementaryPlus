@@ -1,0 +1,39 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg6649" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="48" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<defs id="defs6651">
+<radialGradient id="radialGradient3163" gradientUnits="userSpaceOnUse" cy="93.468" cx="-4.0288" gradientTransform="matrix(0.56606194,0,0,0.06177604,26.100139,38.458622)" r="35.338">
+<stop id="stop3813" stop-color="#000" offset="0"/>
+<stop id="stop3815" stop-color="#000" stop-opacity="0" offset="1"/>
+</radialGradient>
+<linearGradient id="linearGradient3165" y2="117.92" gradientUnits="userSpaceOnUse" x2="64.338" gradientTransform="matrix(0.49749736,0,0,0.49760201,-8.0885455,-7.8419891)" y1="13.998" x1="64.5">
+<stop id="stop5875" stop-color="#b3f847" offset="0"/>
+<stop id="stop5877" stop-color="#84c200" offset="1"/>
+</linearGradient>
+<linearGradient id="linearGradient3167" y2="108.53" gradientUnits="userSpaceOnUse" x2="64.093" gradientTransform="matrix(0.47963375,0,0,0.47976286,-6.9376896,-6.6601598)" y1="21.492" x1="64.226">
+<stop id="stop3179" stop-color="#FFF" stop-opacity="0.80000001" offset="0"/>
+<stop id="stop3181" stop-color="#FFF" stop-opacity="0.60000002" offset="0.38003"/>
+<stop id="stop3183" stop-color="#FFF" stop-opacity="0.40000001" offset="0.88104"/>
+<stop id="stop3185" stop-color="#FFF" stop-opacity="0.60000002" offset="1"/>
+</linearGradient>
+<linearGradient id="linearGradient3968" y2="22.963" gradientUnits="userSpaceOnUse" x2="18.215" gradientTransform="matrix(1.0411907,0,0,1.0411907,4.8312151,-7.6791436)" y1="39.608" x1="18.05">
+<stop id="stop3972" stop-color="#FFF" offset="0"/>
+<stop id="stop3974" stop-color="#FFF" stop-opacity="0.40000001" offset="0.49683"/>
+<stop id="stop3976" stop-color="#FFF" stop-opacity="0.40000001" offset="0.86036"/>
+<stop id="stop3978" stop-color="#FFF" stop-opacity="0.80000001" offset="1"/>
+</linearGradient>
+</defs>
+<metadata id="metadata6654">
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<path id="path3155" opacity="0.15" style="color:#000000;enable-background:accumulate;" d="m43.823,44.232a20.004,2.183,0,0,1,-40.007,0,20.004,2.183,0,1,1,40.007,0z" fill-rule="nonzero" fill="url(#radialGradient3163)"/>
+<path id="path3157" fill="url(#linearGradient3165)" d="m20.766,5.5-0.49749,7.4641-4.8196,2.7834-6.7164-3.2966-3.2337,5.5981,6.2185,4.1674,0,5.567-6.2185,4.1674,3.2337,5.5981,6.7164-3.2966,4.8196,2.7834,0.49749,7.4641,6.4676,0,0.49749-7.4641,4.8196-2.7834,6.7164,3.2966,3.2337-5.5981-6.2185-4.1674,0-5.567,6.2185-4.1674-3.2337-5.5981-6.7164,3.2966-4.8196-2.7834-0.49749-7.4641zm3.2337,12.782c3.5719,0,6.7164,3.145,6.7164,6.7177,0,3.5726-3.1443,6.7177-6.7164,6.7177-3.5719,0-6.7164-3.145-6.7164-6.7177,0-3.5726,3.1443-6.7177,6.7164-6.7177z"/>
+<path id="path3159" d="m21.258,13.58-5.7902,3.2972-6.3421-3.1256-2.2962,3.9942,5.8942,3.9462,0,6.6159-5.9212,3.9462,2.3276,3.9922,6.3018-3.1137,5.8152,3.2972,0.45094,7.0701,4.5928,0,0.4617-7.0236s4.1107-2.4466,5.7537-3.3944c2.1108,1.055,6.3379,3.19,6.3379,3.19l2.3018-4.0057-5.8762-3.9245v-6.645l5.8782-3.9393-2.2656-3.9823-6.3399,3.1537-5.7771-3.3925-0.46907-7.0363h-4.5999z" stroke="url(#linearGradient3167)" stroke-width="1" fill="none"/>
+<path id="path3161" opacity="0.4" d="m20.766,5.5-0.49749,7.4641-4.8196,2.7834-6.7164-3.2966-3.2337,5.5981,6.2185,4.1674,0,5.567-6.2185,4.1674,3.2337,5.5981,6.7164-3.2966,4.8196,2.7834,0.49749,7.4641,6.4676,0,0.49749-7.4641,4.8196-2.7834,6.7164,3.2966,3.2337-5.5981-6.2185-4.1674,0-5.567,6.2185-4.1674-3.2337-5.5981-6.7164,3.2966l-4.819-2.783-0.497-7.464zm3.2337,12.782c3.5719,0,6.7164,3.145,6.7164,6.7177,0,3.5726-3.1443,6.7177-6.7164,6.7177-3.5719,0-6.7164-3.145-6.7164-6.7177,0-3.5726,3.1443-6.7177,6.7164-6.7177z" stroke="#50710f" stroke-width="0.99999994" fill="none"/>
+<path id="path3802" opacity="0.8" stroke-linejoin="round" d="m31.71,25.003c0.04521,3.1288-2.036,6.1351-4.9718,7.2108-2.8817,1.1319-6.3974,0.30277-8.4482-2.0256-2.1433-2.2894-2.6202-5.9251-1.1597-8.696,1.3657-2.7588,4.4993-4.4852,7.5592-4.1704,3.1744,0.23904,6.0216,2.6644,6.7779,5.7539,0.16193,0.62875,0.24295,1.2781,0.24279,1.9273z" stroke="url(#linearGradient3968)" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="none"/>
+</svg>
