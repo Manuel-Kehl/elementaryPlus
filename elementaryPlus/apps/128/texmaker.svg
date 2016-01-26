@@ -1,0 +1,39 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg5157" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="128" width="128" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<defs id="defs5159">
+<linearGradient id="linearGradient5879" y2="117.92" gradientUnits="userSpaceOnUse" x2="64.338" gradientTransform="matrix(1.3901193,0,0,1.3898458,-25.166593,-25.718336)" y1="13.998" x1="64.5">
+<stop id="stop5875" stop-color="#b3f847" offset="0"/>
+<stop id="stop5877" stop-color="#84c200" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient3049" gradientUnits="userSpaceOnUse" cy="93.468" cx="-4.0288" gradientTransform="matrix(1.5563924,0,0,0.16978827,70.270355,102.1321)" r="35.338">
+<stop id="stop3813" stop-color="#000" offset="0"/>
+<stop id="stop3815" stop-color="#000" stop-opacity="0" offset="1"/>
+</radialGradient>
+<linearGradient id="linearGradient3772" y2="60.41" gradientUnits="userSpaceOnUse" y1="93" x2="51.334" x1="51.156">
+<stop id="stop3768" stop-color="#fffff5" stop-opacity="0.58823532" offset="0"/>
+<stop id="stop3776" stop-color="#fffff7" stop-opacity="0.23529412" offset="0.54374"/>
+<stop id="stop3774" stop-color="#fffffa" stop-opacity="0.15686275" offset="0.85484"/>
+<stop id="stop3770" stop-color="#FFF" stop-opacity="0.39215687" offset="1"/>
+</linearGradient>
+<linearGradient id="linearGradient3784" y2="7.6943" gradientUnits="userSpaceOnUse" y1="123.76" x2="64.485" x1="65.057">
+<stop id="stop3780" stop-color="#FFF" stop-opacity="0.23529412" offset="0"/>
+<stop id="stop3788" stop-color="#FFF" stop-opacity="0.15686275" offset="0.25"/>
+<stop id="stop3786" stop-color="#FFF" stop-opacity="0.58823532" offset="0.62405"/>
+<stop id="stop3782" stop-color="#FFF" stop-opacity="0.78431374" offset="1"/>
+</linearGradient>
+</defs>
+<metadata id="metadata5162">
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<path id="path3041" opacity="0.15" style="color:#000000;enable-background:accumulate;" d="m119,118a55,6,0,0,1,-110,0,55,6,0,1,1,110,0z" fill-rule="nonzero" fill="url(#radialGradient3049)"/>
+<path id="path5865" d="m55.46,11.547-1.3901,20.848-13.467,7.7744-18.767-9.2077-9.0358,15.636,17.376,11.64,0,15.549-17.376,11.64,9.0358,15.636,18.767-9.2077,13.467,7.7744,1.3901,20.848,18.072,0,1.3901-20.848,13.467-7.7744,18.767,9.2077,9.0358-15.636-17.376-11.64,0-15.549,17.376-11.64-9.0358-15.636-18.767,9.2077-13.467-7.7744-1.3901-20.848zm9.0358,35.702c9.9806,0,18.767,8.7842,18.767,18.763,0,9.9787-8.786,18.763-18.767,18.763-9.9806,0-18.767-8.7842-18.767-18.763,0-9.9787,8.786-18.763,18.767-18.763z" fill="url(#linearGradient5879)"/>
+<path id="path5897" stroke="url(#linearGradient3784)" stroke-width="1" fill="none" d="m54.938,32.812-14.281,8.4062-18.438-9.0938-8.1875,14.188,17.031,11.406,0,16.562-17.031,11.406,8.2188,14.219,18.375-9.0938,14.312,8.2812,1.3438,20.5,16.406,0,1.375-20.531,14.281-8.25,18.406,9.0938,8.2188-14.219-17.031-11.406,0-16.562,17-11.375-8.1875-14.188-18.375,9.0625-14.312-8.2812-1.3438-20.531-16.406,0z"/>
+<path id="path2996" stroke-linejoin="round" d="m66.444,76.705a15.053,15.053,0,1,1,-30.106,0,15.053,15.053,0,1,1,30.106,0z" transform="matrix(1.3121019,0,0,1.3121019,-2.930438,-34.645159)" stroke="url(#linearGradient3772)" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="0.76213591999999986" fill="none"/>
+<path id="path6124" opacity="0.40000000000000002" stroke="#33480a" fill="none" d="m55.46,11.547-1.3901,20.848-13.467,7.7744-18.767-9.2077-9.0358,15.636,17.376,11.64,0,15.549-17.376,11.64,9.0358,15.636,18.767-9.2077,13.467,7.7744,1.3901,20.848,18.072,0,1.3901-20.848,13.467-7.7744,18.767,9.2077,9.0358-15.636-17.376-11.64,0-15.549,17.376-11.64-9.0358-15.636-18.767,9.2077-13.467-7.7744-1.3901-20.848zm9.0358,35.702c9.9806,0,18.767,8.7842,18.767,18.763,0,9.9787-8.786,18.763-18.767,18.763-9.9806,0-18.767-8.7842-18.767-18.763,0-9.9787,8.786-18.763,18.767-18.763z"/>
+</svg>
