@@ -172,7 +172,7 @@ iconMegaList = [
     [
         "Telegram Desktop",
         "",
-        "%s/.TelegramDesktop/tdata/icon.png" % (home),
+        "%s/.TelegramDesktop/tdata" % (home),
         "Telegram is a messaging app with a focus on speed and security, it's super fast, simple and free",
         "telegram",
         "custom"
