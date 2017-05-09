@@ -1,0 +1,32 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>ic_light_enpass</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(177 141)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M -177 -141L -153 -141L -153 -117L -177 -117L -177 -141Z" fill="#FFFFFF"/>
+</mask>
+<g id="ic_light_enpass" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<mask id="mask1_outline_out">
+<rect id="mask1_outline_inv" fill="white" x="-2" y="-2" width="19" height="19" transform="translate(-172.5 -136.5)"/>
+<use xlink:href="#path0_fill" fill="black" transform="translate(-172.5 -136.5)"/>
+</mask>
+<g mask="url(#mask1_outline_out)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-172.5 -136.5)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(-165 -129.5)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(-168.214 -133.821)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 7.5 15C 11.6421 15 15 11.6422 15 7.50003C 15 3.35789 11.6421 2.61579e-05 7.5 2.61579e-05C 3.35786 2.61579e-05 0 3.35789 0 7.50003C 0 11.6422 3.35786 15 7.5 15Z"/>
+<path id="path1_stroke_2x" d="M 13.25 7.50003C 13.25 10.6757 10.6756 13.25 7.5 13.25L 7.5 16.75C 12.6086 16.75 16.75 12.6087 16.75 7.50003L 13.25 7.50003ZM 7.5 13.25C 4.32436 13.25 1.75 10.6757 1.75 7.50003L -1.75 7.50003C -1.75 12.6087 2.39137 16.75 7.5 16.75L 7.5 13.25ZM 1.75 7.50003C 1.75 4.32439 4.32436 1.75003 7.5 1.75003L 7.5 -1.74997C 2.39137 -1.74997 -1.75 2.39139 -1.75 7.50003L 1.75 7.50003ZM 7.5 1.75003C 10.6756 1.75003 13.25 4.32439 13.25 7.50003L 16.75 7.50003C 16.75 2.39139 12.6086 -1.74997 7.5 -1.74997L 7.5 1.75003Z"/>
+<path id="path2_stroke" d="M 1 0L 1 -1L -1 -1L -1 0L 1 0ZM -1 4.28571L -1 5.28571L 1 5.28571L 1 4.28571L -1 4.28571ZM -1 0L -1 4.28571L 1 4.28571L 1 0L -1 0Z"/>
+<path id="path3_fill" d="M 6.42857 2.67857C 6.42857 4.15791 4.98949 5.35714 3.21429 5.35714C 1.43908 5.35714 0 4.15791 0 2.67857C 0 1.19924 1.43908 0 3.21429 0C 4.98949 0 6.42857 1.19924 6.42857 2.67857Z"/>
+</defs>
+</svg>
