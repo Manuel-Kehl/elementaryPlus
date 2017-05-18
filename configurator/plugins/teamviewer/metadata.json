@@ -1,0 +1,9 @@
+{
+    "icon": "teamviewer", 
+    "label": "Teamviewer", 
+    "description": "TeamViewer is a software package for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers", 
+    "sni-qt-prefix": "teamviewer", 
+    "install-method": "custom", 
+    "check-if-installed": ["/usr/bin/teamviewer"], 
+    "custom-check-location": ""
+}

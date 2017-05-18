@@ -1,0 +1,9 @@
+{
+    "icon": "flareget", 
+    "label": "flareGet", 
+    "description": "FlareGet is a full featured, multi-threaded download manager and accelerator for Windows, Mac and Linux", 
+    "sni-qt-prefix": "flareget", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/flareget"], 
+    "custom-check-location": ""
+}

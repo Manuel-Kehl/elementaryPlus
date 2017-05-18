@@ -1,0 +1,9 @@
+{
+    "icon": "seafile", 
+    "label": "Seafile Client", 
+    "description": "The Seafile desktop client", 
+    "sni-qt-prefix": "seafile-applet", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/seafile-applet"], 
+    "custom-check-location": ""
+}

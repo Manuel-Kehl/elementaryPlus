@@ -1,0 +1,12 @@
+{
+    "icon": "spotify-client", 
+    "label": "Spotify", 
+    "description": "Spotify is a digital music service that gives you access to millions of songs", 
+    "sni-qt-prefix": "spotify", 
+    "install-method": "custom", 
+    "check-if-installed": [
+        "/opt/spotify/spotify-client/spotify", 
+        "/usr/bin/spotify"
+    ], 
+    "custom-check-location": ""
+}

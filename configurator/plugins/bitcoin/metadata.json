@@ -1,0 +1,9 @@
+{
+    "icon": "bitcoin128", 
+    "label": "Bitcoin", 
+    "description": "Bitcoin is a free open source peer-to-peer electronic cash system that is completely decentralized, without the need for a central server or trusted parties", 
+    "sni-qt-prefix": "bitcoin-qt", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/bitcoin-qt"], 
+    "custom-check-location": ""
+}

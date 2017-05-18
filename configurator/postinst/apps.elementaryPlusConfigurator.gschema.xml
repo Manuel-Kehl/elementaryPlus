@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="apps.elementaryPlusConfigurator" path="/apps/elementaryPlusConfigurator/">
+    <key type="s" name="previous-icon-theme">
+      <default>""</default>
+      <summary>Previous icon theme</summary>
+      <description>The name of the icon theme used before selecting elementary+</description>
+    </key>
+   </schema>
+</schemalist>
+

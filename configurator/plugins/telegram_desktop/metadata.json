@@ -1,0 +1,9 @@
+{
+    "icon": "telegram", 
+    "label": "Telegram Desktop", 
+    "description": "Telegram is a messaging app with a focus on speed and security, it's super fast, simple and free", 
+    "sni-qt-prefix": "", 
+    "install-method": "custom", 
+    "check-if-installed": ["~/.TelegramDesktop/tdata/icon.png"], 
+    "custom-check-location": "~/.TelegramDesktop/tdata/ticons/elementaryPlus.installed"
+}

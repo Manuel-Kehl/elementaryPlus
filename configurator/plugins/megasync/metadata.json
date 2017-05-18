@@ -1,0 +1,9 @@
+{
+    "icon": "mega", 
+    "label": "MEGAsync", 
+    "description": "MEGAsync is a free online storage service", 
+    "sni-qt-prefix": "megasync", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/megasync"], 
+    "custom-check-location": ""
+}

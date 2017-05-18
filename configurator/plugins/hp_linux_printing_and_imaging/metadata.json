@@ -1,0 +1,9 @@
+{
+    "icon": "HPmenu", 
+    "label": "HP Linux Printing and Imaging", 
+    "description": "The HP Linux Printing and Imaging System provides full support for printing on most HP SFP inkjets and many LaserJets, and for scanning, sending faxes and for photo-card access on most HP MFP printers", 
+    "sni-qt-prefix": "python2.7", 
+    "install-method": "standard", 
+    "check-if-installed": ["/usr/bin/hp-systray"], 
+    "custom-check-location": ""
+}
