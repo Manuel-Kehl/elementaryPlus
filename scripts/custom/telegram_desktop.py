@@ -26,7 +26,7 @@ import shutil
 
 iconDir = sys.argv[3] + "icons/telegram_desktop/"
 home = expanduser("~")
-destDir = home + "/.TelegramDesktop/tdata/ticons/"
+destDir = home + "/.local/share/TelegramDesktop/tdata/ticons/"
 
 
 def installCustomIndicatorIcons(installMethod):

@@ -171,8 +171,8 @@ iconMegaList = [
     ],
     [
         "Telegram Desktop",
-        "",
-        "%s/.TelegramDesktop/tdata/icon.png" % (home),
+        "telegram",
+        "/usr/bin/telegram",
         "Telegram is a messaging app with a focus on speed and security, it's super fast, simple and free",
         "telegram",
         "custom"
@@ -198,7 +198,7 @@ iconMegaList = [
 customCheckLocations = [
     [
         "telegram_desktop",
-        ["%s/.TelegramDesktop/tdata/ticons/elementaryPlus.installed" % (home)]
+        ["%s/.local/share/TelegramDesktop/tdata/ticons/elementaryPlus.installed" % (home)]
     ]
 ]
 
