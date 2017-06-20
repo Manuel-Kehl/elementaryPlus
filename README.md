@@ -31,7 +31,7 @@ To enable the theme, launch "elementary+ Configurator" from the application menu
 
 Please also make sure, that the original elementary icon theme is installed, because elementary+ only provides additions and inherits the base theme.
 
-####The elementary+ Configurator
+#### The elementary+ Configurator
 ![Screenshot of the elementary+ Configurator](screenshot_configurator.png)
 
 ## Contribute
