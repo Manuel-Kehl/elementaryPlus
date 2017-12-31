@@ -130,6 +130,14 @@ iconMegaList = [
         "standard"
     ],
     [
+        "RescueTime",
+        "rescuetime",
+        "/usr/bin/rescuetime",
+        "A personal analytics service that shows you how you spend your time and provides tools to help you be more productive.",
+        "rescuetime",
+        "standard"
+    ],
+    [
         "ScreenCloud",
         "screencloud",
         "/usr/bin/screencloud",
